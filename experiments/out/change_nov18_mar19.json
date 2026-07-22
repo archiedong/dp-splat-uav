@@ -1,0 +1,139 @@
+{
+ "name": "change_nov18_mar19",
+ "config": {
+  "record_a": "experiments/out/mar19_rich_record.json",
+  "model_a": "experiments/out/mar19_rich_model.npz",
+  "input_a": "/Users/donga2/dp-splat-data/h3d/Epoch_March2019/LiDAR/Mar19_train.laz",
+  "record_b": "experiments/out/nov18_rich_record.json",
+  "model_b": "experiments/out/nov18_rich_model.npz",
+  "input_b": "/Users/donga2/dp-splat-data/h3d/Epoch_November2018/LiDAR/Nov18_train.laz",
+  "cell": 1.0,
+  "sigma_reg": 0.0,
+  "seed": 5,
+  "chunk": 32768,
+  "bbox": null,
+  "min_cell_points": 20,
+  "name": "change_nov18_mar19"
+ },
+ "epochs": {
+  "a": "mar19_rich",
+  "b": "nov18_rich"
+ },
+ "frame": {
+  "origin_a": [
+   513884.7225396636,
+   5426944.081699712,
+   246.7401044876536
+  ],
+  "origin_b": [
+   513879.49387078086,
+   5426926.022589834,
+   245.7816538617829
+  ],
+  "grid_lo_utm": [
+   513767.4019928472,
+   5426486.578002904
+  ],
+  "grid_hi_utm": [
+   514080.4019928472,
+   5427269.578002904
+  ],
+  "grid_shape": [
+   313,
+   783
+  ],
+  "cell_m": 1.0,
+  "note": "grid in absolute UTM; cell centers converted per epoch by subtracting that model's recorded origin xy; heights lifted by origin z before differencing"
+ },
+ "construction": {
+  "weights": "gated GLOBAL E[pi] (un-renormalized within tiles) times full 3D spatial Student-t predictive at the cell's per-epoch mean ground point (cx, cy, zbar); xy-marginal weighting rejected, see docstring",
+  "variance": "law of total variance on the mean estimate: sum_k w_k [Psi_N/(kappa_N(nu_N-D-1))]_zz + sum_k w_k (m_kz - mu_z)^2; posterior MEAN covariance, not predictive (M3C2-EP double-counting pitfall)",
+  "lod": "1.96 sqrt(var_a + var_b + sigma_reg^2)"
+ },
+ "class_names": {
+  "0": "Low Vegetation",
+  "1": "Impervious Surface",
+  "2": "Vehicle",
+  "3": "Urban Furniture",
+  "4": "Roof",
+  "5": "Facade",
+  "6": "Shrub",
+  "7": "Tree",
+  "8": "Soil/Gravel",
+  "9": "Vertical Surface",
+  "10": "Chimney"
+ },
+ "n_cells": {
+  "grid": 245079,
+  "valid": 113020,
+  "null": 17592,
+  "eligible": 93144,
+  "eligible_noveg": 43221,
+  "positive_noveg": 734
+ },
+ "d_summary": {
+  "median_abs_m": 0.27852919526844744,
+  "p95_abs_m": 2.4830189267368836,
+  "median_lod_m": 1.8412896200238356,
+  "flag_rate_valid": 0.03646257299592992
+ },
+ "results": {
+  "sigma_reg": 0.0,
+  "null_test": {
+   "n_cells": 17592,
+   "exceedance_rate": 0.041837198726693954,
+   "median_abs_d_m": 0.17405380067584986,
+   "median_lod_m": 1.160937101135982
+  },
+  "veg_excluded": {
+   "n_pos": 734,
+   "n_neg": 42487,
+   "auc": 0.7177148079723569,
+   "precision": 0.08116710875331565,
+   "recall": 0.20844686648501362,
+   "flag_rate_pos": 0.20844686648501362,
+   "flag_rate_neg": 0.04076541059618236
+  },
+  "veg_included": {
+   "n_pos": 1744,
+   "n_neg": 91400,
+   "auc": 0.6707313414670869,
+   "precision": 0.08124824290132134,
+   "recall": 0.16571100917431192,
+   "flag_rate_pos": 0.16571100917431192,
+   "flag_rate_neg": 0.03575492341356674
+  }
+ },
+ "sensitivity_sigma_reg": {
+  "sigma_reg": 0.02,
+  "null_test": {
+   "n_cells": 17592,
+   "exceedance_rate": 0.04172351068667576,
+   "median_abs_d_m": 0.17405380067584986,
+   "median_lod_m": 1.1615987227946352
+  },
+  "veg_excluded": {
+   "n_pos": 734,
+   "n_neg": 42487,
+   "auc": 0.7178216847095849,
+   "precision": 0.08138297872340426,
+   "recall": 0.20844686648501362,
+   "flag_rate_pos": 0.20844686648501362,
+   "flag_rate_neg": 0.04064772754018876
+  },
+  "veg_included": {
+   "n_pos": 1744,
+   "n_neg": 91400,
+   "auc": 0.6777999781683496,
+   "precision": 0.09560039695666557,
+   "recall": 0.16571100917431192,
+   "flag_rate_pos": 0.16571100917431192,
+   "flag_rate_neg": 0.029912472647702408
+  }
+ },
+ "seconds_total": 21.30413404200226,
+ "versions": {
+  "jax": "0.10.2",
+  "numpy": "2.5.1"
+ }
+}

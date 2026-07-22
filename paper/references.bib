@@ -1,0 +1,471 @@
+%% references.bib — Paper 2 (DP-Splat UAV/Aerial, IEEE TGRS)
+%% Provenance rule: every entry below is verified in ../paper2-uav/LIT_REVIEW.md
+%% (Verified-references lists / must-cite list), taken from Paper 1's own bib
+%% (shared foundational refs), or is a dataset citation from SCOPING_MEMO.md.
+%% Entries carrying a LIT_REVIEW flag have a "%% FLAG:" comment — respect the
+%% flagged caveat in the citing text (one-sentence level only where noted).
+%% "%% TODO-VERIFY:" marks metadata (full author lists / exact titles) that was
+%% NOT recorded in LIT_REVIEW and must be checked against the source before
+%% camera-ready. Key convention: firstauthorYEARkeyword.
+
+%% =====================================================================
+%% Method source (Paper 1)
+%% =====================================================================
+
+@article{dong2026dpsplat,
+  author  = {Dong, Aqi},
+  title   = {{DP-Splat}: {B}ayesian Nonparametric Complexity Control for {G}aussian Splatting},
+  journal = {arXiv preprint arXiv:2607.10912},
+  year    = {2026}
+}
+
+%% =====================================================================
+%% Distributed / parallel BNP inference (LIT_REVIEW Track 1, all verified)
+%% =====================================================================
+
+@inproceedings{campbell2015streaming,
+  author    = {Campbell, Trevor and Straub, Julian and Fisher III, John W. and How, Jonathan P.},
+  title     = {Streaming, Distributed Variational Inference for {B}ayesian Nonparametrics},
+  booktitle = {Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)},
+  volume    = {28},
+  year      = {2015},
+  note      = {arXiv:1510.09161}
+}
+
+@inproceedings{hughes2013memoized,
+  author    = {Hughes, Michael C. and Sudderth, Erik B.},
+  title     = {Memoized Online Variational Inference for {D}irichlet Process Mixture Models},
+  booktitle = {Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)},
+  volume    = {26},
+  year      = {2013}
+}
+
+@inproceedings{yurochkin2019spahm,
+  author    = {Yurochkin, Mikhail and Agarwal, Mayank and Ghosh, Soumya and Greenewald, Kristjan and Hoang, Trong Nghia},
+  title     = {Statistical Model Aggregation via Parameter Matching},
+  booktitle = {Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)},
+  volume    = {32},
+  year      = {2019},
+  note      = {arXiv:1911.00218}
+}
+
+@article{scott2016consensus,
+  author  = {Scott, Steven L. and Blocker, Alexander W. and Bonassi, Fernando V. and Chipman, Hugh A. and George, Edward I. and McCulloch, Robert E.},
+  title   = {Bayes and Big Data: The Consensus {M}onte {C}arlo Algorithm},
+  journal = {Int. J. Manage. Sci. Eng. Manage.},
+  volume  = {11},
+  number  = {2},
+  pages   = {78--88},
+  year    = {2016}
+}
+
+@inproceedings{williamson2013parallel,
+  author    = {Williamson, Sinead and Dubey, Avinava and Xing, Eric P.},
+  title     = {Parallel {M}arkov Chain {M}onte {C}arlo for Nonparametric Mixture Models},
+  booktitle = {Proc. 30th Int. Conf. Mach. Learn. (ICML)},
+  series    = {Proc. Mach. Learn. Res.},
+  volume    = {28},
+  number    = {1},
+  year      = {2013}
+}
+
+@article{dunson2008kernel,
+  author  = {Dunson, David B. and Park, Ju-Hyun},
+  title   = {Kernel Stick-Breaking Processes},
+  journal = {Biometrika},
+  volume  = {95},
+  number  = {2},
+  pages   = {307--323},
+  year    = {2008}
+}
+
+%% (Uncited Track-1 background entries pruned 2026-07-20 per submission
+%% audit C: broderick2013streaming, gal2014pitfalls, chang2013parallel,
+%% srivastava2015wasp, srivastava2018scalable, minsker2017robust,
+%% hoffman2013stochastic, gelfand2005bayesian, jain2004splitmerge,
+%% ge2015distributed, claici2020fusion, tank2015streaming.)
+
+%% =====================================================================
+%% Tiled large-scale splatting / NeRF (LIT_REVIEW Track 2, all verified)
+%% =====================================================================
+
+@article{kerbl2023gaussian,
+  author  = {Kerbl, Bernhard and Kopanas, Georgios and Leimk{\"u}hler, Thomas and Drettakis, George},
+  title   = {{3D} {G}aussian Splatting for Real-Time Radiance Field Rendering},
+  journal = {ACM Trans. Graph.},
+  volume  = {42},
+  number  = {4},
+  pages   = {1--14},
+  month   = jul,
+  year    = {2023},
+  doi     = {10.1145/3592433}
+}
+
+@inproceedings{lin2024vastgaussian,
+  author    = {Lin, Jiaqi and Li, Zhihao and Tang, Xiao and Liu, Jianzhuang and Liu, Shiyong and Liu, Jiayue and Lu, Yangdi and Wu, Xiaofei and Xu, Songcen and Yan, Youliang and Yang, Wenming},
+  title     = {{VastGaussian}: Vast {3D} {G}aussians for Large Scene Reconstruction},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2024},
+  note      = {arXiv:2402.17427}
+}
+
+@inproceedings{liu2024citygaussian,
+  author    = {Liu, Yang and Guan, He and Luo, Chuanchen and Fan, Lue and Peng, Junran and Zhang, Zhaoxiang},
+  title     = {{CityGaussian}: Real-Time High-Quality Large-Scale Scene Rendering with {G}aussians},
+  booktitle = {Proc. Eur. Conf. Comput. Vis. (ECCV)},
+  publisher = {Springer},
+  year      = {2024},
+  note      = {arXiv:2404.01133}
+}
+
+@article{kerbl2024hierarchical,
+  author  = {Kerbl, Bernhard and Meuleman, Andreas and Kopanas, Georgios and Wimmer, Michael and Lanvin, Alexandre and Drettakis, George},
+  title   = {A Hierarchical {3D} {G}aussian Representation for Real-Time Rendering of Very Large Datasets},
+  journal = {ACM Trans. Graph.},
+  volume  = {43},
+  number  = {4},
+  year    = {2024},
+  doi     = {10.1145/3658160},
+  note    = {arXiv:2406.12080}
+}
+
+@inproceedings{chen2024dogs,
+  author    = {Chen, Yu and Lee, Gim Hee},
+  title     = {{DOGS}: Distributed-Oriented {G}aussian Splatting for Large-Scale {3D} Reconstruction via {G}aussian Consensus},
+  booktitle = {Proc. Adv. Neural Inf. Process. Syst. (NeurIPS)},
+  volume    = {37},
+  year      = {2024},
+  note      = {arXiv:2405.13943}
+}
+
+@inproceedings{turki2022meganerf,
+  author    = {Turki, Haithem and Ramanan, Deva and Satyanarayanan, Mahadev},
+  title     = {{Mega-NeRF}: Scalable Construction of Large-Scale {NeRF}s for Virtual Fly-Throughs},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2022},
+  note      = {arXiv:2112.10703}
+}
+
+@inproceedings{tancik2022blocknerf,
+  author    = {Tancik, Matthew and Casser, Vincent and Yan, Xinchen and Pradhan, Sabeek and Mildenhall, Ben and Srinivasan, Pratul P. and Barron, Jonathan T. and Kretzschmar, Henrik},
+  title     = {{Block-NeRF}: Scalable Large Scene Neural View Synthesis},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2022},
+  note      = {arXiv:2202.05263}
+}
+
+%% =====================================================================
+%% Bayesian splatting and closest competitors (LIT_REVIEW Track 3)
+%% =====================================================================
+
+%% VERIFIED 2026-07-17 against arXiv abs page
+@article{jia2026bayesian,
+  author  = {Jia, Gaoxiang and Appia, Vikram and Huang, Junzhou and Wang, Xinlei},
+  title   = {Rendering-Aware {B}ayesian {3D} {G}aussian Splatting with Native Uncertainty and Adaptive Complexity Control},
+  journal = {arXiv preprint arXiv:2607.05522},
+  year    = {2026}
+}
+
+%% FLAG: venue unconfirmed — cite as preprint only (LIT_REVIEW Track 3 sec. 5)
+@inproceedings{vandemaele2024vbgs,
+  author    = {Van de Maele, Toon and {\c{C}}atal, Ozan and Tschantz, Alexander and Buckley, Christopher L. and Verbelen, Tim},
+  title     = {Variational {B}ayes {G}aussian Splatting},
+  booktitle = {Proc. NeurIPS Workshop on Bayesian Decision-Making and Uncertainty},
+  year      = {2024},
+  note      = {arXiv:2410.03592}
+}
+
+%% NOTE: UC Riverside group, NOT VERSES — do not mislabel in text
+@article{zhu2026vbgsslam,
+  author  = {Zhu, Yuhan and Zhang, Yanyu and Xu, Jie and Ren, Wei},
+  title   = {{VBGS-SLAM}: Variational {B}ayesian {G}aussian Splatting Simultaneous Localization and Mapping},
+  journal = {arXiv preprint arXiv:2604.02696},
+  year    = {2026}
+}
+
+
+%% FLAG: full text paywalled — only abstract-level claims verified; confirm metric names before camera-ready
+%% VERIFIED 2026-07-17 via Crossref (DOI resolves; full text still unverified)
+@article{ding2026gugs,
+  author  = {Ding, Bin and Liu, Junyuan and Yin, Xiaoran and Yang, Zi and Luo, Yunfeng and Zhang, Daijun},
+  title   = {{GU-GS}: {G}aussian Splatting-Based Geometry Refinement and Uncertainty-Aware Learning Method for {DSM} Generation from Satellite Imagery},
+  journal = {IEEE Trans. Geosci. Remote Sens.},
+  volume  = {64},
+  pages   = {1--15},
+  year    = {2026},
+  doi     = {10.1109/TGRS.2026.3671346}
+}
+
+%% VERIFIED 2026-07-17 against arXiv abs page
+@article{gottwald2025primu,
+  author  = {Gottwald, Thomas and Heinert, Edgar and Stehr, Peter and Galappaththige, Chamuditha Jayanga and Rottmann, Matthias},
+  title   = {{PRIMU}: Uncertainty Estimation for Novel Views in {G}aussian Splatting from Primitive-Based Representations of Error and Coverage},
+  journal = {arXiv preprint arXiv:2508.02443},
+  year    = {2025}
+}
+
+%% VERIFIED 2026-07-20 against arXiv abs page 2605.30342 (title, all six
+%% authors, "Accepted to CVPR 2026")
+@inproceedings{xue2026gavis,
+  author    = {Xue, Shangjie and Dill, Jesse and Ahuja, Dhruv and Dellaert, Frank and Tsiotras, Panagiotis and Xu, Danfei},
+  title     = {Uncertainty-driven {3D} {G}aussian Splatting Active Mapping via Anisotropic Visibility Field},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2026},
+  note      = {arXiv:2605.30342}
+}
+
+%% VERIFIED 2026-07-17 against arXiv abs page ("Accepted to IEEE RA-L");
+%% VERIFIED 2026-07-20: DOI 10.1109/LRA.2025.3580331 on arXiv abs page;
+%% vol. 10, no. 8, pp. 8099-8106 via the BIT institutional publication record
+@article{li2025activesplat,
+  author  = {Li, Yuetao and Kuang, Zijia and Li, Ting and Hao, Qun and Yan, Zike and Zhou, Guyue and Zhang, Shaohui},
+  title   = {{ActiveSplat}: High-Fidelity Scene Reconstruction through Active {G}aussian Splatting},
+  journal = {IEEE Robot. Autom. Lett.},
+  volume  = {10},
+  number  = {8},
+  pages   = {8099--8106},
+  year    = {2025},
+  doi     = {10.1109/LRA.2025.3580331}
+}
+
+%% FLAG: venue "RSS 2025" rests on the authors' GitHub only — cite as arXiv preprint
+%% VERIFIED 2026-07-17 against arXiv abs page (no venue listed there — keep as preprint)
+@article{xie2025gaussmi,
+  author  = {Xie, Yuhan and Cai, Yixi and Zhang, Yinqiang and Yang, Lei and Pan, Jia},
+  title   = {{GauSS-MI}: {G}aussian Splatting {S}hannon Mutual Information for Active {3D} Reconstruction},
+  journal = {arXiv preprint arXiv:2504.21067},
+  year    = {2025}
+}
+
+@inproceedings{jiang2024fisherrf,
+  author    = {Jiang, Wen and Lei, Boshu and Daniilidis, Kostas},
+  title     = {{FisherRF}: Active View Selection and Mapping with Radiance Fields Using {F}isher Information},
+  booktitle = {Proc. Eur. Conf. Comput. Vis. (ECCV)},
+  series    = {Lect. Notes Comput. Sci.},
+  publisher = {Springer},
+  pages     = {422--440},
+  year      = {2024}
+}
+
+%% NVF deliberately omitted: LIT_REVIEW says pull the citation from GAVIS ref [104]
+%% (not independently verified) — add only after checking GAVIS's bibliography.
+
+%% =====================================================================
+%% Uncertainty evaluation / change detection (LIT_REVIEW Track 3)
+%% =====================================================================
+
+@article{lague2013m3c2,
+  author  = {Lague, Dimitri and Brodu, Nicolas and Leroux, J{\'e}r{\^o}me},
+  title   = {Accurate {3D} Comparison of Complex Topography with Terrestrial Laser Scanner: Application to the {R}angitikei Canyon ({N-Z})},
+  journal = {ISPRS J. Photogramm. Remote Sens.},
+  volume  = {82},
+  pages   = {10--26},
+  year    = {2013}
+}
+
+@article{winiwarter2021m3c2ep,
+  author  = {Winiwarter, Lukas and Anders, Katharina and H{\"o}fle, Bernhard},
+  title   = {{M3C2-EP}: Pushing the Limits of {3D} Topographic Point Cloud Change Detection by Error Propagation},
+  journal = {ISPRS J. Photogramm. Remote Sens.},
+  volume  = {178},
+  pages   = {240--258},
+  year    = {2021}
+}
+
+%% NOTE: CD-PB-M3C2 — a separate method from M3C2-EP; do not conflate (LIT_REVIEW citation correction)
+
+%% VERIFIED 2026-07-17 against isprs-archives.copernicus.org (DOI 10.5194/isprs-archives-XLVIII-G-2025-657-2025)
+@inproceedings{huang2025uncertainty,
+  author    = {Huang, Debao and Qin, Rongjun},
+  title     = {Uncertainty Estimation for Photogrammetric Point Clouds of {UAV} Imagery},
+  booktitle = {Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.},
+  volume    = {XLVIII-G-2025},
+  pages     = {657--664},
+  year      = {2025}
+}
+
+@inproceedings{ilg2018uncertainty,
+  author    = {Ilg, Eddy and {\c{C}}i{\c{c}}ek, {\"O}zg{\"u}n and Galesso, Silvio and Klein, Aaron and Makansi, Osama and Hutter, Frank and Brox, Thomas},
+  title     = {Uncertainty Estimates and Multi-Hypotheses Networks for Optical Flow},
+  booktitle = {Proc. Eur. Conf. Comput. Vis. (ECCV)},
+  publisher = {Springer},
+  year      = {2018}
+}
+
+@inproceedings{poggi2020uncertainty,
+  author    = {Poggi, Matteo and Aleotti, Filippo and Tosi, Fabio and Mattoccia, Stefano},
+  title     = {On the Uncertainty of Self-Supervised Monocular Depth Estimation},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2020}
+}
+
+%% =====================================================================
+%% Aerial 3DGS cluster (LIT_REVIEW Track 3 sec. 4 / ref block 13)
+%% All are one-sentence gap-statement citations; several were verified only at
+%% venue/volume level — author lists and titles NOT recorded in LIT_REVIEW.
+%% =====================================================================
+
+%% NOTE: cite as 2025, not 2026 (reference-hygiene list)
+%% VERIFIED 2026-07-17 via Crossref (DOI 10.3390/rs17233868)
+@article{yan2025aerial,
+  author  = {Yan, Ke and Wang, Hui and Li, Zhuxin and Wang, Yuting and Li, Shuo and Yang, Hongmei},
+  title   = {A Large-Scale {3D} {G}aussian Reconstruction Method for Optimized Adaptive Density Control in Training Resource Scheduling},
+  journal = {Remote Sens.},
+  volume  = {17},
+  number  = {23},
+  pages   = {3868},
+  year    = {2025}
+}
+
+%% VERIFIED 2026-07-17 via Crossref (DOI 10.1109/JSTARS.2025.3552105)
+@article{ortho3dgs2025,
+  author  = {Yang, Junxing and Cai, Zhenglong and Wang, Tianjiao and Ye, Tong and Gao, Haoran and Huang, He},
+  title   = {{Ortho-3DGS}: True Digital Orthophoto Generation from Unmanned Aerial Vehicle Imagery Using the Depth-Regulated {3D} {G}aussian Splatting},
+  journal = {IEEE J. Sel. Topics Appl. Earth Observ. Remote Sens.},
+  volume  = {18},
+  pages   = {10972--10994},
+  year    = {2025}
+}
+
+%% FLAG: arXiv-only — flag as such in text
+%% VERIFIED 2026-07-17 against arXiv abs page
+@article{ulsrgs2024,
+  author  = {Li, Zhuoxiao and Yao, Shanliang and Wu, Taoyu and Yue, Yong and Zhao, Wufan and Qin, Rongjun and Garc{\'i}a-Fern{\'a}ndez, {\'A}ngel F. and Levers, Andrew and Ralph, Jason and Zhu, Xiaohui},
+  title   = {{ULSR-GS}: Urban Large-Scale Surface Reconstruction {G}aussian Splatting with Multi-View Geometric Consistency},
+  journal = {ISPRS J. Photogramm. Remote Sens.},
+  volume  = {230},
+  pages   = {861--880},
+  year    = {2025},
+  doi     = {10.1016/j.isprsjprs.2025.10.008}
+}
+
+%% VERIFIED 2026-07-17 via Crossref/ScienceDirect (DOI 10.1016/j.isprsjprs.2025.10.022)
+@article{arsgaussian2026,
+  author  = {Yao, Yiling and Zhang, Bing and Zhang, Wenjuan and Gao, Lianru and Peng, Dailiang and Li, Bocheng and Wang, Yaning and Wang, Bowen},
+  title   = {{ARSGaussian}: {3D} {G}aussian Splatting with {L}i{DAR} for Aerial Remote Sensing Novel View Synthesis},
+  journal = {ISPRS J. Photogramm. Remote Sens.},
+  volume  = {231},
+  pages   = {288--306},
+  year    = {2026}
+}
+
+%% VERIFIED 2026-07-17 against CVPR 2025 open-access repository (arXiv:2412.01745)
+@inproceedings{horizongs2025,
+  author    = {Jiang, Lihan and Ren, Kerui and Yu, Mulin and Xu, Linning and Dong, Junting and Lu, Tao and Zhao, Feng and Lin, Dahua and Dai, Bo},
+  title     = {{Horizon-GS}: Unified {3D} {G}aussian Splatting for Large-Scale Aerial-to-Ground Scenes},
+  booktitle = {Proc. IEEE/CVF Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2025}
+}
+
+%% VERIFIED 2026-07-17 via Crossref (DOI 10.3390/rs18060867); "Shubham" is a mononym
+@article{treedgs2026,
+  author  = {Shaheen, Belal and Nguyen, Minh-Hieu and Bui, Bach-Thuan and {Shubham} and Wu, Tim and Fairley, Michael and Zane, Matthew and Wu, Michael and Tompkin, James},
+  title   = {{TreeDGS}: Aerial {G}aussian Splatting for Distant {DBH} Measurement},
+  journal = {Remote Sens.},
+  volume  = {18},
+  number  = {6},
+  pages   = {867},
+  year    = {2026},
+  doi     = {10.3390/rs18060867}
+}
+
+%% VERIFIED 2026-07-17 via Crossref (DOI 10.3390/s25102995); single-author paper
+@article{atik2025benchmark,
+  author  = {Atik, Muhammed Enes},
+  title   = {Comparative Assessment of Neural Radiance Fields and {3D} {G}aussian Splatting for Point Cloud Generation from {UAV} Imagery},
+  journal = {Sensors},
+  volume  = {25},
+  number  = {10},
+  pages   = {2995},
+  year    = {2025}
+}
+
+%% NOTE: their "3DGS-MCMC" is a densification sampler, not inference — word comparison carefully
+%% VERIFIED 2026-07-17 against isprs-archives.copernicus.org (XLVIII-2/W12-2026, 3D-ARCH, Ancona)
+@inproceedings{fadilah2026benchmark,
+  author    = {Fadilah, Widiatmoko A. and Murtiyoso, Arnadi and Landes, Tania and Grussenmeyer, Pierre},
+  title     = {Metric Assessment of {3D} {G}aussian Splatting for {UAV}-Based Urban Heritage Reconstruction},
+  booktitle = {Int. Arch. Photogramm. Remote Sens. Spatial Inf. Sci.},
+  volume    = {XLVIII-2/W12-2026},
+  pages     = {143--150},
+  year      = {2026}
+}
+
+%% =====================================================================
+%% Datasets (SCOPING_MEMO verified facts)
+%% =====================================================================
+
+%% H3D: CC BY-NC-SA 4.0; registration via ifpwww.ifp.uni-stuttgart.de/benchmark/hessigheim/
+@article{koelle2021h3d,
+  author  = {K{\"o}lle, Michael and Laupheimer, Dominic and Schmohl, Stefan and Haala, Norbert and Rottensteiner, Franz and Wegner, Jan Dirk and Ledoux, Hugo},
+  title   = {The {H}essigheim {3D} ({H3D}) Benchmark on Semantic Segmentation of High-Resolution {3D} Point Clouds and Textured Meshes from {UAV} {L}i{DAR} and Multi-View-Stereo},
+  journal = {ISPRS Open J. Photogramm. Remote Sens.},
+  volume  = {1},
+  pages   = {100001},
+  year    = {2021}
+}
+
+%% GauU-Scene V2 (SMBU scene): gated license, terms via saliteta.github.io/CUHKSZ_SMBU
+%% VERIFIED 2026-07-20 against arXiv abs page 2404.04880 (title and all four authors)
+@article{xiong2024gauuscene,
+  author        = {Xiong, Butian and Zheng, Nanjun and Liu, Junhua and Li, Zhen},
+  title         = {{GauU-Scene V2}: Assessing the Reliability of Image-Based Metrics with Expansive {L}idar Image Dataset Using {3DGS} and {NeRF}},
+  journal       = {arXiv preprint arXiv:2404.04880},
+  year          = {2024},
+  eprint        = {2404.04880},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.CV}
+}
+
+%% STPLS3D: CC BY-NC-SA 3.0, ungated download at stpls3d.com/data
+@inproceedings{chen2022stpls3d,
+  author    = {Chen, Meida and Hu, Qingyong and Yu, Zifan and Thomas, Hugues and Feng, Andrew and Hou, Yu and McCullough, Kyle and Ren, Fengbo and Soibelman, Lucio},
+  title     = {{STPLS3D}: A Large-Scale Synthetic and Aerial Photogrammetry {3D} Point Cloud Dataset},
+  booktitle = {Proc. 33rd Brit. Mach. Vis. Conf. (BMVC)},
+  year      = {2022}
+}
+
+%% Mill 19 (Rubble): ships with Mega-NeRF — cite turki2022meganerf for the dataset;
+%% note in text: no formal license file, publicly released by CMU.
+
+%% =====================================================================
+%% Utility (IEEEtran-safe standard references)
+%% =====================================================================
+
+@article{antoniak1974mixtures,
+  author  = {Antoniak, Charles E.},
+  title   = {Mixtures of {D}irichlet Processes with Applications to {B}ayesian Nonparametric Problems},
+  journal = {Ann. Statist.},
+  volume  = {2},
+  number  = {6},
+  pages   = {1152--1174},
+  year    = {1974}
+}
+
+@inproceedings{schonberger2016colmap,
+  author    = {Sch{\"o}nberger, Johannes L. and Frahm, Jan-Michael},
+  title     = {Structure-from-Motion Revisited},
+  booktitle = {Proc. IEEE Conf. Comput. Vis. Pattern Recognit. (CVPR)},
+  year      = {2016}
+}
+
+@article{kuhn1955hungarian,
+  author  = {Kuhn, Harold W.},
+  title   = {The {H}ungarian Method for the Assignment Problem},
+  journal = {Naval Res. Logist. Quart.},
+  volume  = {2},
+  number  = {1--2},
+  pages   = {83--97},
+  month   = mar,
+  year    = {1955},
+  doi     = {10.1002/nav.3800020109}
+}
+
+%% =====================================================================
+%% BST control (page-budget pass): force "et al." beyond 6 authors.
+%% =====================================================================
+@IEEEtranBSTCTL{BSTcontrol,
+  CTLuse_forced_etal       = "yes",
+  CTLmax_names_forced_etal = "6",
+  CTLnames_show_etal       = "1"
+}

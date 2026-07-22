@@ -1,0 +1,44 @@
+[
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 500000,
+  "subsample": 500000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.418851198724198,
+   -0.6113084618088164,
+   6.653962562031202
+  ],
+  "khat_count": 21,
+  "khat_entropy": 14.123536673746223,
+  "elbo_tail": [
+   -5722918.30498113,
+   -5722904.540470223,
+   -5722895.794084197,
+   -5722889.489108993,
+   -5722884.3890423775
+  ],
+  "elbo_dips": 0,
+  "seconds": 84.64683316741139,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5801823323404507,
+   "n_classes": 18,
+   "density_per_m2": 96.32796485074346,
+   "surface_variation": 0.03912373735924794,
+   "z_range": 50.05084943771362,
+   "bbox_area_m2": 240098.64669970237,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "cavi",
+  "iters": 108
+ }
+]

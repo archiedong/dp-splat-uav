@@ -1,0 +1,412 @@
+\section{Method}
+\label{sec:method}
+
+\begin{figure}[t]
+  \centering
+  \begin{tikzpicture}[font=\scriptsize, line cap=round, line join=round,
+      >={Stealth[length=1.6mm]}, scale=0.66, every node/.style={inner sep=1pt}]
+    \definecolor{cbBlue}{RGB}{0,114,178}
+    \definecolor{cbVerm}{RGB}{213,94,0}
+    % ==== panel (a): tiling with halos ====
+    \begin{scope}[shift={(0,0)}]
+      \node[anchor=base west,font=\scriptsize\bfseries] at (-0.05,3.0) {(a)};
+      \node[anchor=base west] at (0.45,3.0) {tiles, halos, weights};
+      % halo overlap bands
+      \fill[black!12] (1.5,0) rectangle (2.1,2.8);
+      \fill[black!12] (0,1.1) rectangle (3.6,1.7);
+      \fill[black!25] (1.5,1.1) rectangle (2.1,1.7);
+      % point cloud
+      \pgfmathsetseed{4242}
+      \foreach \i in {1,...,60}{
+        \pgfmathsetmacro{\px}{0.10+3.40*rnd}
+        \pgfmathsetmacro{\py}{0.10+2.60*rnd}
+        \fill[black!60] (\px,\py) circle (0.45pt);
+      }
+      % scene box and core grid
+      \draw[black,thin] (0,0) rectangle (3.6,2.8);
+      \draw[black,thin] (1.8,0) -- (1.8,2.8);
+      \draw[black,thin] (0,1.4) -- (3.6,1.4);
+      % two dilated (halo) tiles
+      \draw[cbBlue,thick,dashed] (0.03,0.03) rectangle (2.1,1.7);
+      \draw[cbVerm,thick,densely dotted] (1.5,0.03) rectangle (3.57,1.7);
+      % ownership weights
+      \node[fill=white,fill opacity=0.75,text opacity=1] at (0.72,0.62) {$w_n{=}1$};
+      \node[fill=white,fill opacity=0.75,text opacity=1] at (1.8,0.5) {$\tfrac12$};
+      \node[fill=white,fill opacity=0.75,text opacity=1] at (1.8,1.4) {$\tfrac14$};
+      \node[fill=white,fill opacity=0.75,text opacity=1] at (2.85,1.4) {$\tfrac12$};
+    \end{scope}
+    % ==== panel (b): independent tile fits ====
+    \begin{scope}[shift={(4.5,0)}]
+      \node[anchor=base west,font=\scriptsize\bfseries] at (-0.05,3.0) {(b)};
+      \node[anchor=base west] at (0.45,3.0) {independent tile posteriors};
+      \draw[black!40,thin] (0,0) rectangle (3.6,2.8);
+      \draw[black!40,thin] (1.8,0) -- (1.8,2.8);
+      \draw[black!40,thin] (0,1.4) -- (3.6,1.4);
+      % interior components (gray)
+      \draw[black!55] (0.55,2.2) ellipse [x radius=0.34, y radius=0.16, rotate=25];
+      \draw[black!55] (1.15,1.85) ellipse [x radius=0.22, y radius=0.13, rotate=-15];
+      \draw[black!55] (2.75,2.3) ellipse [x radius=0.38, y radius=0.15, rotate=-10];
+      \draw[black!55] (3.0,1.8) ellipse [x radius=0.2, y radius=0.12, rotate=40];
+      \draw[black!55] (0.7,0.5) ellipse [x radius=0.3, y radius=0.14, rotate=10];
+      \draw[black!55] (2.9,0.55) ellipse [x radius=0.33, y radius=0.16, rotate=-20];
+      % one structure straddling the vertical seam, fitted twice
+      \draw[cbBlue,thick] (1.62,0.85) ellipse [x radius=0.44, y radius=0.2, rotate=12];
+      \draw[cbVerm,thick,dashed] (1.98,0.92) ellipse [x radius=0.46, y radius=0.21, rotate=8];
+      \node[cbBlue] at (1.05,0.62) {$A$};
+      \node[cbVerm] at (2.6,1.12) {$B$};
+      \node[align=center] at (1.8,2.05) {\tiny fitted twice};
+      \draw[->,black!70,thin] (1.8,1.9) -- (1.8,1.28);
+    \end{scope}
+    % ==== panel (c): Hungarian match + exact merge ====
+    \begin{scope}[shift={(0,-3.85)}]
+      \node[anchor=base west,font=\scriptsize\bfseries] at (-0.05,3.0) {(c)};
+      \node[anchor=base west] at (0.45,3.0) {matched merge};
+      % candidate pair
+      \draw[cbBlue,thick] (0.62,1.95) ellipse [x radius=0.42, y radius=0.2, rotate=12];
+      \draw[cbVerm,thick,dashed] (1.08,2.05) ellipse [x radius=0.44, y radius=0.21, rotate=8];
+      \node[cbBlue] at (0.28,1.55) {$A$};
+      \node[cbVerm] at (1.5,2.42) {$B$};
+      \draw[black,densely dotted,thick] (0.62,1.95) -- (1.08,2.05);
+      \node[anchor=west,align=left] at (0.0,1.05)
+        {$\Delta L + \Delta_{\mathrm{EPPF}} > 0$};
+      % rejected pair
+      \draw[black!55] (0.5,0.35) ellipse [x radius=0.3, y radius=0.14, rotate=-8];
+      \draw[black!55,dashed] (1.35,0.5) ellipse [x radius=0.28, y radius=0.14, rotate=18];
+      \draw[black!55,densely dotted] (0.5,0.35) -- (1.35,0.5);
+      \node[black!55] at (0.95,0.68) {$\times$};
+      \node[black!55,anchor=west] at (1.75,0.4) {\tiny not merged};
+      % arrow to merged component
+      \draw[->,thick] (1.75,1.95) -- (2.45,1.95);
+      \draw[black,very thick] (3.0,1.95) ellipse [x radius=0.55, y radius=0.24, rotate=10];
+      \node[anchor=south,align=center] at (2.95,2.26)
+        {$\lambda_A{+}\lambda_B{-}\lambda_0$};
+    \end{scope}
+    % ==== panel (d): partition-of-unity stitching ====
+    \begin{scope}[shift={(4.5,-3.85)}]
+      \node[anchor=base west,font=\scriptsize\bfseries] at (-0.05,3.0) {(d)};
+      \node[anchor=base west] at (0.45,3.0) {partition-of-unity stitch};
+      % halo band
+      \fill[black!10] (1.4,-0.15) rectangle (2.2,2.75);
+      \draw[black!40,thin] (1.8,-0.15) -- (1.8,2.75);
+      % stitched density (upper): convex blend across the seam
+      \draw[black,very thick]
+        plot[smooth] coordinates {(0,1.62) (0.5,1.85) (0.9,2.45) (1.3,2.0)
+          (1.8,1.85) (2.3,2.3) (2.8,2.55) (3.3,1.85) (3.6,1.65)};
+      \node[anchor=west] at (0.6,2.72) {$\sum_t g_t(s)\,\tilde p_t(x)$};
+      % gates (lower)
+      \draw[->,black!70,thin] (0,-0.15) -- (3.6,-0.15);
+      \draw[black,densely dotted] (0,1.05) -- (3.6,1.05);
+      \node[anchor=south west] at (2.32,1.02) {\tiny $\sum_t g_t = 1$};
+      \draw[cbBlue,thick]
+        plot[smooth] coordinates {(0,1.05) (1.4,1.05) (1.6,0.97) (1.8,0.525)
+          (2.0,0.08) (2.2,0.0)} -- (3.6,0);
+      \draw[cbVerm,thick,dashed] (0,0) -- (1.4,0)
+        plot[smooth] coordinates {(1.4,0.0) (1.6,0.08) (1.8,0.525)
+          (2.0,0.97) (2.2,1.05)} -- (3.6,1.05);
+      \node[cbBlue] at (0.55,0.82) {$g_1$};
+      \node[cbVerm] at (3.05,0.82) {$g_2$};
+      \node[anchor=north] at (1.8,-0.19) {\tiny seam $\pm h$};
+    \end{scope}
+  \end{tikzpicture}
+  \caption{Tiled DP-Splat pipeline. (a)~Core tiles (solid grid) dilated
+  by width-$h$ halos; a point in $k_n$ dilated tiles gets weight
+  $w_n = 1/k_n$, conserving evidence. (b)~Independent weighted-CAVI
+  fits under one shared NIW prior represent a straddling structure
+  twice ($A$, $B$). (c)~Hungarian-matched pairs merge iff the closed-form
+  Bayes factor plus DP partition term is positive
+  ($\Delta L + \Delta_{\mathrm{EPPF}} > 0$); accepted pairs combine
+  exactly as
+  $\lambda_A + \lambda_B - \lambda_0$; unmatched components survive.
+  (d)~Raw bumps fall linearly across the halo band; the normalized
+  gates $g_t$ sum to one, blending tile sub-mixtures at global
+  component weights into a single scene-level density.}
+  \label{fig:schematic}
+\end{figure}
+
+\subsection{Base Model}
+\label{sec:model-recap}
+
+\looseness=-1 DP-Splat~\cite{dong2026dpsplat} models a colored point cloud as a
+DP mixture of anisotropic Gaussians: point
+$x_n = (s_n, c_n)$ has spatial coordinate $s_n \in \mathbb{R}^{D_s}$
+($D_s{=}3$) and color $c_n \in \mathbb{R}^{D_c}$ ($D_c{=}3$), and
+conditional on its assignment $z_n = k$ the modalities are independent
+Gaussians, $s_n \sim \mathcal{N}(\mu_{k,s}, \Sigma_{k,s})$ and
+$c_n \sim \mathcal{N}(\mu_{k,c}, \Sigma_{k,c})$.
+Each modality $m \in \{s, c\}$ carries a conjugate NIW prior
+$\Sigma_{k,m} \sim \mathcal{IW}(\Psi_{0,m}, \nu_{0,m})$,
+$\mu_{k,m} \mid \Sigma_{k,m} \sim
+\mathcal{N}(m_{0,m}, \Sigma_{k,m}/\kappa_{0,m})$, and the mixture weights
+follow a truncated stick-breaking DP:
+$v_k \sim \mathrm{Beta}(1, \alpha)$ for $k < T$, $v_T := 1$,
+$\pi_k = v_k \prod_{j<k}(1 - v_j)$, with truncation level $T$ the
+component budget. Inference is mean-field: $q$ factorizes
+over assignments (responsibilities $r_{nk}$), sticks (Beta),
+and per-component, per-modality NIW factors; CAVI cycles closed-form
+conjugate updates with a
+monotone ELBO, and natural-gradient SVI
+handles large $N$. Derivations are in~\cite{dong2026dpsplat}; we restate only what the tiled construction
+manipulates.
+
+\looseness=-1 Two facts carry the rest of this section. First, the NIW is exponential
+family: writing $\lambda(m, \kappa, \Psi, \nu) =
+(\kappa,\; \kappa m,\; \nu,\; \Psi + \kappa m m^{\!\top})$ for its natural
+parameters, the variational posterior of component $k$ in modality $m$ is
+the prior plus that component's expected sufficient statistics,
+\begin{align}
+\lambda_{k,m} &= \lambda_{0,m} + t_{k,m}, \notag \\
+t_{k,m} &= \Big(N_k,\; \textstyle\sum_n r_{nk} x^m_n,\; N_k,\;
+\textstyle\sum_n r_{nk} x^m_n x^{m\top}_n\Big),
+\label{eq:natadd}
+\end{align}
+with $N_k = \sum_n r_{nk}$. Second, the posterior predictive is a
+closed-form mixture of Student-$t$ products,
+\begin{equation}
+\hat{p}(x) = \sum_{k=1}^{T} \mathbb{E}_q[\pi_k]
+\prod_{m \in \{s,c\}}
+\operatorname{St}\big(x^m;\, m_{k,m},\, \tilde{\Psi}_{k,m},\,
+\eta_{k,m}\big),
+\label{eq:predictive}
+\end{equation}
+with $\eta_{k,m} = \nu_{k,m} - D_m + 1$ and $\tilde{\Psi}_{k,m} =
+\frac{\kappa_{k,m}+1}{\kappa_{k,m}\eta_{k,m}} \Psi_{k,m}$.
+Equation~\eqref{eq:predictive} is a normalized density; every evaluation
+in this paper is a functional of it or of the underlying posterior,
+never of a rendering.
+
+\subsection{Tiled Weighted Fitting}
+\label{sec:tiled-fit}
+
+Aerial scenes of $10^7$--$10^8$ points do not fit in a single CAVI
+instance (the dense $N \times T$ responsibility array alone is
+${\sim}350$~GB at $N{=}1.7\times10^{8}$, $T{=}256$ in double
+precision), so we partition the ground plane: a $G_x \times G_y$ grid of
+core rectangles exactly partitions the $(x,y)$ bounding box
+(the vertical axis is never split), and each tile owns its core
+dilated by a halo of physical width $h$, so adjacent tiles share the
+halo points (Fig.~\ref{fig:schematic}a). Tiles are enumerated in a
+fixed Morton order (deterministic, locality-preserving indexing), and
+coordinates are centered in double precision so UTM-scale offsets
+never enter the natural-parameter algebra.
+
+\looseness=-1 A point in $k_n$ dilated tiles receives ownership weight
+$w_n = 1/k_n$ in each, so
+$\sum_t \sum_{n \in t} w_n = N$: evidence is conserved, not
+duplicated. Each tile is fit by \emph{weighted} CAVI: point $n$'s
+likelihood and assignment factors are raised to the power $w_n$,
+counted $w_n$ times with fractional counts allowed. The variational family
+is unchanged (the E-step remains the responsibility softmax);
+the weights enter only where the objective sums over points: the
+sufficient statistics
+\begin{align}
+N_k &= \sum_n w_n r_{nk}, \qquad
+\bar{x}_k = \frac{1}{N_k}\sum_n w_n r_{nk}\, x_n, \notag \\
+S_k &= \sum_n w_n r_{nk}\, (x_n - \bar{x}_k)(x_n - \bar{x}_k)^{\!\top},
+\label{eq:wstats}
+\end{align}
+which feed the unmodified conjugate updates, and the point-sum ELBO
+terms, which each carry a factor $w_n$ (the factor multiplies each
+point's entire ELBO contribution, entropy included, so it cancels in
+the assignment update; the softmax is untempered, exactly as the
+duplication identity requires). Two regression-tested
+identities pin the construction down: $w_n \equiv 1$
+reproduces the unweighted fit exactly, and integer $w_n$ equals
+physically duplicating point $n$ that many times.
+
+The scene-level DP concentration $\alpha$ (written
+$\alpha_{\mathrm{global}}$ below) is allocated across tiles in
+proportion to weighted evidence,
+\begin{equation}
+\alpha_t = \alpha_{\mathrm{global}} \,
+{\textstyle\frac{1}{N}\sum_{n \in t} w_n},
+\qquad \textstyle\sum_t \alpha_t = \alpha_{\mathrm{global}},
+\label{eq:alphat}
+\end{equation}
+a bookkeeping \emph{motivated by} the gamma-process superposition
+theorem of Williamson \emph{et al.}~\cite{williamson2013parallel}
+(Thm.~1): Dirichlet-weighted superpositions of independent
+$\mathrm{DP}(\alpha_j, H)$ draws with $\sum_j \alpha_j = \alpha$ are
+again $\mathrm{DP}(\alpha, H)$. Three deviations place our construction
+outside its hypotheses: tile assignment is deterministic by
+location, not exchangeable; the sub-measures combine by deterministic
+gates (Sec.~\ref{sec:stitch}), not Dirichlet weights; and the
+$\alpha_t$ are set from realized counts. Equation~\eqref{eq:alphat}
+therefore guides the model-order accounting of
+Sec.~\ref{sec:khat} as an analogy, not a theorem-backed guarantee.
+All tiles share one global NIW prior $\lambda_{0,m}$ per modality,
+built from the full-scene data scale by the base model's prior
+recipe: a precondition for the exact merge, whose algebra subtracts
+a single common prior.
+
+\looseness=-1 Tile fits are embarrassingly parallel and never communicate. Tiles at or
+below an SVI threshold run full-batch weighted CAVI to a relative ELBO
+tolerance; larger tiles run weighted natural-gradient SVI
+(minibatch statistics scaled by $w_n r_{nk}$) followed by \emph{one exact
+full-batch weighted CAVI cycle}, so every final tile posterior equals
+prior plus full weighted statistics as in \eqref{eq:natadd}: the form
+the merge assumes, not SVI's stochastic blend of it.
+Configuration values are listed in Sec.~\ref{sec:setup}.
+Full-CAVI tiles are audited for a monotone ELBO trace; SVI-path tiles
+only at the exact closing cycle (their subsampled trace is
+stochastic); outcomes in Sec.~\ref{sec:results:seams}.
+
+\subsection{Exact Cross-Tile Matched Merge}
+\label{sec:merge}
+
+\looseness=-1 Independent tile fits represent a surface that straddles a tile boundary
+twice: once per tile, each copy trained on that tile's down-weighted
+halo view. Rather than deleting one copy by a geometric rule, we test
+whether the two posteriors describe the same component and, if so, merge
+them exactly (Fig.~\ref{fig:schematic}b,~c). Every ingredient is
+adapted from the distributed-Bayesian
+precedents of Sec.~\ref{sec:related-eval}; ours is the application to
+spatially tiled, fully independent fits with halo
+de-duplication and a single stitched global predictive.
+
+\emph{Candidates.} After discarding numerically empty components
+(weighted count $N_k \le n_{\min} = 1$), each pair
+of tiles with intersecting halo-dilated rectangles is scanned: a
+component pair $(A, B)$ is a candidate if both posterior spatial means
+lie in the shared overlap box dilated by one further halo width. The
+gate is deliberately generous; the sign test below does the real
+rejection.
+
+\emph{Score.} The NIW log-normalizer is closed-form in the
+parameterization of \eqref{eq:natadd}:
+\begin{multline}
+A(\lambda) = \tfrac{D}{2}\log 2\pi - \tfrac{D}{2}\log\kappa
++ \tfrac{\nu D}{2}\log 2 \\
++ \log \Gamma_D\!\big(\tfrac{\nu}{2}\big)
+- \tfrac{\nu}{2}\log\lvert\Psi\rvert,
+\label{eq:lognorm}
+\end{multline}
+with $\Gamma_D$ the multivariate gamma function. Because posterior
+naturals are prior plus statistics, the natural-space combination
+$\lambda_A + \lambda_B - \lambda_0 = \lambda_0 + t_A + t_B$ is exactly the
+posterior a single component would have reached on the pooled statistics,
+and
+\begin{equation}
+\Delta L = A(\lambda_A + \lambda_B - \lambda_0)
+- A(\lambda_A) - A(\lambda_B) + A(\lambda_0),
+\label{eq:score}
+\end{equation}
+summed over the two modalities, is the log Bayes factor of ``one component
+generated both blocks'' against ``two independent components''
+(base-measure terms cancel: counts add). The partition side is
+the DP exchangeable partition probability function (EPPF) ratio of
+merged versus separate
+clusterings: since the DP EPPF is proportional to
+$\alpha^{\#\mathrm{clusters}} \prod_c \Gamma(N_c)$~\cite{antoniak1974mixtures}, replacing clusters of sizes $N_A, N_B$ by one
+of size $N_A + N_B$ contributes
+\begin{multline}
+\Delta_{\mathrm{EPPF}} = \log\Gamma(N_A + N_B) - \log\Gamma(N_A) \\
+- \log\Gamma(N_B) - \log \alpha_{\mathrm{global}},
+\label{eq:eppf}
+\end{multline}
+the merge/no-merge partition term of Campbell \emph{et al.}~\cite{campbell2015streaming} (their Eqs.~13--14) specialized to the DP,
+evaluated at $\alpha_{\mathrm{global}}$ (never $\alpha_t$: the merged
+pair is an event of the \emph{global} partition, whose concentration
+is $\alpha_{\mathrm{global}}$) and extended
+continuously to the soft counts by the gamma form.
+
+\emph{Decision and merge.} For each adjacent tile pair, a Hungarian
+assignment~\cite{kuhn1955hungarian} maximizes $\Delta L + \Delta_{\mathrm{EPPF}}$ over the
+candidate mask; an assigned pair is accepted iff its total score is
+strictly positive. Connected components of the resulting cross-tile match
+graph form $J$-way merge sets, each combined in natural space,
+\begin{equation}
+\lambda_{\mathrm{merged}} = \sum_{i=1}^{J} \lambda_i - (J - 1)\,\lambda_0,
+\label{eq:merge}
+\end{equation}
+which counts the shared prior exactly once and equals the
+single-component posterior on the pooled weighted statistics for any
+$J \ge 2$: exact conjugate arithmetic, no moment matching.
+Unmatched components survive as distinct global atoms.
+
+\emph{Weights.} Stick-breaking Beta parameters are never added across
+tiles (labels and size-biased orderings differ per tile, the failure
+mode named by Campbell \emph{et al.}~\cite{campbell2015streaming});
+the global sticks are rebuilt from the pooled soft counts in
+size-biased (descending) order: $a_k = 1 + N_{(k)}$,
+$b_k = \alpha_{\mathrm{global}} + \sum_{j > k} N_{(j)}$.
+
+\looseness=-1 One sign in \eqref{eq:eppf} deserves emphasis: beyond a few counts,
+$\Delta_{\mathrm{EPPF}}$ is \emph{positive}, growing as
+${\approx}(N_A{+}N_B)\,H\!\big(\tfrac{N_A}{N_A+N_B}\big)$ ($H$ the
+binary entropy): the DP's rich-get-richer preference \emph{for}
+merging ($\log\alpha_{\mathrm{global}}$ subtracts only $4.6$ at
+$\alpha{=}100$), at its largest at the $10^6$--$10^7$-point tiles used
+here.
+Rejection is carried by the likelihood term: when the two
+halo views' statistics disagree, $\Delta L$ is negative at order $N$
+and empirically dominates the partition bonus, so the procedure
+defaults to \emph{not} merging on discordant evidence and failure
+degrades toward the independent-tiles model, not spurious fusion;
+acceptance rates and their capacity dependence are reported in
+Sec.~\ref{sec:results}. One caveat is in order: the decision
+is exact for the marginal-likelihood comparison on the components' own
+(halo-local) statistics; we claim no global-ELBO monotonicity for the
+merged model, and we verify its quality only by held-out evaluation.
+
+\subsection{Partition-of-Unity Stitching}
+\label{sec:stitch}
+
+\looseness=-1 It remains to combine tile predictives into one scene-level
+density (Fig.~\ref{fig:schematic}d). Each tile $t$ carries a separable
+bump over the
+ground plane,
+$\mathrm{raw}_t(s) = \prod_{d \in \{x,y\}} \rho_{t,d}(s_d)$, where
+$\rho_{t,d}$ equals $1$ on the core interval, falls linearly to $0$
+across the width-$h$ halo band, and is $0$ beyond. The
+gates are the normalized bumps
+\begin{equation}
+g_t(s) = \frac{\mathrm{raw}_t(s)}{\sum_u \mathrm{raw}_u(s)},
+\label{eq:gate}
+\end{equation}
+which satisfy $\sum_t g_t(s) = 1$, a partition of unity everywhere in
+the scene bounding box by construction, including edges and corners
+(the denominator is ${\ge}1$: every point lies in some core). The
+stitched predictive gates the per-tile \emph{sub-mixtures}: writing
+$\tilde{p}_t$ for \eqref{eq:predictive} restricted to tile $t$'s
+components evaluated at their \emph{global} post-merge mixture weights
+(Sec.~\ref{sec:merge}), un-renormalized within the tile,
+\begin{equation}
+\log p(x) = \log \sum_t g_t(s)\, \tilde{p}_t(x).
+\label{eq:stitch}
+\end{equation}
+\looseness=-1 The global-weight convention is load-bearing: because the gates sum
+to one, a component carried by several tiles contributes
+$\mathbb{E}_q[\pi_k]\sum_t g_t = \mathbb{E}_q[\pi_k]$ (counted
+once, never double), so \eqref{eq:stitch}, defined on the
+halo-dilated scene footprint and taken as zero outside it, has unit
+total mass up to Student-$t$ tail mass beyond the footprint;
+renormalizing $\tilde{p}_t$ within tiles instead would inflate the
+mass to ${\approx}$\,\#tiles (Sec.~\ref{sec:setup:metrics}). In the configuration where every tile carries one
+common predictive, \eqref{eq:stitch} collapses to exactly that density.
+The acceptance tests verify the gate identity to
+$10^{-12}$ on grids concentrated in the halo bands; verify unit total
+mass in that configuration by two independent numerical oracles
+(Gauss--Legendre quadrature and importance-sampled Monte Carlo); and,
+end to end, verify that two independently fitted tiles carrying their
+components at \emph{global} mixture weights stitch to within $0.05$
+nats of a pooled single fit on held-out points. Beyond the pooled weight rebuild of Sec.~\ref{sec:merge}, stitching
+needs no inter-tile communication and ships regardless of merge
+decisions: the merge changes \emph{what} the tiles agree on near
+seams, the gates govern \emph{how} their densities combine.
+
+\subsection{$\hat{K}$ as Capacity Adaptation}
+\label{sec:khat}
+
+\looseness=-1 Each tile reports its effective model order
+$\hat{K}_t = \#\{k : N_k > n_{\min}\}$ on the weighted soft counts,
+recorded before merging; the global order after merging is
+$\sum_t \hat{K}_t$ minus the duplicates removed by
+Sec.~\ref{sec:merge}, an accounting motivated by the concentration
+bookkeeping of \eqref{eq:alphat} (with the caveats stated there). We interpret $\hat{K}$ as
+\emph{automatic per-tile capacity adaptation to data volume}: under a
+shared truncation budget $T$, tiles with little supported evidence occupy
+few components while heavily populated tiles recruit many, without
+per-tile tuning. We do \emph{not} claim $\hat{K}$ is a
+scene-content complexity map: on matched-$N$ controlled fits it shows
+no scene-content signal, and on real tiled scenes it tracks per-tile
+point count (Secs.~\ref{sec:results}, \ref{sec:disc-khat}).

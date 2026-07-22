@@ -1,0 +1,217 @@
+{
+ "name": "change_synth_test",
+ "config": {
+  "record_a": "/var/folders/pg/zwmrn1w56575pnqd4ld_6d_80000gq/T/change_synth_persist_wrrve1_0/synth_a_record.json",
+  "model_a": "/var/folders/pg/zwmrn1w56575pnqd4ld_6d_80000gq/T/change_synth_persist_wrrve1_0/synth_a_model.npz",
+  "input_a": "/var/folders/pg/zwmrn1w56575pnqd4ld_6d_80000gq/T/change_synth_persist_wrrve1_0/synth_a.las",
+  "record_b": "/var/folders/pg/zwmrn1w56575pnqd4ld_6d_80000gq/T/change_synth_persist_wrrve1_0/synth_b_record.json",
+  "model_b": "/var/folders/pg/zwmrn1w56575pnqd4ld_6d_80000gq/T/change_synth_persist_wrrve1_0/synth_b_model.npz",
+  "input_b": "/var/folders/pg/zwmrn1w56575pnqd4ld_6d_80000gq/T/change_synth_persist_wrrve1_0/synth_b.las",
+  "cell": 1.0,
+  "sigma_reg": 0.0,
+  "seed": 5,
+  "chunk": 32768,
+  "bbox": null,
+  "min_cell_points": 20,
+  "classical": true,
+  "name": "change_synth_test"
+ },
+ "epochs": {
+  "a": "synth_a",
+  "b": "synth_b"
+ },
+ "frame": {
+  "origin_a": [
+   500021.9795587446,
+   5400022.063566274,
+   79.99980339187266
+  ],
+  "origin_b": [
+   500019.5139017066,
+   5400022.008160586,
+   80.13431144093953
+  ],
+  "grid_lo_utm": [
+   500000.001,
+   5400000.001
+  ],
+  "grid_hi_utm": [
+   500043.001,
+   5400043.001
+  ],
+  "grid_shape": [
+   43,
+   43
+  ],
+  "cell_m": 1.0,
+  "note": "grid in absolute UTM; cell centers converted per epoch by subtracting that model's recorded origin xy; heights lifted by origin z before differencing"
+ },
+ "construction": {
+  "weights": "gated GLOBAL E[pi] (un-renormalized within tiles) times full 3D spatial Student-t predictive at the cell's per-epoch mean ground point (cx, cy, zbar); xy-marginal weighting rejected, see docstring",
+  "variance": "law of total variance on the mean estimate: sum_k w_k [Psi_N/(kappa_N(nu_N-D-1))]_zz + sum_k w_k (m_kz - mu_z)^2; posterior MEAN covariance, not predictive (M3C2-EP double-counting pitfall)",
+  "lod": "1.96 sqrt(var_a + var_b + sigma_reg^2)"
+ },
+ "class_names": {
+  "0": "Low Vegetation",
+  "1": "Impervious Surface",
+  "2": "Vehicle",
+  "3": "Urban Furniture",
+  "4": "Roof",
+  "5": "Facade",
+  "6": "Shrub",
+  "7": "Tree",
+  "8": "Soil/Gravel",
+  "9": "Vertical Surface",
+  "10": "Chimney"
+ },
+ "n_cells": {
+  "grid": 1849,
+  "valid": 1758,
+  "null": 894,
+  "eligible": 1758,
+  "eligible_noveg": 1758,
+  "positive_noveg": 864
+ },
+ "d_summary": {
+  "median_abs_m": 0.013020335932502292,
+  "p95_abs_m": 0.3000173472031378,
+  "median_lod_m": 0.0018303227948900402,
+  "flag_rate_valid": 0.49146757679180886
+ },
+ "results": {
+  "sigma_reg": 0.0,
+  "null_test": {
+   "n_cells": 894,
+   "exceedance_rate": 0.0,
+   "median_abs_d_m": 0.00032373813161257203,
+   "median_lod_m": 0.001682227997529493
+  },
+  "veg_excluded": {
+   "n_pos": 864,
+   "n_neg": 894,
+   "auc": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "flag_rate_pos": 1.0,
+   "flag_rate_neg": 0.0
+  },
+  "veg_included": {
+   "n_pos": 864,
+   "n_neg": 894,
+   "auc": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "flag_rate_pos": 1.0,
+   "flag_rate_neg": 0.0
+  }
+ },
+ "sensitivity_sigma_reg": {
+  "sigma_reg": 0.02,
+  "null_test": {
+   "n_cells": 894,
+   "exceedance_rate": 0.0,
+   "median_abs_d_m": 0.00032373813161257203,
+   "median_lod_m": 0.03923607894573147
+  },
+  "veg_excluded": {
+   "n_pos": 864,
+   "n_neg": 894,
+   "auc": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "flag_rate_pos": 1.0,
+   "flag_rate_neg": 0.0
+  },
+  "veg_included": {
+   "n_pos": 864,
+   "n_neg": 894,
+   "auc": 1.0,
+   "precision": 1.0,
+   "recall": 1.0,
+   "flag_rate_pos": 1.0,
+   "flag_rate_neg": 0.0
+  }
+ },
+ "classical": {
+  "construction": {
+   "d": "zbar_A - zbar_B (raw per-cell mean z, both epochs)",
+   "lod": "1.96 sqrt(s_A^2/n_A + s_B^2/n_B + sigma_reg^2), s^2 the within-cell sample z-variance (ddof=1) of the raw points; standard propagated-error DoD form",
+   "cells": "identical grid, validity masks, and proxy sets as the model arm"
+  },
+  "d_summary": {
+   "median_abs_m": 0.01791038961037117,
+   "p95_abs_m": 0.3094282332610177,
+   "median_lod_m": 0.015077760755436702,
+   "flag_rate_valid": 0.5193401592718999
+  },
+  "results": {
+   "sigma_reg": 0.0,
+   "null_test": {
+    "n_cells": 894,
+    "exceedance_rate": 0.05480984340044743,
+    "median_abs_d_m": 0.005331034482765062,
+    "median_lod_m": 0.015045202917806153
+   },
+   "veg_excluded": {
+    "n_pos": 864,
+    "n_neg": 894,
+    "auc": 1.0,
+    "precision": 0.9463307776560789,
+    "recall": 1.0,
+    "flag_rate_pos": 1.0,
+    "flag_rate_neg": 0.05480984340044743
+   },
+   "veg_included": {
+    "n_pos": 864,
+    "n_neg": 894,
+    "auc": 1.0,
+    "precision": 0.9463307776560789,
+    "recall": 1.0,
+    "flag_rate_pos": 1.0,
+    "flag_rate_neg": 0.05480984340044743
+   }
+  },
+  "sensitivity_sigma_reg": {
+   "sigma_reg": 0.02,
+   "null_test": {
+    "n_cells": 894,
+    "exceedance_rate": 0.0,
+    "median_abs_d_m": 0.005331034482765062,
+    "median_lod_m": 0.041988071302563074
+   },
+   "veg_excluded": {
+    "n_pos": 864,
+    "n_neg": 894,
+    "auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "flag_rate_pos": 1.0,
+    "flag_rate_neg": 0.0
+   },
+   "veg_included": {
+    "n_pos": 864,
+    "n_neg": 894,
+    "auc": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "flag_rate_pos": 1.0,
+    "flag_rate_neg": 0.0
+   }
+  }
+ },
+ "seconds_total": 2.1687349998392165,
+ "versions": {
+  "jax": "0.10.2",
+  "numpy": "2.5.1"
+ },
+ "slab_summary": {
+  "recall": 1.0,
+  "null_exceedance": 0.0,
+  "unchanged_geom_flag_rate": 0.0,
+  "n_unchanged_cells": 853,
+  "n_slab_cells": 823,
+  "median_slab_d_m": -0.2998311586527507,
+  "displacement_error_frac": 0.0005628044908310519,
+  "provenance": "regenerated verbatim from tests/test_change_oracle.py synth_run fixture (rng seed 11, identical CLI args); summary conventions follow that file's test_synth_* checks"
+ }
+}

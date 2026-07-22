@@ -1,0 +1,108 @@
+{
+ "name": "mar18_rich",
+ "config": {
+  "record": "experiments/out/mar18_rich_record.json",
+  "model": "experiments/out/mar18_rich_model.npz",
+  "input": "/Users/donga2/dp-splat-data/h3d/Epoch_March2018/LiDAR/Mar18_train.laz",
+  "holdout": 200000,
+  "seed": 11,
+  "chunk": 131072
+ },
+ "in_sample": false,
+ "holdout_note": "hold-out drawn from the exact complement of the recorded fit subsample (indices reconstructed from config.subsample and config.seed) -- a true held-out score",
+ "n_holdout": 200000,
+ "n_seam": 16941,
+ "seam_fraction": 0.084705,
+ "tile_k": [
+  235,
+  164,
+  85,
+  108,
+  149,
+  139
+ ],
+ "k_global": 841,
+ "k_crop": 821,
+ "k_voronoi": 821,
+ "log_predictive": {
+  "stitched": {
+   "all": {
+    "mean": -5.834482675906273,
+    "median": -5.747275284078718
+   },
+   "seam": {
+    "mean": -5.921365215356361,
+    "median": -5.714671953640544
+   }
+  },
+  "crop": {
+   "all": {
+    "mean": -5.817539761958971,
+    "median": -5.735871798360204
+   },
+   "seam": {
+    "mean": -5.930961525322382,
+    "median": -5.741093982589432
+   }
+  },
+  "voronoi": {
+   "all": {
+    "mean": -5.817539761958971,
+    "median": -5.735871798360204
+   },
+   "seam": {
+    "mean": -5.930961525322382,
+    "median": -5.741093982589432
+   }
+  }
+ },
+ "coverage": {
+  "0.68": {
+   "all": {
+    "axis_mean": 0.6956143365465244,
+    "x": 0.6567144772964233,
+    "y": 0.6432579049490972,
+    "z": 0.7868706273940529
+   },
+   "seam": {
+    "axis_mean": 0.6707947163009075,
+    "x": 0.5794153180270714,
+    "y": 0.6021942256486201,
+    "z": 0.8307746052270307
+   }
+  },
+  "0.90": {
+   "all": {
+    "axis_mean": 0.935018750269458,
+    "x": 0.9244257229576566,
+    "y": 0.9230159542033544,
+    "z": 0.9576145736473632
+   },
+   "seam": {
+    "axis_mean": 0.9318675968386184,
+    "x": 0.9074086664695505,
+    "y": 0.9121502070781341,
+    "z": 0.9760439169681707
+   }
+  },
+  "0.95": {
+   "all": {
+    "axis_mean": 0.9756831963469352,
+    "x": 0.9722710022517749,
+    "y": 0.9715495669132407,
+    "z": 0.9832290198757904
+   },
+   "seam": {
+    "axis_mean": 0.9766762556985781,
+    "x": 0.9747789029308038,
+    "y": 0.9642048412257163,
+    "z": 0.9910450229392139
+   }
+  }
+ },
+ "seconds_total": 28.881492624990642,
+ "versions": {
+  "jax": "0.10.2",
+  "numpy": "2.5.1"
+ }
+}

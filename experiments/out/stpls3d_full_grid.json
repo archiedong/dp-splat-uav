@@ -1,0 +1,8354 @@
+[
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.471778970112422,
+   -0.548230246225614,
+   6.623987272718103
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.6741084620767177,
+  "elbo_tail": [
+   -37460645.68753122
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.802082374691963,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.578990426387689,
+   "n_classes": 18,
+   "density_per_m2": 96.32745790362573,
+   "surface_variation": 0.03914437050196483,
+   "z_range": 50.115405559539795,
+   "bbox_area_m2": 240099.91027832846,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1323561.7707076808,
+   -1310136.4859977704,
+   -1301154.776199986,
+   -1296646.4362230012,
+   -1297074.946863389,
+   -1298301.1073598065
+  ],
+  "elbo_full_final": -37460645.68753122
+ },
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.471778970112422,
+   -0.548230246225614,
+   6.623987272718103
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.3848867336366535,
+  "elbo_tail": [
+   -37773954.8102097
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.32819337490946,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.578990426387689,
+   "n_classes": 18,
+   "density_per_m2": 96.32745790362573,
+   "surface_variation": 0.03914437050196483,
+   "z_range": 50.115405559539795,
+   "bbox_area_m2": 240099.91027832846,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1328762.8130520135,
+   -1315846.2664117494,
+   -1305624.0997866397,
+   -1295878.4351149756,
+   -1289869.078152046,
+   -1288932.805414821
+  ],
+  "elbo_full_final": -37773954.8102097
+ },
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.471778970112422,
+   -0.548230246225614,
+   6.623987272718103
+  ],
+  "khat_count": 22,
+  "khat_entropy": 14.843492877365232,
+  "elbo_tail": [
+   -34846093.69809497
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.314234834164381,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.578990426387689,
+   "n_classes": 18,
+   "density_per_m2": 96.32745790362573,
+   "surface_variation": 0.03914437050196483,
+   "z_range": 50.115405559539795,
+   "bbox_area_m2": 240099.91027832846,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1267032.9270021105,
+   -1250724.675992091,
+   -1250114.5871221249,
+   -1253948.7208000761,
+   -1259694.0049408895,
+   -1263184.0477346783
+  ],
+  "elbo_full_final": -34846093.69809497
+ },
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.471778970112422,
+   -0.548230246225614,
+   6.623987272718103
+  ],
+  "khat_count": 22,
+  "khat_entropy": 15.209050362964092,
+  "elbo_tail": [
+   -34672608.488368206
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.281508000101894,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.578990426387689,
+   "n_classes": 18,
+   "density_per_m2": 96.32745790362573,
+   "surface_variation": 0.03914437050196483,
+   "z_range": 50.115405559539795,
+   "bbox_area_m2": 240099.91027832846,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1263561.220268156,
+   -1246397.4406682563,
+   -1241733.832549229,
+   -1244440.9894632357,
+   -1252109.3878533114,
+   -1256813.1329146156
+  ],
+  "elbo_full_final": -34672608.488368206
+ },
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.471778970112422,
+   -0.548230246225614,
+   6.623987272718103
+  ],
+  "khat_count": 64,
+  "khat_entropy": 43.798310757953004,
+  "elbo_tail": [
+   -33008073.41897656
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.311377374920994,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.578990426387689,
+   "n_classes": 18,
+   "density_per_m2": 96.32745790362573,
+   "surface_variation": 0.03914437050196483,
+   "z_range": 50.115405559539795,
+   "bbox_area_m2": 240099.91027832846,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1245035.4673007568,
+   -1269799.847476691,
+   -1295496.6851302413,
+   -1315835.3718405247,
+   -1331578.6296226205,
+   -1338381.4546532617
+  ],
+  "elbo_full_final": -33008073.41897656
+ },
+ {
+  "tile": "1_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/1_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.471778970112422,
+   -0.548230246225614,
+   6.623987272718103
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.90904527736694,
+  "elbo_tail": [
+   -32962462.33796611
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.736329458653927,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.578990426387689,
+   "n_classes": 18,
+   "density_per_m2": 96.32745790362573,
+   "surface_variation": 0.03914437050196483,
+   "z_range": 50.115405559539795,
+   "bbox_area_m2": 240099.91027832846,
+   "n_raw": 23128214
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1235767.0237259422,
+   -1256736.170823997,
+   -1286040.16163738,
+   -1311970.8421612342,
+   -1332730.3885954942,
+   -1341797.584138347
+  ],
+  "elbo_full_final": -32962462.33796611
+ },
+ {
+  "tile": "2_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/2_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.4780221972164265,
+   -3.6988780779772825,
+   3.5925165634443816
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.485273748254882,
+  "elbo_tail": [
+   -37267223.46043293
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.362928290851414,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7668927651194828,
+   "n_classes": 18,
+   "density_per_m2": 113.81330170891744,
+   "surface_variation": 0.06436543333510573,
+   "z_range": 50.599785804748535,
+   "bbox_area_m2": 240099.68597421795,
+   "n_raw": 27326538
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1321995.7335640907,
+   -1315525.482208092,
+   -1307605.01838559,
+   -1294008.17482015,
+   -1275735.3923920577,
+   -1266645.7310818627
+  ],
+  "elbo_full_final": -37267223.46043293
+ },
+ {
+  "tile": "2_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/2_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.4780221972164265,
+   -3.6988780779772825,
+   3.5925165634443816
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.6753569546770457,
+  "elbo_tail": [
+   -38056987.51704884
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.356997499708086,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7668927651194828,
+   "n_classes": 18,
+   "density_per_m2": 113.81330170891744,
+   "surface_variation": 0.06436543333510573,
+   "z_range": 50.599785804748535,
+   "bbox_area_m2": 240099.68597421795,
+   "n_raw": 27326538
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1309481.7765342672,
+   -1303572.7614826863,
+   -1298123.9127126175,
+   -1292506.2601368402,
+   -1285805.0419253702,
+   -1281751.1216781612
+  ],
+  "elbo_full_final": -38056987.51704884
+ },
+ {
+  "tile": "2_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/2_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.4780221972164265,
+   -3.6988780779772825,
+   3.5925165634443816
+  ],
+  "khat_count": 20,
+  "khat_entropy": 12.198712999623917,
+  "elbo_tail": [
+   -36285783.80839638
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.345828792080283,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7668927651194828,
+   "n_classes": 18,
+   "density_per_m2": 113.81330170891744,
+   "surface_variation": 0.06436543333510573,
+   "z_range": 50.599785804748535,
+   "bbox_area_m2": 240099.68597421795,
+   "n_raw": 27326538
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1282536.8285447278,
+   -1272259.2248595487,
+   -1265579.8495264477,
+   -1261007.9933003183,
+   -1258299.915115651,
+   -1257530.0726270622
+  ],
+  "elbo_full_final": -36285783.80839638
+ },
+ {
+  "tile": "2_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/2_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.4780221972164265,
+   -3.6988780779772825,
+   3.5925165634443816
+  ],
+  "khat_count": 22,
+  "khat_entropy": 12.387061574446204,
+  "elbo_tail": [
+   -35319709.07951605
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.432796333916485,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7668927651194828,
+   "n_classes": 18,
+   "density_per_m2": 113.81330170891744,
+   "surface_variation": 0.06436543333510573,
+   "z_range": 50.599785804748535,
+   "bbox_area_m2": 240099.68597421795,
+   "n_raw": 27326538
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1278639.1169037716,
+   -1259733.4047409408,
+   -1245589.6082451278,
+   -1240131.074698136,
+   -1239834.5958815287,
+   -1240683.8064866941
+  ],
+  "elbo_full_final": -35319709.07951605
+ },
+ {
+  "tile": "2_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/2_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.4780221972164265,
+   -3.6988780779772825,
+   3.5925165634443816
+  ],
+  "khat_count": 64,
+  "khat_entropy": 46.865663810779964,
+  "elbo_tail": [
+   -34134945.625705205
+  ],
+  "elbo_dips": 0,
+  "seconds": 21.61601316696033,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7668927651194828,
+   "n_classes": 18,
+   "density_per_m2": 113.81330170891744,
+   "surface_variation": 0.06436543333510573,
+   "z_range": 50.599785804748535,
+   "bbox_area_m2": 240099.68597421795,
+   "n_raw": 27326538
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1265718.419470545,
+   -1294818.7261945219,
+   -1332154.9367669397,
+   -1366719.1287174895,
+   -1394811.4501973453,
+   -1406724.1968937758
+  ],
+  "elbo_full_final": -34134945.625705205
+ },
+ {
+  "tile": "2_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/2_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.4780221972164265,
+   -3.6988780779772825,
+   3.5925165634443816
+  ],
+  "khat_count": 64,
+  "khat_entropy": 42.66852862918164,
+  "elbo_tail": [
+   -34151776.782825924
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.962319083046168,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7668927651194828,
+   "n_classes": 18,
+   "density_per_m2": 113.81330170891744,
+   "surface_variation": 0.06436543333510573,
+   "z_range": 50.599785804748535,
+   "bbox_area_m2": 240099.68597421795,
+   "n_raw": 27326538
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1270854.291825744,
+   -1296038.1467242276,
+   -1332283.835720476,
+   -1368303.8979890933,
+   -1397966.6056720242,
+   -1410517.7279728814
+  ],
+  "elbo_full_final": -34151776.782825924
+ },
+ {
+  "tile": "3_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/3_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   17.365357393598945,
+   6.695822727474419,
+   3.981393213615914
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.716304230025847,
+  "elbo_tail": [
+   -34519309.369149506
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.891252375207841,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.76779883778992,
+   "n_classes": 18,
+   "density_per_m2": 84.54383221110216,
+   "surface_variation": 0.033389255996043206,
+   "z_range": 30.81347692012787,
+   "bbox_area_m2": 240099.88037110027,
+   "n_raw": 20298964
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1260321.4723610966,
+   -1213643.5782686863,
+   -1196891.6381830894,
+   -1189327.4739851132,
+   -1186588.1744608986,
+   -1186952.609524896
+  ],
+  "elbo_full_final": -34519309.369149506
+ },
+ {
+  "tile": "3_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/3_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   17.365357393598945,
+   6.695822727474419,
+   3.981393213615914
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.4097448749333727,
+  "elbo_tail": [
+   -36049615.33898087
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.585038042161614,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.76779883778992,
+   "n_classes": 18,
+   "density_per_m2": 84.54383221110216,
+   "surface_variation": 0.033389255996043206,
+   "z_range": 30.81347692012787,
+   "bbox_area_m2": 240099.88037110027,
+   "n_raw": 20298964
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1292692.4406664222,
+   -1271450.873491579,
+   -1252589.8487112536,
+   -1240659.411472092,
+   -1232797.136576562,
+   -1229899.865699651
+  ],
+  "elbo_full_final": -36049615.33898087
+ },
+ {
+  "tile": "3_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/3_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   17.365357393598945,
+   6.695822727474419,
+   3.981393213615914
+  ],
+  "khat_count": 23,
+  "khat_entropy": 13.493840528306952,
+  "elbo_tail": [
+   -32557482.52822
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.426364458166063,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.76779883778992,
+   "n_classes": 18,
+   "density_per_m2": 84.54383221110216,
+   "surface_variation": 0.033389255996043206,
+   "z_range": 30.81347692012787,
+   "bbox_area_m2": 240099.88037110027,
+   "n_raw": 20298964
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1238903.8688281777,
+   -1248296.7836932598,
+   -1256858.2043095496,
+   -1264098.09723759,
+   -1269266.229998633,
+   -1271461.2909755849
+  ],
+  "elbo_full_final": -32557482.52822
+ },
+ {
+  "tile": "3_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/3_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   17.365357393598945,
+   6.695822727474419,
+   3.981393213615914
+  ],
+  "khat_count": 21,
+  "khat_entropy": 12.83316886794173,
+  "elbo_tail": [
+   -31944249.836581152
+  ],
+  "elbo_dips": 0,
+  "seconds": 13.106936832889915,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.76779883778992,
+   "n_classes": 18,
+   "density_per_m2": 84.54383221110216,
+   "surface_variation": 0.033389255996043206,
+   "z_range": 30.81347692012787,
+   "bbox_area_m2": 240099.88037110027,
+   "n_raw": 20298964
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1212988.1128854877,
+   -1228271.076641847,
+   -1252498.22514132,
+   -1265198.619005654,
+   -1272302.2793950804,
+   -1274911.011116394
+  ],
+  "elbo_full_final": -31944249.836581152
+ },
+ {
+  "tile": "3_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/3_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   17.365357393598945,
+   6.695822727474419,
+   3.981393213615914
+  ],
+  "khat_count": 64,
+  "khat_entropy": 37.3716439373196,
+  "elbo_tail": [
+   -30690718.55367452
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.49735466670245,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.76779883778992,
+   "n_classes": 18,
+   "density_per_m2": 84.54383221110216,
+   "surface_variation": 0.033389255996043206,
+   "z_range": 30.81347692012787,
+   "bbox_area_m2": 240099.88037110027,
+   "n_raw": 20298964
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1214183.7500088713,
+   -1272029.2621480578,
+   -1319805.7888136755,
+   -1353733.5473987209,
+   -1377360.0789806354,
+   -1387093.8837494056
+  ],
+  "elbo_full_final": -30690718.55367452
+ },
+ {
+  "tile": "3_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/3_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   17.365357393598945,
+   6.695822727474419,
+   3.981393213615914
+  ],
+  "khat_count": 64,
+  "khat_entropy": 41.73412417372928,
+  "elbo_tail": [
+   -30276391.576220527
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.470535833388567,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.76779883778992,
+   "n_classes": 18,
+   "density_per_m2": 84.54383221110216,
+   "surface_variation": 0.033389255996043206,
+   "z_range": 30.81347692012787,
+   "bbox_area_m2": 240099.88037110027,
+   "n_raw": 20298964
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1218996.1879287881,
+   -1288002.9430239084,
+   -1353712.0016196286,
+   -1403685.7506886835,
+   -1438527.391923274,
+   -1451903.0078683107
+  ],
+  "elbo_full_final": -30276391.576220527
+ },
+ {
+  "tile": "4_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/4_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.557509036284255,
+   -5.884640938767272,
+   4.51830911286674
+  ],
+  "khat_count": 3,
+  "khat_entropy": 2.733881436477785,
+  "elbo_tail": [
+   -32954488.920079738
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.572751792147756,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7154218570437756,
+   "n_classes": 18,
+   "density_per_m2": 90.04383647666242,
+   "surface_variation": 0.03608704353223545,
+   "z_range": 48.88718914985657,
+   "bbox_area_m2": 240099.8429870694,
+   "n_raw": 21619511
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1284475.4492152366,
+   -1458179.1293559012,
+   -1576715.862084526,
+   -1643659.8511260466,
+   -1680193.8370252855,
+   -1692596.3417689146
+  ],
+  "elbo_full_final": -32954488.920079738
+ },
+ {
+  "tile": "4_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/4_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.557509036284255,
+   -5.884640938767272,
+   4.51830911286674
+  ],
+  "khat_count": 6,
+  "khat_entropy": 3.517837118771131,
+  "elbo_tail": [
+   -33147048.289797217
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.599443124607205,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7154218570437756,
+   "n_classes": 18,
+   "density_per_m2": 90.04383647666242,
+   "surface_variation": 0.03608704353223545,
+   "z_range": 48.88718914985657,
+   "bbox_area_m2": 240099.8429870694,
+   "n_raw": 21619511
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1199380.9591175632,
+   -1204780.3910719133,
+   -1226240.4094498747,
+   -1253650.9594541185,
+   -1283711.6734884144,
+   -1300598.142867277
+  ],
+  "elbo_full_final": -33147048.289797217
+ },
+ {
+  "tile": "4_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/4_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.557509036284255,
+   -5.884640938767272,
+   4.51830911286674
+  ],
+  "khat_count": 20,
+  "khat_entropy": 11.196286717671795,
+  "elbo_tail": [
+   -31237088.40300983
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.527474999893457,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7154218570437756,
+   "n_classes": 18,
+   "density_per_m2": 90.04383647666242,
+   "surface_variation": 0.03608704353223545,
+   "z_range": 48.88718914985657,
+   "bbox_area_m2": 240099.8429870694,
+   "n_raw": 21619511
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1180796.5323727443,
+   -1213632.9912926813,
+   -1258461.0437258033,
+   -1308809.2809695157,
+   -1364639.4445385588,
+   -1395404.4679369293
+  ],
+  "elbo_full_final": -31237088.40300983
+ },
+ {
+  "tile": "4_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/4_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.557509036284255,
+   -5.884640938767272,
+   4.51830911286674
+  ],
+  "khat_count": 21,
+  "khat_entropy": 11.452323567428513,
+  "elbo_tail": [
+   -31648923.759540133
+  ],
+  "elbo_dips": 0,
+  "seconds": 37.2861416246742,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7154218570437756,
+   "n_classes": 18,
+   "density_per_m2": 90.04383647666242,
+   "surface_variation": 0.03608704353223545,
+   "z_range": 48.88718914985657,
+   "bbox_area_m2": 240099.8429870694,
+   "n_raw": 21619511
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1171191.534797993,
+   -1173025.4276361337,
+   -1212208.3368740198,
+   -1279385.8581980942,
+   -1358931.8237713366,
+   -1399713.0398075336
+  ],
+  "elbo_full_final": -31648923.759540133
+ },
+ {
+  "tile": "4_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/4_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.557509036284255,
+   -5.884640938767272,
+   4.51830911286674
+  ],
+  "khat_count": 64,
+  "khat_entropy": 34.474379469390726,
+  "elbo_tail": [
+   -30553313.39987739
+  ],
+  "elbo_dips": 0,
+  "seconds": 15.918611709028482,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7154218570437756,
+   "n_classes": 18,
+   "density_per_m2": 90.04383647666242,
+   "surface_variation": 0.03608704353223545,
+   "z_range": 48.88718914985657,
+   "bbox_area_m2": 240099.8429870694,
+   "n_raw": 21619511
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1235646.3515551263,
+   -1342307.9482050012,
+   -1437263.240032566,
+   -1512524.1291237038,
+   -1570323.78970231,
+   -1594881.5901191658
+  ],
+  "elbo_full_final": -30553313.39987739
+ },
+ {
+  "tile": "4_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/4_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.557509036284255,
+   -5.884640938767272,
+   4.51830911286674
+  ],
+  "khat_count": 64,
+  "khat_entropy": 41.56430542455085,
+  "elbo_tail": [
+   -30450785.195032366
+  ],
+  "elbo_dips": 0,
+  "seconds": 13.190263208001852,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7154218570437756,
+   "n_classes": 18,
+   "density_per_m2": 90.04383647666242,
+   "surface_variation": 0.03608704353223545,
+   "z_range": 48.88718914985657,
+   "bbox_area_m2": 240099.8429870694,
+   "n_raw": 21619511
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1223190.6057712287,
+   -1319673.5109229838,
+   -1416281.6293287897,
+   -1493804.8186317598,
+   -1551663.8389015156,
+   -1574644.2544501296
+  ],
+  "elbo_full_final": -30450785.195032366
+ },
+ {
+  "tile": "5_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/5_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   5.325251852896271,
+   -6.372004598066611,
+   7.904071099245548
+  ],
+  "khat_count": 6,
+  "khat_entropy": 4.45727887090176,
+  "elbo_tail": [
+   -39444778.716854975
+  ],
+  "elbo_dips": 0,
+  "seconds": 25.836320291738957,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6490683479862631,
+   "n_classes": 18,
+   "density_per_m2": 109.5910034554013,
+   "surface_variation": 0.04869774453974246,
+   "z_range": 69.47127151489258,
+   "bbox_area_m2": 240099.8728942941,
+   "n_raw": 26312786
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1348688.1582740904,
+   -1339057.982016559,
+   -1332991.1829389543,
+   -1328416.8066677577,
+   -1324625.5597903735,
+   -1322612.268955558
+  ],
+  "elbo_full_final": -39444778.716854975
+ },
+ {
+  "tile": "5_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/5_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   5.325251852896271,
+   -6.372004598066611,
+   7.904071099245548
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.6598698971960877,
+  "elbo_tail": [
+   -40209193.538916014
+  ],
+  "elbo_dips": 0,
+  "seconds": 35.39827658282593,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6490683479862631,
+   "n_classes": 18,
+   "density_per_m2": 109.5910034554013,
+   "surface_variation": 0.04869774453974246,
+   "z_range": 69.47127151489258,
+   "bbox_area_m2": 240099.8728942941,
+   "n_raw": 26312786
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1355699.2991829426,
+   -1349412.3551004878,
+   -1347743.0699889197,
+   -1346928.0013967115,
+   -1346397.923524849,
+   -1346197.20477866
+  ],
+  "elbo_full_final": -40209193.538916014
+ },
+ {
+  "tile": "5_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/5_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   5.325251852896271,
+   -6.372004598066611,
+   7.904071099245548
+  ],
+  "khat_count": 22,
+  "khat_entropy": 13.32611691138125,
+  "elbo_tail": [
+   -37377779.66136578
+  ],
+  "elbo_dips": 0,
+  "seconds": 33.30516308406368,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6490683479862631,
+   "n_classes": 18,
+   "density_per_m2": 109.5910034554013,
+   "surface_variation": 0.04869774453974246,
+   "z_range": 69.47127151489258,
+   "bbox_area_m2": 240099.8728942941,
+   "n_raw": 26312786
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1303188.5969682543,
+   -1288239.9972675494,
+   -1280065.9273989159,
+   -1275386.831398558,
+   -1272968.0366294086,
+   -1272154.6157414124
+  ],
+  "elbo_full_final": -37377779.66136578
+ },
+ {
+  "tile": "5_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/5_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   5.325251852896271,
+   -6.372004598066611,
+   7.904071099245548
+  ],
+  "khat_count": 22,
+  "khat_entropy": 15.242605066586078,
+  "elbo_tail": [
+   -37773278.29886494
+  ],
+  "elbo_dips": 0,
+  "seconds": 30.565372417215258,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6490683479862631,
+   "n_classes": 18,
+   "density_per_m2": 109.5910034554013,
+   "surface_variation": 0.04869774453974246,
+   "z_range": 69.47127151489258,
+   "bbox_area_m2": 240099.8728942941,
+   "n_raw": 26312786
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1302971.2098677284,
+   -1293380.012100773,
+   -1288397.4165088157,
+   -1285166.0529067633,
+   -1283138.239778763,
+   -1282387.1506883076
+  ],
+  "elbo_full_final": -37773278.29886494
+ },
+ {
+  "tile": "5_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/5_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   5.325251852896271,
+   -6.372004598066611,
+   7.904071099245548
+  ],
+  "khat_count": 64,
+  "khat_entropy": 46.949225645515554,
+  "elbo_tail": [
+   -35783600.90921895
+  ],
+  "elbo_dips": 0,
+  "seconds": 32.719295500312,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6490683479862631,
+   "n_classes": 18,
+   "density_per_m2": 109.5910034554013,
+   "surface_variation": 0.04869774453974246,
+   "z_range": 69.47127151489258,
+   "bbox_area_m2": 240099.8728942941,
+   "n_raw": 26312786
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1273414.685417918,
+   -1271205.738581089,
+   -1272875.4389750843,
+   -1274996.66461066,
+   -1276976.6625421771,
+   -1277884.3649322856
+  ],
+  "elbo_full_final": -35783600.90921895
+ },
+ {
+  "tile": "5_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/5_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   5.325251852896271,
+   -6.372004598066611,
+   7.904071099245548
+  ],
+  "khat_count": 64,
+  "khat_entropy": 50.18088158419636,
+  "elbo_tail": [
+   -35520708.296753325
+  ],
+  "elbo_dips": 0,
+  "seconds": 37.5482779587619,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6490683479862631,
+   "n_classes": 18,
+   "density_per_m2": 109.5910034554013,
+   "surface_variation": 0.04869774453974246,
+   "z_range": 69.47127151489258,
+   "bbox_area_m2": 240099.8728942941,
+   "n_raw": 26312786
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1272479.2236575661,
+   -1270926.0330643812,
+   -1275120.26084184,
+   -1279782.7230526584,
+   -1283813.6339018554,
+   -1285695.6308097395
+  ],
+  "elbo_full_final": -35520708.296753325
+ },
+ {
+  "tile": "6_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/6_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.3531795681544674,
+   -12.665440411964228,
+   5.518241720277082
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.152322966215387,
+  "elbo_tail": [
+   -39932156.51527106
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.655655624810606,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7904953630361282,
+   "n_classes": 18,
+   "density_per_m2": 98.50873056889691,
+   "surface_variation": 0.04828055223945206,
+   "z_range": 52.88898468017578,
+   "bbox_area_m2": 240099.97756958054,
+   "n_raw": 23651944
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1352972.2763293963,
+   -1346136.2078238002,
+   -1341718.042369243,
+   -1338374.6869396684,
+   -1335661.2006429015,
+   -1334388.535471604
+  ],
+  "elbo_full_final": -39932156.51527106
+ },
+ {
+  "tile": "6_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/6_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.3531795681544674,
+   -12.665440411964228,
+   5.518241720277082
+  ],
+  "khat_count": 5,
+  "khat_entropy": 4.145380509782056,
+  "elbo_tail": [
+   -37869374.03424277
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.896545333322138,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7904953630361282,
+   "n_classes": 18,
+   "density_per_m2": 98.50873056889691,
+   "surface_variation": 0.04828055223945206,
+   "z_range": 52.88898468017578,
+   "bbox_area_m2": 240099.97756958054,
+   "n_raw": 23651944
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1305350.2607565403,
+   -1294566.9650747098,
+   -1292217.018164844,
+   -1291886.301271644,
+   -1291655.7027053991,
+   -1291670.259053834
+  ],
+  "elbo_full_final": -37869374.03424277
+ },
+ {
+  "tile": "6_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/6_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.3531795681544674,
+   -12.665440411964228,
+   5.518241720277082
+  ],
+  "khat_count": 22,
+  "khat_entropy": 14.614810612098111,
+  "elbo_tail": [
+   -35484336.34996618
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.422724000178277,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7904953630361282,
+   "n_classes": 18,
+   "density_per_m2": 98.50873056889691,
+   "surface_variation": 0.04828055223945206,
+   "z_range": 52.88898468017578,
+   "bbox_area_m2": 240099.97756958054,
+   "n_raw": 23651944
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1292423.700103859,
+   -1312111.4774107996,
+   -1328560.347765579,
+   -1341753.4776106912,
+   -1353951.56850668,
+   -1360149.0567601093
+  ],
+  "elbo_full_final": -35484336.34996618
+ },
+ {
+  "tile": "6_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/6_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.3531795681544674,
+   -12.665440411964228,
+   5.518241720277082
+  ],
+  "khat_count": 21,
+  "khat_entropy": 14.307106643312292,
+  "elbo_tail": [
+   -35838216.94056377
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.377938457764685,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7904953630361282,
+   "n_classes": 18,
+   "density_per_m2": 98.50873056889691,
+   "surface_variation": 0.04828055223945206,
+   "z_range": 52.88898468017578,
+   "bbox_area_m2": 240099.97756958054,
+   "n_raw": 23651944
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1288786.0823115807,
+   -1300732.1093587514,
+   -1313709.5756507157,
+   -1327479.9707723076,
+   -1340246.8638734166,
+   -1345196.6571639776
+  ],
+  "elbo_full_final": -35838216.94056377
+ },
+ {
+  "tile": "6_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/6_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.3531795681544674,
+   -12.665440411964228,
+   5.518241720277082
+  ],
+  "khat_count": 64,
+  "khat_entropy": 48.98253524116201,
+  "elbo_tail": [
+   -34142977.38364076
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.795046417042613,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7904953630361282,
+   "n_classes": 18,
+   "density_per_m2": 98.50873056889691,
+   "surface_variation": 0.04828055223945206,
+   "z_range": 52.88898468017578,
+   "bbox_area_m2": 240099.97756958054,
+   "n_raw": 23651944
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1297914.056613928,
+   -1354366.152693391,
+   -1406184.319912414,
+   -1449586.8298961627,
+   -1482461.6684324075,
+   -1495777.6418205926
+  ],
+  "elbo_full_final": -34142977.38364076
+ },
+ {
+  "tile": "6_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/6_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.3531795681544674,
+   -12.665440411964228,
+   5.518241720277082
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.51729530037941,
+  "elbo_tail": [
+   -34368143.23221695
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.673874333966523,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7904953630361282,
+   "n_classes": 18,
+   "density_per_m2": 98.50873056889691,
+   "surface_variation": 0.04828055223945206,
+   "z_range": 52.88898468017578,
+   "bbox_area_m2": 240099.97756958054,
+   "n_raw": 23651944
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1292135.6209135565,
+   -1330931.8767213258,
+   -1367133.5699948252,
+   -1398429.0188786772,
+   -1424849.041208622,
+   -1436281.9096095765
+  ],
+  "elbo_full_final": -34368143.23221695
+ },
+ {
+  "tile": "7_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/7_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.865592504731336,
+   9.059382021413349,
+   6.656012493975186
+  ],
+  "khat_count": 4,
+  "khat_entropy": 2.7622732993692836,
+  "elbo_tail": [
+   -39584886.92446192
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.424528791103512,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6931337214330848,
+   "n_classes": 18,
+   "density_per_m2": 105.5508191629029,
+   "surface_variation": 0.050921914710841336,
+   "z_range": 49.97419238090515,
+   "bbox_area_m2": 240099.91775513394,
+   "n_raw": 25342743
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1350317.0106563298,
+   -1342096.880961999,
+   -1333732.3461876968,
+   -1328177.2823991568,
+   -1324116.5863382276,
+   -1322467.4946430211
+  ],
+  "elbo_full_final": -39584886.92446192
+ },
+ {
+  "tile": "7_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/7_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.865592504731336,
+   9.059382021413349,
+   6.656012493975186
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.0205536524618353,
+  "elbo_tail": [
+   -39250215.662248045
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.466734665911645,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6931337214330848,
+   "n_classes": 18,
+   "density_per_m2": 105.5508191629029,
+   "surface_variation": 0.050921914710841336,
+   "z_range": 49.97419238090515,
+   "bbox_area_m2": 240099.91775513394,
+   "n_raw": 25342743
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1337877.0673699612,
+   -1328120.0891262332,
+   -1322228.5710777978,
+   -1318318.8881592248,
+   -1315491.7717348523,
+   -1314223.0661815521
+  ],
+  "elbo_full_final": -39250215.662248045
+ },
+ {
+  "tile": "7_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/7_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.865592504731336,
+   9.059382021413349,
+   6.656012493975186
+  ],
+  "khat_count": 20,
+  "khat_entropy": 14.649279549743364,
+  "elbo_tail": [
+   -36345790.71760556
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.469702042173594,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6931337214330848,
+   "n_classes": 18,
+   "density_per_m2": 105.5508191629029,
+   "surface_variation": 0.050921914710841336,
+   "z_range": 49.97419238090515,
+   "bbox_area_m2": 240099.91775513394,
+   "n_raw": 25342743
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1278165.903690911,
+   -1283012.769454515,
+   -1292157.1715783353,
+   -1297742.265082775,
+   -1301500.0979023797,
+   -1302929.0473464385
+  ],
+  "elbo_full_final": -36345790.71760556
+ },
+ {
+  "tile": "7_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/7_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.865592504731336,
+   9.059382021413349,
+   6.656012493975186
+  ],
+  "khat_count": 20,
+  "khat_entropy": 14.171608903723536,
+  "elbo_tail": [
+   -35504412.011553936
+  ],
+  "elbo_dips": 0,
+  "seconds": 13.834483750164509,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6931337214330848,
+   "n_classes": 18,
+   "density_per_m2": 105.5508191629029,
+   "surface_variation": 0.050921914710841336,
+   "z_range": 49.97419238090515,
+   "bbox_area_m2": 240099.91775513394,
+   "n_raw": 25342743
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1284261.4580378747,
+   -1289413.4327284219,
+   -1303348.318500545,
+   -1323843.711844625,
+   -1342360.0673349034,
+   -1350449.7612828794
+  ],
+  "elbo_full_final": -35504412.011553936
+ },
+ {
+  "tile": "7_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/7_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.865592504731336,
+   9.059382021413349,
+   6.656012493975186
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.401884805704114,
+  "elbo_tail": [
+   -33858946.49139252
+  ],
+  "elbo_dips": 0,
+  "seconds": 20.41284945886582,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6931337214330848,
+   "n_classes": 18,
+   "density_per_m2": 105.5508191629029,
+   "surface_variation": 0.050921914710841336,
+   "z_range": 49.97419238090515,
+   "bbox_area_m2": 240099.91775513394,
+   "n_raw": 25342743
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1247742.5916203507,
+   -1261556.4573959804,
+   -1291643.6179610002,
+   -1323195.074707039,
+   -1350294.528259429,
+   -1362492.9275067707
+  ],
+  "elbo_full_final": -33858946.49139252
+ },
+ {
+  "tile": "7_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/7_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -7.865592504731336,
+   9.059382021413349,
+   6.656012493975186
+  ],
+  "khat_count": 64,
+  "khat_entropy": 39.64897980320389,
+  "elbo_tail": [
+   -33512697.50595177
+  ],
+  "elbo_dips": 0,
+  "seconds": 35.28968325024471,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.6931337214330848,
+   "n_classes": 18,
+   "density_per_m2": 105.5508191629029,
+   "surface_variation": 0.050921914710841336,
+   "z_range": 49.97419238090515,
+   "bbox_area_m2": 240099.91775513394,
+   "n_raw": 25342743
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1252144.103302194,
+   -1279029.0565260851,
+   -1309526.40908849,
+   -1334353.1771791067,
+   -1355430.730334221,
+   -1365326.6114122781
+  ],
+  "elbo_full_final": -33512697.50595177
+ },
+ {
+  "tile": "8_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/8_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.067600981047643,
+   -1.9222177751071707,
+   1.644135311922702
+  ],
+  "khat_count": 6,
+  "khat_entropy": 4.1059448430221215,
+  "elbo_tail": [
+   -40254030.134420775
+  ],
+  "elbo_dips": 0,
+  "seconds": 15.705538999754936,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7148722556900209,
+   "n_classes": 18,
+   "density_per_m2": 98.49013850499898,
+   "surface_variation": 0.04895625818000533,
+   "z_range": 59.41951560974121,
+   "bbox_area_m2": 240099.86541748792,
+   "n_raw": 23647469
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1359504.485213777,
+   -1354377.653981922,
+   -1351150.6212311184,
+   -1349052.1336426772,
+   -1347434.888098834,
+   -1346672.7676185868
+  ],
+  "elbo_full_final": -40254030.134420775
+ },
+ {
+  "tile": "8_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/8_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.067600981047643,
+   -1.9222177751071707,
+   1.644135311922702
+  ],
+  "khat_count": 6,
+  "khat_entropy": 4.186230852417285,
+  "elbo_tail": [
+   -40170806.3274399
+  ],
+  "elbo_dips": 0,
+  "seconds": 33.240531916730106,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7148722556900209,
+   "n_classes": 18,
+   "density_per_m2": 98.49013850499898,
+   "surface_variation": 0.04895625818000533,
+   "z_range": 59.41951560974121,
+   "bbox_area_m2": 240099.86541748792,
+   "n_raw": 23647469
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1354358.679367154,
+   -1350389.4140091771,
+   -1347575.3239645339,
+   -1345214.4163959294,
+   -1343525.7150294667,
+   -1342749.2494202938
+  ],
+  "elbo_full_final": -40170806.3274399
+ },
+ {
+  "tile": "8_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/8_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.067600981047643,
+   -1.9222177751071707,
+   1.644135311922702
+  ],
+  "khat_count": 23,
+  "khat_entropy": 16.438943812965803,
+  "elbo_tail": [
+   -38133874.85398078
+  ],
+  "elbo_dips": 0,
+  "seconds": 34.88354429183528,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7148722556900209,
+   "n_classes": 18,
+   "density_per_m2": 98.49013850499898,
+   "surface_variation": 0.04895625818000533,
+   "z_range": 59.41951560974121,
+   "bbox_area_m2": 240099.86541748792,
+   "n_raw": 23647469
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1319365.675957432,
+   -1308816.6791355899,
+   -1302032.60801834,
+   -1296983.9407927427,
+   -1293130.799842958,
+   -1291421.6678666
+  ],
+  "elbo_full_final": -38133874.85398078
+ },
+ {
+  "tile": "8_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/8_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.067600981047643,
+   -1.9222177751071707,
+   1.644135311922702
+  ],
+  "khat_count": 18,
+  "khat_entropy": 14.041305944558738,
+  "elbo_tail": [
+   -38453651.48401627
+  ],
+  "elbo_dips": 0,
+  "seconds": 34.022670375183225,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7148722556900209,
+   "n_classes": 18,
+   "density_per_m2": 98.49013850499898,
+   "surface_variation": 0.04895625818000533,
+   "z_range": 59.41951560974121,
+   "bbox_area_m2": 240099.86541748792,
+   "n_raw": 23647469
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1322457.5569649138,
+   -1312306.977249664,
+   -1305930.6528809106,
+   -1301705.6550143461,
+   -1298461.4047216617,
+   -1296944.6853741605
+  ],
+  "elbo_full_final": -38453651.48401627
+ },
+ {
+  "tile": "8_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/8_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.067600981047643,
+   -1.9222177751071707,
+   1.644135311922702
+  ],
+  "khat_count": 64,
+  "khat_entropy": 51.96282549211598,
+  "elbo_tail": [
+   -36193822.00516115
+  ],
+  "elbo_dips": 0,
+  "seconds": 34.05239495774731,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7148722556900209,
+   "n_classes": 18,
+   "density_per_m2": 98.49013850499898,
+   "surface_variation": 0.04895625818000533,
+   "z_range": 59.41951560974121,
+   "bbox_area_m2": 240099.86541748792,
+   "n_raw": 23647469
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1299084.006005166,
+   -1296367.5459843061,
+   -1296102.9536446095,
+   -1297427.7241287318,
+   -1299618.557113292,
+   -1300910.4364305355
+  ],
+  "elbo_full_final": -36193822.00516115
+ },
+ {
+  "tile": "8_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/8_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -5.067600981047643,
+   -1.9222177751071707,
+   1.644135311922702
+  ],
+  "khat_count": 64,
+  "khat_entropy": 52.00639299059283,
+  "elbo_tail": [
+   -36177083.70451539
+  ],
+  "elbo_dips": 0,
+  "seconds": 33.90459516691044,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7148722556900209,
+   "n_classes": 18,
+   "density_per_m2": 98.49013850499898,
+   "surface_variation": 0.04895625818000533,
+   "z_range": 59.41951560974121,
+   "bbox_area_m2": 240099.86541748792,
+   "n_raw": 23647469
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1297486.5984777347,
+   -1297211.4634698401,
+   -1298904.4315156247,
+   -1301094.5689266578,
+   -1303458.5341986036,
+   -1304721.129445615
+  ],
+  "elbo_full_final": -36177083.70451539
+ },
+ {
+  "tile": "9_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/9_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.003706234583403,
+   3.263101787816541,
+   7.997784155707357
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.801689260959432,
+  "elbo_tail": [
+   -38615398.19205686
+  ],
+  "elbo_dips": 0,
+  "seconds": 39.13471854198724,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8403396184899445,
+   "n_classes": 18,
+   "density_per_m2": 100.82268048435805,
+   "surface_variation": 0.053989968120335345,
+   "z_range": 52.354087591171265,
+   "bbox_area_m2": 240099.83551028115,
+   "n_raw": 24207509
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1334202.6864338445,
+   -1321814.2255439684,
+   -1313117.4277530767,
+   -1306284.8157575189,
+   -1300661.9006206295,
+   -1298187.3842991265
+  ],
+  "elbo_full_final": -38615398.19205686
+ },
+ {
+  "tile": "9_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/9_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.003706234583403,
+   3.263101787816541,
+   7.997784155707357
+  ],
+  "khat_count": 7,
+  "khat_entropy": 5.9955123322964425,
+  "elbo_tail": [
+   -38781234.73997387
+  ],
+  "elbo_dips": 0,
+  "seconds": 28.888434583321214,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8403396184899445,
+   "n_classes": 18,
+   "density_per_m2": 100.82268048435805,
+   "surface_variation": 0.053989968120335345,
+   "z_range": 52.354087591171265,
+   "bbox_area_m2": 240099.83551028115,
+   "n_raw": 24207509
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1332319.1402587858,
+   -1323852.6340439466,
+   -1316997.962331676,
+   -1310930.1802324313,
+   -1305272.4895307065,
+   -1302503.652656327
+  ],
+  "elbo_full_final": -38781234.73997387
+ },
+ {
+  "tile": "9_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/9_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.003706234583403,
+   3.263101787816541,
+   7.997784155707357
+  ],
+  "khat_count": 20,
+  "khat_entropy": 14.783525821156207,
+  "elbo_tail": [
+   -36254432.777686276
+  ],
+  "elbo_dips": 0,
+  "seconds": 33.16566766705364,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8403396184899445,
+   "n_classes": 18,
+   "density_per_m2": 100.82268048435805,
+   "surface_variation": 0.053989968120335345,
+   "z_range": 52.354087591171265,
+   "bbox_area_m2": 240099.83551028115,
+   "n_raw": 24207509
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1305514.3889440342,
+   -1317637.2204167473,
+   -1325701.5208017442,
+   -1330688.0294276453,
+   -1333400.7938266015,
+   -1334492.0980926552
+  ],
+  "elbo_full_final": -36254432.777686276
+ },
+ {
+  "tile": "9_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/9_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.003706234583403,
+   3.263101787816541,
+   7.997784155707357
+  ],
+  "khat_count": 23,
+  "khat_entropy": 15.226185967168224,
+  "elbo_tail": [
+   -36731745.127290316
+  ],
+  "elbo_dips": 0,
+  "seconds": 39.80622662510723,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8403396184899445,
+   "n_classes": 18,
+   "density_per_m2": 100.82268048435805,
+   "surface_variation": 0.053989968120335345,
+   "z_range": 52.354087591171265,
+   "bbox_area_m2": 240099.83551028115,
+   "n_raw": 24207509
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1289327.430008008,
+   -1275842.5700640592,
+   -1267073.43400197,
+   -1261736.974357172,
+   -1258357.105992041,
+   -1257104.1571755898
+  ],
+  "elbo_full_final": -36731745.127290316
+ },
+ {
+  "tile": "9_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/9_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.003706234583403,
+   3.263101787816541,
+   7.997784155707357
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.163321001963354,
+  "elbo_tail": [
+   -34946464.75552215
+  ],
+  "elbo_dips": 0,
+  "seconds": 32.44766420824453,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8403396184899445,
+   "n_classes": 18,
+   "density_per_m2": 100.82268048435805,
+   "surface_variation": 0.053989968120335345,
+   "z_range": 52.354087591171265,
+   "bbox_area_m2": 240099.83551028115,
+   "n_raw": 24207509
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1302396.077942168,
+   -1333528.464259551,
+   -1357414.5931518935,
+   -1375136.7965073662,
+   -1388429.4944964484,
+   -1394316.6074604595
+  ],
+  "elbo_full_final": -34946464.75552215
+ },
+ {
+  "tile": "9_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/9_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.003706234583403,
+   3.263101787816541,
+   7.997784155707357
+  ],
+  "khat_count": 64,
+  "khat_entropy": 49.05240304014457,
+  "elbo_tail": [
+   -34854538.38547858
+  ],
+  "elbo_dips": 0,
+  "seconds": 33.025207832921296,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8403396184899445,
+   "n_classes": 18,
+   "density_per_m2": 100.82268048435805,
+   "surface_variation": 0.053989968120335345,
+   "z_range": 52.354087591171265,
+   "bbox_area_m2": 240099.83551028115,
+   "n_raw": 24207509
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1297822.0329597224,
+   -1327917.156224232,
+   -1349934.3743036105,
+   -1365334.8384482134,
+   -1376307.4108897862,
+   -1380997.5992173324
+  ],
+  "elbo_full_final": -34854538.38547858
+ },
+ {
+  "tile": "10_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/10_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.3638695619747803,
+   -2.869214687632552,
+   6.137412850781218
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.669919186011343,
+  "elbo_tail": [
+   -37279960.60009958
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.362301332876086,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7589013774595155,
+   "n_classes": 18,
+   "density_per_m2": 119.28123461392589,
+   "surface_variation": 0.0628049479687128,
+   "z_range": 51.617045164108276,
+   "bbox_area_m2": 240099.7532654344,
+   "n_raw": 28639395
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1304523.2637072352,
+   -1287319.6732146554,
+   -1276625.9902486173,
+   -1268607.4923999466,
+   -1262171.6348714116,
+   -1259197.1142095958
+  ],
+  "elbo_full_final": -37279960.60009958
+ },
+ {
+  "tile": "10_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/10_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.3638695619747803,
+   -2.869214687632552,
+   6.137412850781218
+  ],
+  "khat_count": 5,
+  "khat_entropy": 2.312931736201366,
+  "elbo_tail": [
+   -39784614.59457265
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.40973470825702,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7589013774595155,
+   "n_classes": 18,
+   "density_per_m2": 119.28123461392589,
+   "surface_variation": 0.0628049479687128,
+   "z_range": 51.617045164108276,
+   "bbox_area_m2": 240099.7532654344,
+   "n_raw": 28639395
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1338835.096994532,
+   -1334245.1540235817,
+   -1331349.338286719,
+   -1329900.4746092043,
+   -1328861.2035394565,
+   -1328394.010175936
+  ],
+  "elbo_full_final": -39784614.59457265
+ },
+ {
+  "tile": "10_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/10_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.3638695619747803,
+   -2.869214687632552,
+   6.137412850781218
+  ],
+  "khat_count": 21,
+  "khat_entropy": 15.688900346758874,
+  "elbo_tail": [
+   -35802956.630801596
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.443271874915808,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7589013774595155,
+   "n_classes": 18,
+   "density_per_m2": 119.28123461392589,
+   "surface_variation": 0.0628049479687128,
+   "z_range": 51.617045164108276,
+   "bbox_area_m2": 240099.7532654344,
+   "n_raw": 28639395
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1279671.1620541257,
+   -1262036.581463058,
+   -1250673.8929030038,
+   -1246498.4825528031,
+   -1248702.7676220143,
+   -1251736.3118873567
+  ],
+  "elbo_full_final": -35802956.630801596
+ },
+ {
+  "tile": "10_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/10_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.3638695619747803,
+   -2.869214687632552,
+   6.137412850781218
+  ],
+  "khat_count": 21,
+  "khat_entropy": 12.68565613928351,
+  "elbo_tail": [
+   -35688101.76208016
+  ],
+  "elbo_dips": 0,
+  "seconds": 27.893238874617964,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7589013774595155,
+   "n_classes": 18,
+   "density_per_m2": 119.28123461392589,
+   "surface_variation": 0.0628049479687128,
+   "z_range": 51.617045164108276,
+   "bbox_area_m2": 240099.7532654344,
+   "n_raw": 28639395
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1282162.1928843476,
+   -1267810.0272911985,
+   -1265225.9830473196,
+   -1268619.7418823983,
+   -1275035.497792313,
+   -1279095.265812582
+  ],
+  "elbo_full_final": -35688101.76208016
+ },
+ {
+  "tile": "10_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/10_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.3638695619747803,
+   -2.869214687632552,
+   6.137412850781218
+  ],
+  "khat_count": 64,
+  "khat_entropy": 38.2750475215475,
+  "elbo_tail": [
+   -34497866.462170176
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.985365541186184,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7589013774595155,
+   "n_classes": 18,
+   "density_per_m2": 119.28123461392589,
+   "surface_variation": 0.0628049479687128,
+   "z_range": 51.617045164108276,
+   "bbox_area_m2": 240099.7532654344,
+   "n_raw": 28639395
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1284453.4817149413,
+   -1331718.8004000562,
+   -1363364.9428377892,
+   -1382147.66600034,
+   -1393283.256229327,
+   -1397327.5511339307
+  ],
+  "elbo_full_final": -34497866.462170176
+ },
+ {
+  "tile": "10_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/10_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.3638695619747803,
+   -2.869214687632552,
+   6.137412850781218
+  ],
+  "khat_count": 64,
+  "khat_entropy": 43.884495732691164,
+  "elbo_tail": [
+   -34567963.682924025
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.912877459079027,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7589013774595155,
+   "n_classes": 18,
+   "density_per_m2": 119.28123461392589,
+   "surface_variation": 0.0628049479687128,
+   "z_range": 51.617045164108276,
+   "bbox_area_m2": 240099.7532654344,
+   "n_raw": 28639395
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1264108.318929231,
+   -1280044.698324122,
+   -1307658.4449715011,
+   -1338078.0810438804,
+   -1364897.397017601,
+   -1376428.1326405075
+  ],
+  "elbo_full_final": -34567963.682924025
+ },
+ {
+  "tile": "11_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/11_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.2533130337885294,
+   -3.7426887441764882,
+   4.15195529028417
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.9784463648590678,
+  "elbo_tail": [
+   -35319973.89170962
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.919403874780983,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.9491784436214707,
+   "n_classes": 18,
+   "density_per_m2": 101.58816822615506,
+   "surface_variation": 0.054022122501777355,
+   "z_range": 56.1555552482605,
+   "bbox_area_m2": 240099.85046388675,
+   "n_raw": 24391304
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1300706.9429137462,
+   -1296616.5580587867,
+   -1289644.5647610056,
+   -1284859.7793460195,
+   -1285501.9561326955,
+   -1284206.052825925
+  ],
+  "elbo_full_final": -35319973.89170962
+ },
+ {
+  "tile": "11_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/11_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.2533130337885294,
+   -3.7426887441764882,
+   4.15195529028417
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.8859142812318477,
+  "elbo_tail": [
+   -35130855.35499677
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.549222374800593,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.9491784436214707,
+   "n_classes": 18,
+   "density_per_m2": 101.58816822615506,
+   "surface_variation": 0.054022122501777355,
+   "z_range": 56.1555552482605,
+   "bbox_area_m2": 240099.85046388675,
+   "n_raw": 24391304
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1245079.1892355497,
+   -1247867.6809269704,
+   -1262537.9635800514,
+   -1277399.5550435707,
+   -1290260.4116014421,
+   -1296036.1429524538
+  ],
+  "elbo_full_final": -35130855.35499677
+ },
+ {
+  "tile": "11_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/11_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.2533130337885294,
+   -3.7426887441764882,
+   4.15195529028417
+  ],
+  "khat_count": 22,
+  "khat_entropy": 12.679958818005197,
+  "elbo_tail": [
+   -33821942.12623939
+  ],
+  "elbo_dips": 0,
+  "seconds": 29.712297291029245,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.9491784436214707,
+   "n_classes": 18,
+   "density_per_m2": 101.58816822615506,
+   "surface_variation": 0.054022122501777355,
+   "z_range": 56.1555552482605,
+   "bbox_area_m2": 240099.85046388675,
+   "n_raw": 24391304
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1227387.1681663874,
+   -1232709.499060529,
+   -1266150.256657719,
+   -1305951.3643605707,
+   -1340512.2144841636,
+   -1355085.8556658458
+  ],
+  "elbo_full_final": -33821942.12623939
+ },
+ {
+  "tile": "11_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/11_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.2533130337885294,
+   -3.7426887441764882,
+   4.15195529028417
+  ],
+  "khat_count": 22,
+  "khat_entropy": 12.88566735256611,
+  "elbo_tail": [
+   -33890788.050398834
+  ],
+  "elbo_dips": 0,
+  "seconds": 25.006048375274986,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.9491784436214707,
+   "n_classes": 18,
+   "density_per_m2": 101.58816822615506,
+   "surface_variation": 0.054022122501777355,
+   "z_range": 56.1555552482605,
+   "bbox_area_m2": 240099.85046388675,
+   "n_raw": 24391304
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1258700.3927628417,
+   -1281871.0275684881,
+   -1302278.0249807637,
+   -1320949.1707964228,
+   -1337754.624688993,
+   -1345731.9168803203
+  ],
+  "elbo_full_final": -33890788.050398834
+ },
+ {
+  "tile": "11_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/11_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.2533130337885294,
+   -3.7426887441764882,
+   4.15195529028417
+  ],
+  "khat_count": 64,
+  "khat_entropy": 37.00750356931763,
+  "elbo_tail": [
+   -32800504.563676335
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.4429906248115,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.9491784436214707,
+   "n_classes": 18,
+   "density_per_m2": 101.58816822615506,
+   "surface_variation": 0.054022122501777355,
+   "z_range": 56.1555552482605,
+   "bbox_area_m2": 240099.85046388675,
+   "n_raw": 24391304
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1295630.8617361682,
+   -1384362.2659243,
+   -1450029.592918192,
+   -1492404.7499787284,
+   -1517552.2190201415,
+   -1526045.423340395
+  ],
+  "elbo_full_final": -32800504.563676335
+ },
+ {
+  "tile": "11_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/11_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.2533130337885294,
+   -3.7426887441764882,
+   4.15195529028417
+  ],
+  "khat_count": 64,
+  "khat_entropy": 36.294113355314934,
+  "elbo_tail": [
+   -32843714.62270754
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.276701166294515,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.9491784436214707,
+   "n_classes": 18,
+   "density_per_m2": 101.58816822615506,
+   "surface_variation": 0.054022122501777355,
+   "z_range": 56.1555552482605,
+   "bbox_area_m2": 240099.85046388675,
+   "n_raw": 24391304
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1253996.7034168516,
+   -1316609.090663828,
+   -1380368.0681860219,
+   -1431715.5205040756,
+   -1469189.5060180095,
+   -1484142.5465305464
+  ],
+  "elbo_full_final": -32843714.62270754
+ },
+ {
+  "tile": "12_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/12_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   3.5653256872861148,
+   7.410351429152834,
+   4.913259965498882
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.0892540904404067,
+  "elbo_tail": [
+   -36700463.543504804
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.374614833854139,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7607296686285276,
+   "n_classes": 18,
+   "density_per_m2": 87.06359547663227,
+   "surface_variation": 0.03785452756031349,
+   "z_range": 29.10663092136383,
+   "bbox_area_m2": 240099.81307986053,
+   "n_raw": 20903953
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1298943.583233732,
+   -1288106.7656727175,
+   -1284206.5848444498,
+   -1282445.2404635216,
+   -1282732.4527322345,
+   -1283708.770194617
+  ],
+  "elbo_full_final": -36700463.543504804
+ },
+ {
+  "tile": "12_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/12_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   3.5653256872861148,
+   7.410351429152834,
+   4.913259965498882
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.8983882275378026,
+  "elbo_tail": [
+   -37880643.8513046
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.498879916965961,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7607296686285276,
+   "n_classes": 18,
+   "density_per_m2": 87.06359547663227,
+   "surface_variation": 0.03785452756031349,
+   "z_range": 29.10663092136383,
+   "bbox_area_m2": 240099.81307986053,
+   "n_raw": 20903953
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1296511.175808859,
+   -1283436.5218871143,
+   -1280525.1376430152,
+   -1282863.6053665597,
+   -1286838.8499677286,
+   -1288856.6579226116
+  ],
+  "elbo_full_final": -37880643.8513046
+ },
+ {
+  "tile": "12_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/12_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   3.5653256872861148,
+   7.410351429152834,
+   4.913259965498882
+  ],
+  "khat_count": 20,
+  "khat_entropy": 13.985806915108896,
+  "elbo_tail": [
+   -35255247.83593196
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.484003374818712,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7607296686285276,
+   "n_classes": 18,
+   "density_per_m2": 87.06359547663227,
+   "surface_variation": 0.03785452756031349,
+   "z_range": 29.10663092136383,
+   "bbox_area_m2": 240099.81307986053,
+   "n_raw": 20903953
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1263436.3211251071,
+   -1271603.4913143094,
+   -1286004.2991491642,
+   -1297229.7192755274,
+   -1304473.6497693036,
+   -1306447.9818436494
+  ],
+  "elbo_full_final": -35255247.83593196
+ },
+ {
+  "tile": "12_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/12_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   3.5653256872861148,
+   7.410351429152834,
+   4.913259965498882
+  ],
+  "khat_count": 21,
+  "khat_entropy": 13.94431405659482,
+  "elbo_tail": [
+   -34808436.63599282
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.47667841706425,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7607296686285276,
+   "n_classes": 18,
+   "density_per_m2": 87.06359547663227,
+   "surface_variation": 0.03785452756031349,
+   "z_range": 29.10663092136383,
+   "bbox_area_m2": 240099.81307986053,
+   "n_raw": 20903953
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1248277.54541621,
+   -1241685.6486303585,
+   -1240570.8965009442,
+   -1244693.1760830663,
+   -1253973.0021303047,
+   -1260191.1364419367
+  ],
+  "elbo_full_final": -34808436.63599282
+ },
+ {
+  "tile": "12_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/12_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   3.5653256872861148,
+   7.410351429152834,
+   4.913259965498882
+  ],
+  "khat_count": 64,
+  "khat_entropy": 41.613894886261974,
+  "elbo_tail": [
+   -32897265.093684
+  ],
+  "elbo_dips": 0,
+  "seconds": 13.14515387499705,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7607296686285276,
+   "n_classes": 18,
+   "density_per_m2": 87.06359547663227,
+   "surface_variation": 0.03785452756031349,
+   "z_range": 29.10663092136383,
+   "bbox_area_m2": 240099.81307986053,
+   "n_raw": 20903953
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1259288.167381374,
+   -1316480.4007702258,
+   -1368605.4381780196,
+   -1408204.9696953464,
+   -1436624.3877004965,
+   -1448016.5867059235
+  ],
+  "elbo_full_final": -32897265.093684
+ },
+ {
+  "tile": "12_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/12_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   3.5653256872861148,
+   7.410351429152834,
+   4.913259965498882
+  ],
+  "khat_count": 64,
+  "khat_entropy": 46.42453117809073,
+  "elbo_tail": [
+   -32763768.736872777
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.407844333909452,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7607296686285276,
+   "n_classes": 18,
+   "density_per_m2": 87.06359547663227,
+   "surface_variation": 0.03785452756031349,
+   "z_range": 29.10663092136383,
+   "bbox_area_m2": 240099.81307986053,
+   "n_raw": 20903953
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1255072.794977323,
+   -1311949.4221677722,
+   -1371953.6071522553,
+   -1421878.7315805324,
+   -1459910.4112268966,
+   -1475261.410009313
+  ],
+  "elbo_full_final": -32763768.736872777
+ },
+ {
+  "tile": "13_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/13_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.2443998391648164,
+   -1.332694618791912,
+   5.022639183881011
+  ],
+  "khat_count": 5,
+  "khat_entropy": 4.017099153722561,
+  "elbo_tail": [
+   -37030066.7283606
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.471980166621506,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7323979435050731,
+   "n_classes": 17,
+   "density_per_m2": 87.43107774549523,
+   "surface_variation": 0.03366086970889766,
+   "z_range": 60.82766103744507,
+   "bbox_area_m2": 240099.8654174956,
+   "n_raw": 20992190
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1277711.0787941555,
+   -1276890.4237081287,
+   -1274888.336886,
+   -1272406.9208233731,
+   -1270309.8543008305,
+   -1269526.238990597
+  ],
+  "elbo_full_final": -37030066.7283606
+ },
+ {
+  "tile": "13_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/13_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.2443998391648164,
+   -1.332694618791912,
+   5.022639183881011
+  ],
+  "khat_count": 6,
+  "khat_entropy": 4.345030875560188,
+  "elbo_tail": [
+   -36427138.33383807
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.511663500219584,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7323979435050731,
+   "n_classes": 17,
+   "density_per_m2": 87.43107774549523,
+   "surface_variation": 0.03366086970889766,
+   "z_range": 60.82766103744507,
+   "bbox_area_m2": 240099.8654174956,
+   "n_raw": 20992190
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1255053.3467643342,
+   -1249812.229133561,
+   -1251658.2230383405,
+   -1254085.9914317147,
+   -1255674.809903126,
+   -1256143.848141954
+  ],
+  "elbo_full_final": -36427138.33383807
+ },
+ {
+  "tile": "13_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/13_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.2443998391648164,
+   -1.332694618791912,
+   5.022639183881011
+  ],
+  "khat_count": 22,
+  "khat_entropy": 15.233644920516271,
+  "elbo_tail": [
+   -33488227.9218946
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.30624237516895,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7323979435050731,
+   "n_classes": 17,
+   "density_per_m2": 87.43107774549523,
+   "surface_variation": 0.03366086970889766,
+   "z_range": 60.82766103744507,
+   "bbox_area_m2": 240099.8654174956,
+   "n_raw": 20992190
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1185893.762055496,
+   -1181525.189469467,
+   -1186219.075027006,
+   -1193483.0751635304,
+   -1200917.5951236365,
+   -1204267.4870048172
+  ],
+  "elbo_full_final": -33488227.9218946
+ },
+ {
+  "tile": "13_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/13_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.2443998391648164,
+   -1.332694618791912,
+   5.022639183881011
+  ],
+  "khat_count": 25,
+  "khat_entropy": 15.087062170359545,
+  "elbo_tail": [
+   -32403484.555779483
+  ],
+  "elbo_dips": 0,
+  "seconds": 17.69007687503472,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7323979435050731,
+   "n_classes": 17,
+   "density_per_m2": 87.43107774549523,
+   "surface_variation": 0.03366086970889766,
+   "z_range": 60.82766103744507,
+   "bbox_area_m2": 240099.8654174956,
+   "n_raw": 20992190
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1172706.4166371245,
+   -1167904.7854375325,
+   -1170901.2948853709,
+   -1180832.6844917093,
+   -1192934.4037811714,
+   -1198812.6564962533
+  ],
+  "elbo_full_final": -32403484.555779483
+ },
+ {
+  "tile": "13_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/13_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.2443998391648164,
+   -1.332694618791912,
+   5.022639183881011
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.94658989791019,
+  "elbo_tail": [
+   -30519604.46745498
+  ],
+  "elbo_dips": 0,
+  "seconds": 38.68363641668111,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7323979435050731,
+   "n_classes": 17,
+   "density_per_m2": 87.43107774549523,
+   "surface_variation": 0.03366086970889766,
+   "z_range": 60.82766103744507,
+   "bbox_area_m2": 240099.8654174956,
+   "n_raw": 20992190
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1176762.5107094191,
+   -1202967.2950654593,
+   -1239429.624043889,
+   -1275458.6795948213,
+   -1306291.557725679,
+   -1319594.0232930775
+  ],
+  "elbo_full_final": -30519604.46745498
+ },
+ {
+  "tile": "13_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/13_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.2443998391648164,
+   -1.332694618791912,
+   5.022639183881011
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.78748060069269,
+  "elbo_tail": [
+   -30265605.546021882
+  ],
+  "elbo_dips": 0,
+  "seconds": 32.50148420780897,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7323979435050731,
+   "n_classes": 17,
+   "density_per_m2": 87.43107774549523,
+   "surface_variation": 0.03366086970889766,
+   "z_range": 60.82766103744507,
+   "bbox_area_m2": 240099.8654174956,
+   "n_raw": 20992190
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1181334.803953451,
+   -1221364.3083066593,
+   -1263536.58998224,
+   -1301919.1777572904,
+   -1333769.3271155336,
+   -1347962.326569192
+  ],
+  "elbo_full_final": -30265605.546021882
+ },
+ {
+  "tile": "14_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/14_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.7634509714790825,
+   -3.276021203242767,
+   19.151974233140816
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.170462517656871,
+  "elbo_tail": [
+   -42390616.59856951
+  ],
+  "elbo_dips": 0,
+  "seconds": 31.646589667070657,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.799443446979204,
+   "n_classes": 18,
+   "density_per_m2": 130.05911890268808,
+   "surface_variation": 0.07955386223622875,
+   "z_range": 124.04999732971191,
+   "bbox_area_m2": 240099.85046388465,
+   "n_raw": 31227175
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1420155.9589294358,
+   -1417589.9118295785,
+   -1416347.8434033196,
+   -1415535.4697790951,
+   -1414902.9299235982,
+   -1414616.114882975
+  ],
+  "elbo_full_final": -42390616.59856951
+ },
+ {
+  "tile": "14_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/14_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.7634509714790825,
+   -3.276021203242767,
+   19.151974233140816
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.2772596790474005,
+  "elbo_tail": [
+   -42422079.56432799
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.929978874977678,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.799443446979204,
+   "n_classes": 18,
+   "density_per_m2": 130.05911890268808,
+   "surface_variation": 0.07955386223622875,
+   "z_range": 124.04999732971191,
+   "bbox_area_m2": 240099.85046388465,
+   "n_raw": 31227175
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1426014.335282537,
+   -1421319.579029594,
+   -1418325.5486103478,
+   -1416775.5845520836,
+   -1415893.5085253823,
+   -1415539.2681728352
+  ],
+  "elbo_full_final": -42422079.56432799
+ },
+ {
+  "tile": "14_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/14_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.7634509714790825,
+   -3.276021203242767,
+   19.151974233140816
+  ],
+  "khat_count": 20,
+  "khat_entropy": 15.102430897029592,
+  "elbo_tail": [
+   -40303378.49173917
+  ],
+  "elbo_dips": 0,
+  "seconds": 31.58955558296293,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.799443446979204,
+   "n_classes": 18,
+   "density_per_m2": 130.05911890268808,
+   "surface_variation": 0.07955386223622875,
+   "z_range": 124.04999732971191,
+   "bbox_area_m2": 240099.85046388465,
+   "n_raw": 31227175
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1374251.5429459035,
+   -1366481.1191406178,
+   -1361578.7216976096,
+   -1357701.0670737692,
+   -1354421.223412131,
+   -1352933.3887197631
+  ],
+  "elbo_full_final": -40303378.49173917
+ },
+ {
+  "tile": "14_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/14_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.7634509714790825,
+   -3.276021203242767,
+   19.151974233140816
+  ],
+  "khat_count": 20,
+  "khat_entropy": 16.47489045497209,
+  "elbo_tail": [
+   -40171426.77006583
+  ],
+  "elbo_dips": 0,
+  "seconds": 37.91710825031623,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.799443446979204,
+   "n_classes": 18,
+   "density_per_m2": 130.05911890268808,
+   "surface_variation": 0.07955386223622875,
+   "z_range": 124.04999732971191,
+   "bbox_area_m2": 240099.85046388465,
+   "n_raw": 31227175
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1372171.0724800306,
+   -1361847.5423565693,
+   -1355550.1672498537,
+   -1351271.556252292,
+   -1348257.235684047,
+   -1346999.913544871
+  ],
+  "elbo_full_final": -40171426.77006583
+ },
+ {
+  "tile": "14_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/14_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.7634509714790825,
+   -3.276021203242767,
+   19.151974233140816
+  ],
+  "khat_count": 64,
+  "khat_entropy": 53.41000887768381,
+  "elbo_tail": [
+   -38553225.30641552
+  ],
+  "elbo_dips": 0,
+  "seconds": 26.645952249877155,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.799443446979204,
+   "n_classes": 18,
+   "density_per_m2": 130.05911890268808,
+   "surface_variation": 0.07955386223622875,
+   "z_range": 124.04999732971191,
+   "bbox_area_m2": 240099.85046388465,
+   "n_raw": 31227175
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1335598.4346052436,
+   -1326471.145548578,
+   -1321449.3746196495,
+   -1318173.643733148,
+   -1315809.7580194206,
+   -1314829.1921418072
+  ],
+  "elbo_full_final": -38553225.30641552
+ },
+ {
+  "tile": "14_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/14_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.7634509714790825,
+   -3.276021203242767,
+   19.151974233140816
+  ],
+  "khat_count": 64,
+  "khat_entropy": 51.90510124386036,
+  "elbo_tail": [
+   -38514605.07392615
+  ],
+  "elbo_dips": 0,
+  "seconds": 35.41457970812917,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.799443446979204,
+   "n_classes": 18,
+   "density_per_m2": 130.05911890268808,
+   "surface_variation": 0.07955386223622875,
+   "z_range": 124.04999732971191,
+   "bbox_area_m2": 240099.85046388465,
+   "n_raw": 31227175
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1334719.5118114122,
+   -1325566.755272511,
+   -1320191.6159724146,
+   -1316251.1579136576,
+   -1313231.3615889049,
+   -1311910.1066843772
+  ],
+  "elbo_full_final": -38514605.07392615
+ },
+ {
+  "tile": "15_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/15_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.2631937796746067,
+   1.0103610896541022,
+   -12.530086652607814
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.836496453921865,
+  "elbo_tail": [
+   -43159580.60115877
+  ],
+  "elbo_dips": 0,
+  "seconds": 37.89763895794749,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8054747415288126,
+   "n_classes": 18,
+   "density_per_m2": 114.32755309849922,
+   "surface_variation": 0.061654835307696415,
+   "z_range": 121.21597290039062,
+   "bbox_area_m2": 240099.76821904304,
+   "n_raw": 27450019
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1454491.694417767,
+   -1447026.2335244261,
+   -1443488.047552879,
+   -1441683.9650258736,
+   -1440512.6774669816,
+   -1440025.5700244764
+  ],
+  "elbo_full_final": -43159580.60115877
+ },
+ {
+  "tile": "15_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/15_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.2631937796746067,
+   1.0103610896541022,
+   -12.530086652607814
+  ],
+  "khat_count": 6,
+  "khat_entropy": 5.136470499275955,
+  "elbo_tail": [
+   -42813993.16275067
+  ],
+  "elbo_dips": 0,
+  "seconds": 32.25137216737494,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8054747415288126,
+   "n_classes": 18,
+   "density_per_m2": 114.32755309849922,
+   "surface_variation": 0.061654835307696415,
+   "z_range": 121.21597290039062,
+   "bbox_area_m2": 240099.76821904304,
+   "n_raw": 27450019
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1445935.2864043647,
+   -1439396.0619319503,
+   -1435679.6188085328,
+   -1432918.0958464136,
+   -1430753.6326858867,
+   -1429816.0184448252
+  ],
+  "elbo_full_final": -42813993.16275067
+ },
+ {
+  "tile": "15_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/15_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.2631937796746067,
+   1.0103610896541022,
+   -12.530086652607814
+  ],
+  "khat_count": 19,
+  "khat_entropy": 13.54747041229244,
+  "elbo_tail": [
+   -40450641.04376423
+  ],
+  "elbo_dips": 0,
+  "seconds": 28.051249583251774,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8054747415288126,
+   "n_classes": 18,
+   "density_per_m2": 114.32755309849922,
+   "surface_variation": 0.061654835307696415,
+   "z_range": 121.21597290039062,
+   "bbox_area_m2": 240099.76821904304,
+   "n_raw": 27450019
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1382502.096556683,
+   -1372189.5257326372,
+   -1366304.454844117,
+   -1362151.6972692376,
+   -1358958.7459367444,
+   -1357534.0336512912
+  ],
+  "elbo_full_final": -40450641.04376423
+ },
+ {
+  "tile": "15_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/15_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.2631937796746067,
+   1.0103610896541022,
+   -12.530086652607814
+  ],
+  "khat_count": 21,
+  "khat_entropy": 15.25413612182856,
+  "elbo_tail": [
+   -40293209.43133276
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.469038208015263,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8054747415288126,
+   "n_classes": 18,
+   "density_per_m2": 114.32755309849922,
+   "surface_variation": 0.061654835307696415,
+   "z_range": 121.21597290039062,
+   "bbox_area_m2": 240099.76821904304,
+   "n_raw": 27450019
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1375493.9787101587,
+   -1364113.5371997694,
+   -1358645.3760824597,
+   -1355419.1539053698,
+   -1353307.5890634265,
+   -1352504.5919163337
+  ],
+  "elbo_full_final": -40293209.43133276
+ },
+ {
+  "tile": "15_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/15_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.2631937796746067,
+   1.0103610896541022,
+   -12.530086652607814
+  ],
+  "khat_count": 64,
+  "khat_entropy": 52.131623030635,
+  "elbo_tail": [
+   -38425044.52611576
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.501195750199258,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8054747415288126,
+   "n_classes": 18,
+   "density_per_m2": 114.32755309849922,
+   "surface_variation": 0.061654835307696415,
+   "z_range": 121.21597290039062,
+   "bbox_area_m2": 240099.76821904304,
+   "n_raw": 27450019
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1333029.5399806674,
+   -1322896.0569450574,
+   -1318562.9122810871,
+   -1316108.5437596398,
+   -1314427.8167473597,
+   -1313727.504218366
+  ],
+  "elbo_full_final": -38425044.52611576
+ },
+ {
+  "tile": "15_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/15_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   1.2631937796746067,
+   1.0103610896541022,
+   -12.530086652607814
+  ],
+  "khat_count": 64,
+  "khat_entropy": 52.96310492438386,
+  "elbo_tail": [
+   -38564521.42568727
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.504813083913177,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8054747415288126,
+   "n_classes": 18,
+   "density_per_m2": 114.32755309849922,
+   "surface_variation": 0.061654835307696415,
+   "z_range": 121.21597290039062,
+   "bbox_area_m2": 240099.76821904304,
+   "n_raw": 27450019
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1335901.7964326052,
+   -1327250.875429867,
+   -1323233.5162221435,
+   -1320821.7568522152,
+   -1319254.2472598837,
+   -1318647.930851822
+  ],
+  "elbo_full_final": -38564521.42568727
+ },
+ {
+  "tile": "16_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/16_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.9986221218572195,
+   -3.206172265102392,
+   17.234116932901756
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.3211158212006286,
+  "elbo_tail": [
+   -43118779.27138976
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.53644866636023,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8237638537228529,
+   "n_classes": 18,
+   "density_per_m2": 126.05613896272568,
+   "surface_variation": 0.07465323342668757,
+   "z_range": 91.35657501220703,
+   "bbox_area_m2": 240099.8654174991,
+   "n_raw": 30266062
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1447295.1587516707,
+   -1444624.5623242138,
+   -1442806.529975878,
+   -1441278.6919203522,
+   -1439904.8723103572,
+   -1439217.0025590714
+  ],
+  "elbo_full_final": -43118779.27138976
+ },
+ {
+  "tile": "16_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/16_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.9986221218572195,
+   -3.206172265102392,
+   17.234116932901756
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.2533100809026188,
+  "elbo_tail": [
+   -43484758.76051699
+  ],
+  "elbo_dips": 0,
+  "seconds": 16.28783758310601,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8237638537228529,
+   "n_classes": 18,
+   "density_per_m2": 126.05613896272568,
+   "surface_variation": 0.07465323342668757,
+   "z_range": 91.35657501220703,
+   "bbox_area_m2": 240099.8654174991,
+   "n_raw": 30266062
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1455131.9623184593,
+   -1453218.4273665946,
+   -1452258.6654098083,
+   -1451681.280616203,
+   -1451288.0723484394,
+   -1451120.2495946244
+  ],
+  "elbo_full_final": -43484758.76051699
+ },
+ {
+  "tile": "16_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/16_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.9986221218572195,
+   -3.206172265102392,
+   17.234116932901756
+  ],
+  "khat_count": 21,
+  "khat_entropy": 15.104732292406965,
+  "elbo_tail": [
+   -41058272.27685176
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.18755912501365,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8237638537228529,
+   "n_classes": 18,
+   "density_per_m2": 126.05613896272568,
+   "surface_variation": 0.07465323342668757,
+   "z_range": 91.35657501220703,
+   "bbox_area_m2": 240099.8654174991,
+   "n_raw": 30266062
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1402255.2044761532,
+   -1393359.486547097,
+   -1388593.6938123903,
+   -1385634.9348923026,
+   -1383729.5938986829,
+   -1382876.644866084
+  ],
+  "elbo_full_final": -41058272.27685176
+ },
+ {
+  "tile": "16_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/16_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.9986221218572195,
+   -3.206172265102392,
+   17.234116932901756
+  ],
+  "khat_count": 20,
+  "khat_entropy": 14.895733146523801,
+  "elbo_tail": [
+   -41254311.56303431
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.617289999965578,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8237638537228529,
+   "n_classes": 18,
+   "density_per_m2": 126.05613896272568,
+   "surface_variation": 0.07465323342668757,
+   "z_range": 91.35657501220703,
+   "bbox_area_m2": 240099.8654174991,
+   "n_raw": 30266062
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1400852.989047175,
+   -1394595.5951847343,
+   -1390545.8620348712,
+   -1387847.4526042044,
+   -1385638.5044219815,
+   -1384758.6694348215
+  ],
+  "elbo_full_final": -41254311.56303431
+ },
+ {
+  "tile": "16_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/16_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.9986221218572195,
+   -3.206172265102392,
+   17.234116932901756
+  ],
+  "khat_count": 64,
+  "khat_entropy": 55.16087329775784,
+  "elbo_tail": [
+   -39193830.78622425
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.602090499829501,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8237638537228529,
+   "n_classes": 18,
+   "density_per_m2": 126.05613896272568,
+   "surface_variation": 0.07465323342668757,
+   "z_range": 91.35657501220703,
+   "bbox_area_m2": 240099.8654174991,
+   "n_raw": 30266062
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1363449.1776800016,
+   -1357176.2854355054,
+   -1353883.5203314044,
+   -1351557.7220955964,
+   -1349897.0974978518,
+   -1349248.7766060953
+  ],
+  "elbo_full_final": -39193830.78622425
+ },
+ {
+  "tile": "16_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/16_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.9986221218572195,
+   -3.206172265102392,
+   17.234116932901756
+  ],
+  "khat_count": 64,
+  "khat_entropy": 55.632620685609965,
+  "elbo_tail": [
+   -39110565.99399563
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.684716290794313,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8237638537228529,
+   "n_classes": 18,
+   "density_per_m2": 126.05613896272568,
+   "surface_variation": 0.07465323342668757,
+   "z_range": 91.35657501220703,
+   "bbox_area_m2": 240099.8654174991,
+   "n_raw": 30266062
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1362862.9548340926,
+   -1352444.7585288181,
+   -1347226.8930798376,
+   -1344138.6283058666,
+   -1342200.0925165277,
+   -1341525.6809079226
+  ],
+  "elbo_full_final": -39110565.99399563
+ },
+ {
+  "tile": "17_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/17_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -3.4584849946437166,
+   2.254922997273525,
+   4.4244733408306764
+  ],
+  "khat_count": 6,
+  "khat_entropy": 3.6368618315581935,
+  "elbo_tail": [
+   -36454907.405719735
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.88521295785904,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8630628813870906,
+   "n_classes": 18,
+   "density_per_m2": 110.0861028420238,
+   "surface_variation": 0.06443541548907239,
+   "z_range": 45.12213930487633,
+   "bbox_area_m2": 240099.97009277437,
+   "n_raw": 26431670
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1266672.745911099,
+   -1253386.3279652882,
+   -1244273.4197029814,
+   -1236697.1720673398,
+   -1229758.4978215909,
+   -1226304.5599061255
+  ],
+  "elbo_full_final": -36454907.405719735
+ },
+ {
+  "tile": "17_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/17_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -3.4584849946437166,
+   2.254922997273525,
+   4.4244733408306764
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.529719071422853,
+  "elbo_tail": [
+   -34419407.16495993
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.467362374998629,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8630628813870906,
+   "n_classes": 18,
+   "density_per_m2": 110.0861028420238,
+   "surface_variation": 0.06443541548907239,
+   "z_range": 45.12213930487633,
+   "bbox_area_m2": 240099.97009277437,
+   "n_raw": 26431670
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1253769.7518253797,
+   -1232063.0817178327,
+   -1215059.3137791236,
+   -1200063.2518695535,
+   -1189143.126525595,
+   -1185886.1536084597
+  ],
+  "elbo_full_final": -34419407.16495993
+ },
+ {
+  "tile": "17_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/17_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -3.4584849946437166,
+   2.254922997273525,
+   4.4244733408306764
+  ],
+  "khat_count": 24,
+  "khat_entropy": 12.503766941160944,
+  "elbo_tail": [
+   -32942407.700161513
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.473568875342607,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8630628813870906,
+   "n_classes": 18,
+   "density_per_m2": 110.0861028420238,
+   "surface_variation": 0.06443541548907239,
+   "z_range": 45.12213930487633,
+   "bbox_area_m2": 240099.97009277437,
+   "n_raw": 26431670
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1205500.2352433319,
+   -1193964.1073314403,
+   -1203375.169098567,
+   -1231004.8080181621,
+   -1274180.7107068412,
+   -1300947.418212137
+  ],
+  "elbo_full_final": -32942407.700161513
+ },
+ {
+  "tile": "17_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/17_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -3.4584849946437166,
+   2.254922997273525,
+   4.4244733408306764
+  ],
+  "khat_count": 25,
+  "khat_entropy": 9.913485502062281,
+  "elbo_tail": [
+   -32561318.00690965
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.44797454122454,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8630628813870906,
+   "n_classes": 18,
+   "density_per_m2": 110.0861028420238,
+   "surface_variation": 0.06443541548907239,
+   "z_range": 45.12213930487633,
+   "bbox_area_m2": 240099.97009277437,
+   "n_raw": 26431670
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1213774.0670639477,
+   -1207732.9766416568,
+   -1238979.0752034464,
+   -1301565.8405207545,
+   -1378943.1692883703,
+   -1419494.6213070566
+  ],
+  "elbo_full_final": -32561318.00690965
+ },
+ {
+  "tile": "17_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/17_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -3.4584849946437166,
+   2.254922997273525,
+   4.4244733408306764
+  ],
+  "khat_count": 64,
+  "khat_entropy": 34.42682253433756,
+  "elbo_tail": [
+   -32397660.628299613
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.162114958278835,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8630628813870906,
+   "n_classes": 18,
+   "density_per_m2": 110.0861028420238,
+   "surface_variation": 0.06443541548907239,
+   "z_range": 45.12213930487633,
+   "bbox_area_m2": 240099.97009277437,
+   "n_raw": 26431670
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1223376.824670088,
+   -1285834.0951696537,
+   -1371957.8651496782,
+   -1453969.7124520582,
+   -1521478.9478165607,
+   -1549964.776286571
+  ],
+  "elbo_full_final": -32397660.628299613
+ },
+ {
+  "tile": "17_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/17_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -3.4584849946437166,
+   2.254922997273525,
+   4.4244733408306764
+  ],
+  "khat_count": 64,
+  "khat_entropy": 33.82149468341634,
+  "elbo_tail": [
+   -32418369.390888557
+  ],
+  "elbo_dips": 0,
+  "seconds": 22.814133165869862,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8630628813870906,
+   "n_classes": 18,
+   "density_per_m2": 110.0861028420238,
+   "surface_variation": 0.06443541548907239,
+   "z_range": 45.12213930487633,
+   "bbox_area_m2": 240099.97009277437,
+   "n_raw": 26431670
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1206749.5499521426,
+   -1216117.4332256538,
+   -1252124.5343332016,
+   -1307078.3617491,
+   -1370439.9145637972,
+   -1403840.9020562095
+  ],
+  "elbo_full_final": -32418369.390888557
+ },
+ {
+  "tile": "18_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/18_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.765433725970343,
+   5.806373750786715,
+   18.625861875190132
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.1418149157005817,
+  "elbo_tail": [
+   -41231759.81176736
+  ],
+  "elbo_dips": 0,
+  "seconds": 32.07503212476149,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7486329858041976,
+   "n_classes": 18,
+   "density_per_m2": 127.8325704281805,
+   "surface_variation": 0.0766648590984829,
+   "z_range": 134.93910598754883,
+   "bbox_area_m2": 240099.85794069478,
+   "n_raw": 30692582
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1386952.4234929006,
+   -1381799.2695326807,
+   -1379470.8855685652,
+   -1378057.3058502097,
+   -1377091.2586498582,
+   -1376694.0681221646
+  ],
+  "elbo_full_final": -41231759.81176736
+ },
+ {
+  "tile": "18_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/18_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.765433725970343,
+   5.806373750786715,
+   18.625861875190132
+  ],
+  "khat_count": 3,
+  "khat_entropy": 2.1929925951934637,
+  "elbo_tail": [
+   -42188908.26313395
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.109126416034997,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7486329858041976,
+   "n_classes": 18,
+   "density_per_m2": 127.8325704281805,
+   "surface_variation": 0.0766648590984829,
+   "z_range": 134.93910598754883,
+   "bbox_area_m2": 240099.85794069478,
+   "n_raw": 30692582
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1413920.5069958807,
+   -1411394.0867922015,
+   -1409623.5045263164,
+   -1408545.6192224147,
+   -1407759.2374762972,
+   -1407415.5333220076
+  ],
+  "elbo_full_final": -42188908.26313395
+ },
+ {
+  "tile": "18_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/18_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.765433725970343,
+   5.806373750786715,
+   18.625861875190132
+  ],
+  "khat_count": 21,
+  "khat_entropy": 16.446255450991337,
+  "elbo_tail": [
+   -39348472.90178298
+  ],
+  "elbo_dips": 0,
+  "seconds": 32.19115975033492,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7486329858041976,
+   "n_classes": 18,
+   "density_per_m2": 127.8325704281805,
+   "surface_variation": 0.0766648590984829,
+   "z_range": 134.93910598754883,
+   "bbox_area_m2": 240099.85794069478,
+   "n_raw": 30692582
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1344419.9998401818,
+   -1336107.8437857393,
+   -1330817.1050027173,
+   -1327076.9616909854,
+   -1324109.7029719793,
+   -1322743.8157523815
+  ],
+  "elbo_full_final": -39348472.90178298
+ },
+ {
+  "tile": "18_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/18_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.765433725970343,
+   5.806373750786715,
+   18.625861875190132
+  ],
+  "khat_count": 21,
+  "khat_entropy": 16.334545782482508,
+  "elbo_tail": [
+   -39463909.666218884
+  ],
+  "elbo_dips": 0,
+  "seconds": 35.653367708902806,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7486329858041976,
+   "n_classes": 18,
+   "density_per_m2": 127.8325704281805,
+   "surface_variation": 0.0766648590984829,
+   "z_range": 134.93910598754883,
+   "bbox_area_m2": 240099.85794069478,
+   "n_raw": 30692582
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1347206.3906094185,
+   -1339509.9074665047,
+   -1334629.5813114396,
+   -1330737.452053457,
+   -1327649.855227922,
+   -1326275.3356728521
+  ],
+  "elbo_full_final": -39463909.666218884
+ },
+ {
+  "tile": "18_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/18_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.765433725970343,
+   5.806373750786715,
+   18.625861875190132
+  ],
+  "khat_count": 64,
+  "khat_entropy": 54.84895423443845,
+  "elbo_tail": [
+   -37800047.117214076
+  ],
+  "elbo_dips": 0,
+  "seconds": 19.08157587517053,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7486329858041976,
+   "n_classes": 18,
+   "density_per_m2": 127.8325704281805,
+   "surface_variation": 0.0766648590984829,
+   "z_range": 134.93910598754883,
+   "bbox_area_m2": 240099.85794069478,
+   "n_raw": 30692582
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1311102.2314885883,
+   -1303704.9839256082,
+   -1299651.0365264472,
+   -1297053.427566973,
+   -1295306.9989841848,
+   -1294618.7395309622
+  ],
+  "elbo_full_final": -37800047.117214076
+ },
+ {
+  "tile": "18_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/18_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -4.765433725970343,
+   5.806373750786715,
+   18.625861875190132
+  ],
+  "khat_count": 64,
+  "khat_entropy": 55.006374347575104,
+  "elbo_tail": [
+   -37826528.13017121
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.959641458000988,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7486329858041976,
+   "n_classes": 18,
+   "density_per_m2": 127.8325704281805,
+   "surface_variation": 0.0766648590984829,
+   "z_range": 134.93910598754883,
+   "bbox_area_m2": 240099.85794069478,
+   "n_raw": 30692582
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1308549.4077400563,
+   -1301662.1172654713,
+   -1298498.7253227434,
+   -1296544.2981708664,
+   -1295087.0977962478,
+   -1294430.1490218514
+  ],
+  "elbo_full_final": -37826528.13017121
+ },
+ {
+  "tile": "19_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/19_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.28153906006955715,
+   -2.7384050086311778,
+   5.86304447828731
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.315772388173924,
+  "elbo_tail": [
+   -38257378.52024913
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.471572374925017,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8582887606264327,
+   "n_classes": 18,
+   "density_per_m2": 104.0029408951585,
+   "surface_variation": 0.05755708454323729,
+   "z_range": 33.86806654930115,
+   "bbox_area_m2": 240099.90280152205,
+   "n_raw": 24971096
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1290655.7816741848,
+   -1286965.3172256825,
+   -1286066.6434738354,
+   -1286346.490174685,
+   -1287198.070221049,
+   -1287696.265488822
+  ],
+  "elbo_full_final": -38257378.52024913
+ },
+ {
+  "tile": "19_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/19_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.28153906006955715,
+   -2.7384050086311778,
+   5.86304447828731
+  ],
+  "khat_count": 6,
+  "khat_entropy": 4.045561058040258,
+  "elbo_tail": [
+   -38327930.46986219
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.467635625042021,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8582887606264327,
+   "n_classes": 18,
+   "density_per_m2": 104.0029408951585,
+   "surface_variation": 0.05755708454323729,
+   "z_range": 33.86806654930115,
+   "bbox_area_m2": 240099.90280152205,
+   "n_raw": 24971096
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1312834.8131971858,
+   -1302104.5309776065,
+   -1291561.6873514478,
+   -1287817.7791243757,
+   -1285944.3670707843,
+   -1285219.2869531678
+  ],
+  "elbo_full_final": -38327930.46986219
+ },
+ {
+  "tile": "19_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/19_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.28153906006955715,
+   -2.7384050086311778,
+   5.86304447828731
+  ],
+  "khat_count": 19,
+  "khat_entropy": 13.95316125063778,
+  "elbo_tail": [
+   -36284649.57151813
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.938216000329703,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8582887606264327,
+   "n_classes": 18,
+   "density_per_m2": 104.0029408951585,
+   "surface_variation": 0.05755708454323729,
+   "z_range": 33.86806654930115,
+   "bbox_area_m2": 240099.90280152205,
+   "n_raw": 24971096
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1257000.9484259426,
+   -1250779.94777123,
+   -1246596.3175406074,
+   -1243761.6316649825,
+   -1242315.1681151916,
+   -1241582.4191537783
+  ],
+  "elbo_full_final": -36284649.57151813
+ },
+ {
+  "tile": "19_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/19_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.28153906006955715,
+   -2.7384050086311778,
+   5.86304447828731
+  ],
+  "khat_count": 25,
+  "khat_entropy": 17.391701243659142,
+  "elbo_tail": [
+   -36157302.201274395
+  ],
+  "elbo_dips": 0,
+  "seconds": 16.1470648329705,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8582887606264327,
+   "n_classes": 18,
+   "density_per_m2": 104.0029408951585,
+   "surface_variation": 0.05755708454323729,
+   "z_range": 33.86806654930115,
+   "bbox_area_m2": 240099.90280152205,
+   "n_raw": 24971096
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1260211.8338706726,
+   -1260353.2807755312,
+   -1260054.7017671715,
+   -1259522.0858475473,
+   -1258642.4004013045,
+   -1258123.6950178267
+  ],
+  "elbo_full_final": -36157302.201274395
+ },
+ {
+  "tile": "19_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/19_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.28153906006955715,
+   -2.7384050086311778,
+   5.86304447828731
+  ],
+  "khat_count": 64,
+  "khat_entropy": 47.71748185113302,
+  "elbo_tail": [
+   -34396314.91188857
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.798966458067298,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8582887606264327,
+   "n_classes": 18,
+   "density_per_m2": 104.0029408951585,
+   "surface_variation": 0.05755708454323729,
+   "z_range": 33.86806654930115,
+   "bbox_area_m2": 240099.90280152205,
+   "n_raw": 24971096
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1241728.0968284498,
+   -1250698.3585590876,
+   -1261867.7271708013,
+   -1272669.7301801157,
+   -1282863.5745433257,
+   -1287978.3132823305
+  ],
+  "elbo_full_final": -34396314.91188857
+ },
+ {
+  "tile": "19_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/19_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.28153906006955715,
+   -2.7384050086311778,
+   5.86304447828731
+  ],
+  "khat_count": 64,
+  "khat_entropy": 47.8095296077065,
+  "elbo_tail": [
+   -34328165.83030084
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.43372662505135,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8582887606264327,
+   "n_classes": 18,
+   "density_per_m2": 104.0029408951585,
+   "surface_variation": 0.05755708454323729,
+   "z_range": 33.86806654930115,
+   "bbox_area_m2": 240099.90280152205,
+   "n_raw": 24971096
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1246961.6157169621,
+   -1263215.784940384,
+   -1276894.5333500714,
+   -1286386.4097530656,
+   -1292756.8454259166,
+   -1295316.5991692175
+  ],
+  "elbo_full_final": -34328165.83030084
+ },
+ {
+  "tile": "20_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/20_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.8140285683149107,
+   2.761503693281911,
+   5.93674635109751
+  ],
+  "khat_count": 5,
+  "khat_entropy": 2.920772155976847,
+  "elbo_tail": [
+   -39617351.60223651
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.491973333060741,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8390159831778514,
+   "n_classes": 18,
+   "density_per_m2": 131.8299246133598,
+   "surface_variation": 0.07795906077926833,
+   "z_range": 59.32149076461792,
+   "bbox_area_m2": 240099.94766235584,
+   "n_raw": 31652358
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1332835.4742066257,
+   -1327975.7039040006,
+   -1325847.2771475993,
+   -1324552.591010158,
+   -1323458.5743477673,
+   -1322908.5327357296
+  ],
+  "elbo_full_final": -39617351.60223651
+ },
+ {
+  "tile": "20_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/20_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.8140285683149107,
+   2.761503693281911,
+   5.93674635109751
+  ],
+  "khat_count": 5,
+  "khat_entropy": 2.5251488356337637,
+  "elbo_tail": [
+   -39956886.3261412
+  ],
+  "elbo_dips": 0,
+  "seconds": 11.311233874876052,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8390159831778514,
+   "n_classes": 18,
+   "density_per_m2": 131.8299246133598,
+   "surface_variation": 0.07795906077926833,
+   "z_range": 59.32149076461792,
+   "bbox_area_m2": 240099.94766235584,
+   "n_raw": 31652358
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1346926.8174675186,
+   -1340392.8602388708,
+   -1337741.8840943687,
+   -1336049.9552919907,
+   -1334713.9260330575,
+   -1334078.8073547434
+  ],
+  "elbo_full_final": -39956886.3261412
+ },
+ {
+  "tile": "20_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/20_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.8140285683149107,
+   2.761503693281911,
+   5.93674635109751
+  ],
+  "khat_count": 25,
+  "khat_entropy": 15.905134410647031,
+  "elbo_tail": [
+   -37088641.98001813
+  ],
+  "elbo_dips": 0,
+  "seconds": 11.32020974997431,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8390159831778514,
+   "n_classes": 18,
+   "density_per_m2": 131.8299246133598,
+   "surface_variation": 0.07795906077926833,
+   "z_range": 59.32149076461792,
+   "bbox_area_m2": 240099.94766235584,
+   "n_raw": 31652358
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1296090.9372035328,
+   -1283900.6737193665,
+   -1280979.3002891892,
+   -1282342.3847754688,
+   -1285325.8976906738,
+   -1287138.236585109
+  ],
+  "elbo_full_final": -37088641.98001813
+ },
+ {
+  "tile": "20_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/20_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.8140285683149107,
+   2.761503693281911,
+   5.93674635109751
+  ],
+  "khat_count": 20,
+  "khat_entropy": 14.627992042866655,
+  "elbo_tail": [
+   -37518255.70085985
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.560594707727432,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8390159831778514,
+   "n_classes": 18,
+   "density_per_m2": 131.8299246133598,
+   "surface_variation": 0.07795906077926833,
+   "z_range": 59.32149076461792,
+   "bbox_area_m2": 240099.94766235584,
+   "n_raw": 31652358
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1310068.1982783691,
+   -1300381.6831750672,
+   -1294791.1993418576,
+   -1292486.2198243414,
+   -1292378.76480443,
+   -1293068.428215958
+  ],
+  "elbo_full_final": -37518255.70085985
+ },
+ {
+  "tile": "20_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/20_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.8140285683149107,
+   2.761503693281911,
+   5.93674635109751
+  ],
+  "khat_count": 64,
+  "khat_entropy": 48.90407520806206,
+  "elbo_tail": [
+   -35925591.88179191
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.562272750306875,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8390159831778514,
+   "n_classes": 18,
+   "density_per_m2": 131.8299246133598,
+   "surface_variation": 0.07795906077926833,
+   "z_range": 59.32149076461792,
+   "bbox_area_m2": 240099.94766235584,
+   "n_raw": 31652358
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1291051.0726104565,
+   -1293926.478696858,
+   -1306590.3844693666,
+   -1324441.8323551582,
+   -1342993.8470767988,
+   -1352110.9635107575
+  ],
+  "elbo_full_final": -35925591.88179191
+ },
+ {
+  "tile": "20_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/20_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -2.8140285683149107,
+   2.761503693281911,
+   5.93674635109751
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.54822521656996,
+  "elbo_tail": [
+   -36115871.93581615
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.503312834072858,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8390159831778514,
+   "n_classes": 18,
+   "density_per_m2": 131.8299246133598,
+   "surface_variation": 0.07795906077926833,
+   "z_range": 59.32149076461792,
+   "bbox_area_m2": 240099.94766235584,
+   "n_raw": 31652358
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1284491.618698736,
+   -1280550.5520168063,
+   -1286537.9536612388,
+   -1295385.5423596075,
+   -1304337.3677126225,
+   -1308841.3380239438
+  ],
+  "elbo_full_final": -36115871.93581615
+ },
+ {
+  "tile": "21_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/21_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.011860694895429406,
+   0.10804378633043539,
+   0.5542513951745778
+  ],
+  "khat_count": 4,
+  "khat_entropy": 2.903343653426707,
+  "elbo_tail": [
+   -39286286.83674756
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.211098082829267,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8560556463461315,
+   "n_classes": 18,
+   "density_per_m2": 102.84851021929718,
+   "surface_variation": 0.05642678859978199,
+   "z_range": 61.79581069946289,
+   "bbox_area_m2": 240099.88037110865,
+   "n_raw": 24693915
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1342938.7353985514,
+   -1334087.7926015712,
+   -1327644.5412809195,
+   -1322390.6427379628,
+   -1318214.1163505379,
+   -1316475.6291357884
+  ],
+  "elbo_full_final": -39286286.83674756
+ },
+ {
+  "tile": "21_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/21_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.011860694895429406,
+   0.10804378633043539,
+   0.5542513951745778
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.823824041498943,
+  "elbo_tail": [
+   -38663062.44120295
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.006471375003457,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8560556463461315,
+   "n_classes": 18,
+   "density_per_m2": 102.84851021929718,
+   "surface_variation": 0.05642678859978199,
+   "z_range": 61.79581069946289,
+   "bbox_area_m2": 240099.88037110865,
+   "n_raw": 24693915
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1328907.9208035567,
+   -1316686.44327722,
+   -1308371.1220426345,
+   -1302791.5892211387,
+   -1299411.3769985521,
+   -1298216.0523235034
+  ],
+  "elbo_full_final": -38663062.44120295
+ },
+ {
+  "tile": "21_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/21_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.011860694895429406,
+   0.10804378633043539,
+   0.5542513951745778
+  ],
+  "khat_count": 22,
+  "khat_entropy": 16.16785097578708,
+  "elbo_tail": [
+   -36454593.49537388
+  ],
+  "elbo_dips": 0,
+  "seconds": 17.124493540730327,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8560556463461315,
+   "n_classes": 18,
+   "density_per_m2": 102.84851021929718,
+   "surface_variation": 0.05642678859978199,
+   "z_range": 61.79581069946289,
+   "bbox_area_m2": 240099.88037110865,
+   "n_raw": 24693915
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1305582.5216236846,
+   -1302759.3605846465,
+   -1303708.6293777092,
+   -1304124.4141939224,
+   -1302366.1049081767,
+   -1300984.1450794165
+  ],
+  "elbo_full_final": -36454593.49537388
+ },
+ {
+  "tile": "21_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/21_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.011860694895429406,
+   0.10804378633043539,
+   0.5542513951745778
+  ],
+  "khat_count": 19,
+  "khat_entropy": 13.214788207618106,
+  "elbo_tail": [
+   -36543708.04925979
+  ],
+  "elbo_dips": 0,
+  "seconds": 39.46986758289859,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8560556463461315,
+   "n_classes": 18,
+   "density_per_m2": 102.84851021929718,
+   "surface_variation": 0.05642678859978199,
+   "z_range": 61.79581069946289,
+   "bbox_area_m2": 240099.88037110865,
+   "n_raw": 24693915
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1292341.9029414246,
+   -1277966.3420809363,
+   -1266982.8137454442,
+   -1258394.7380427707,
+   -1251960.9438580156,
+   -1249437.536779289
+  ],
+  "elbo_full_final": -36543708.04925979
+ },
+ {
+  "tile": "21_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/21_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.011860694895429406,
+   0.10804378633043539,
+   0.5542513951745778
+  ],
+  "khat_count": 64,
+  "khat_entropy": 46.57700953552889,
+  "elbo_tail": [
+   -34824262.126093924
+  ],
+  "elbo_dips": 0,
+  "seconds": 28.731553042307496,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8560556463461315,
+   "n_classes": 18,
+   "density_per_m2": 102.84851021929718,
+   "surface_variation": 0.05642678859978199,
+   "z_range": 61.79581069946289,
+   "bbox_area_m2": 240099.88037110865,
+   "n_raw": 24693915
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1280582.951797154,
+   -1292639.1956283604,
+   -1306712.8244305565,
+   -1320164.1187252777,
+   -1332176.132196477,
+   -1337570.5090228321
+  ],
+  "elbo_full_final": -34824262.126093924
+ },
+ {
+  "tile": "21_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/21_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.011860694895429406,
+   0.10804378633043539,
+   0.5542513951745778
+  ],
+  "khat_count": 64,
+  "khat_entropy": 44.76937519686312,
+  "elbo_tail": [
+   -34784883.01887112
+  ],
+  "elbo_dips": 0,
+  "seconds": 31.318530790973455,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8560556463461315,
+   "n_classes": 18,
+   "density_per_m2": 102.84851021929718,
+   "surface_variation": 0.05642678859978199,
+   "z_range": 61.79581069946289,
+   "bbox_area_m2": 240099.88037110865,
+   "n_raw": 24693915
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1272065.8157530073,
+   -1288443.318642277,
+   -1303736.9594544081,
+   -1315452.277919322,
+   -1324019.6313597856,
+   -1327513.1025197513
+  ],
+  "elbo_full_final": -34784883.01887112
+ },
+ {
+  "tile": "22_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/22_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.1232977064067085,
+   4.335316383986701,
+   4.556122717559989
+  ],
+  "khat_count": 5,
+  "khat_entropy": 2.9189092416144717,
+  "elbo_tail": [
+   -38218056.18112293
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.63848412502557,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8811787414170464,
+   "n_classes": 18,
+   "density_per_m2": 115.46648533832078,
+   "surface_variation": 0.06663455980395029,
+   "z_range": 52.46605432033539,
+   "bbox_area_m2": 240099.84298707312,
+   "n_raw": 27723485
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1301667.6954847823,
+   -1297446.3386590143,
+   -1293552.8362104164,
+   -1289032.4460714576,
+   -1283591.2622668648,
+   -1280516.918411867
+  ],
+  "elbo_full_final": -38218056.18112293
+ },
+ {
+  "tile": "22_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/22_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.1232977064067085,
+   4.335316383986701,
+   4.556122717559989
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.626162550669911,
+  "elbo_tail": [
+   -36735768.99843606
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.602287208195776,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8811787414170464,
+   "n_classes": 18,
+   "density_per_m2": 115.46648533832078,
+   "surface_variation": 0.06663455980395029,
+   "z_range": 52.46605432033539,
+   "bbox_area_m2": 240099.84298707312,
+   "n_raw": 27723485
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1306327.6890615816,
+   -1301991.928554098,
+   -1291426.1472792365,
+   -1283478.5050947608,
+   -1278188.441522526,
+   -1275977.7330337625
+  ],
+  "elbo_full_final": -36735768.99843606
+ },
+ {
+  "tile": "22_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/22_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.1232977064067085,
+   4.335316383986701,
+   4.556122717559989
+  ],
+  "khat_count": 25,
+  "khat_entropy": 13.705561324071361,
+  "elbo_tail": [
+   -35052781.44656661
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.451963209081441,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8811787414170464,
+   "n_classes": 18,
+   "density_per_m2": 115.46648533832078,
+   "surface_variation": 0.06663455980395029,
+   "z_range": 52.46605432033539,
+   "bbox_area_m2": 240099.84298707312,
+   "n_raw": 27723485
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1249617.052067582,
+   -1231238.3339998047,
+   -1226865.7880871443,
+   -1227839.3083233037,
+   -1229581.148858915,
+   -1230396.7230891786
+  ],
+  "elbo_full_final": -35052781.44656661
+ },
+ {
+  "tile": "22_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/22_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.1232977064067085,
+   4.335316383986701,
+   4.556122717559989
+  ],
+  "khat_count": 23,
+  "khat_entropy": 10.985206767816468,
+  "elbo_tail": [
+   -35274469.907878034
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.852718125097454,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8811787414170464,
+   "n_classes": 18,
+   "density_per_m2": 115.46648533832078,
+   "surface_variation": 0.06663455980395029,
+   "z_range": 52.46605432033539,
+   "bbox_area_m2": 240099.84298707312,
+   "n_raw": 27723485
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1258211.0853342086,
+   -1237836.246155701,
+   -1225086.7045714129,
+   -1220470.2010347866,
+   -1220690.8944804603,
+   -1221637.0659119068
+  ],
+  "elbo_full_final": -35274469.907878034
+ },
+ {
+  "tile": "22_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/22_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.1232977064067085,
+   4.335316383986701,
+   4.556122717559989
+  ],
+  "khat_count": 64,
+  "khat_entropy": 36.20278862495342,
+  "elbo_tail": [
+   -34030517.56558518
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.712783875409514,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8811787414170464,
+   "n_classes": 18,
+   "density_per_m2": 115.46648533832078,
+   "surface_variation": 0.06663455980395029,
+   "z_range": 52.46605432033539,
+   "bbox_area_m2": 240099.84298707312,
+   "n_raw": 27723485
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1241278.0763507069,
+   -1246884.0847589492,
+   -1256826.6423116701,
+   -1268197.277581565,
+   -1280075.2043511497,
+   -1286321.910835198
+  ],
+  "elbo_full_final": -34030517.56558518
+ },
+ {
+  "tile": "22_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/22_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.1232977064067085,
+   4.335316383986701,
+   4.556122717559989
+  ],
+  "khat_count": 64,
+  "khat_entropy": 40.43146635821327,
+  "elbo_tail": [
+   -34080165.144800186
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.433333500288427,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8811787414170464,
+   "n_classes": 18,
+   "density_per_m2": 115.46648533832078,
+   "surface_variation": 0.06663455980395029,
+   "z_range": 52.46605432033539,
+   "bbox_area_m2": 240099.84298707312,
+   "n_raw": 27723485
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1241532.9414659697,
+   -1236892.6952751116,
+   -1249550.1709133438,
+   -1271458.6021953188,
+   -1296128.0437016017,
+   -1308635.9997367626
+  ],
+  "elbo_full_final": -34080165.144800186
+ },
+ {
+  "tile": "23_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/23_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.4692815629510867,
+   -1.3527770748152297,
+   4.693543188347764
+  ],
+  "khat_count": 4,
+  "khat_entropy": 2.5404065402127123,
+  "elbo_tail": [
+   -39741953.35083282
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.413195167202502,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8849196844767027,
+   "n_classes": 18,
+   "density_per_m2": 106.98094792956209,
+   "surface_variation": 0.05964806899452482,
+   "z_range": 43.16197490692139,
+   "bbox_area_m2": 240099.87289430387,
+   "n_raw": 25686112
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1354406.3994176486,
+   -1345853.119379459,
+   -1339331.4423746208,
+   -1334383.203759289,
+   -1330515.9335931672,
+   -1328776.533659555
+  ],
+  "elbo_full_final": -39741953.35083282
+ },
+ {
+  "tile": "23_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/23_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.4692815629510867,
+   -1.3527770748152297,
+   4.693543188347764
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.3581064692792864,
+  "elbo_tail": [
+   -36204544.692805864
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.474167624954134,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8849196844767027,
+   "n_classes": 18,
+   "density_per_m2": 106.98094792956209,
+   "surface_variation": 0.05964806899452482,
+   "z_range": 43.16197490692139,
+   "bbox_area_m2": 240099.87289430387,
+   "n_raw": 25686112
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1287417.3959501027,
+   -1263121.982360049,
+   -1251450.6804429062,
+   -1246238.111402759,
+   -1246754.1513765214,
+   -1249248.495985981
+  ],
+  "elbo_full_final": -36204544.692805864
+ },
+ {
+  "tile": "23_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/23_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.4692815629510867,
+   -1.3527770748152297,
+   4.693543188347764
+  ],
+  "khat_count": 19,
+  "khat_entropy": 13.319147273650644,
+  "elbo_tail": [
+   -35511591.80034062
+  ],
+  "elbo_dips": 0,
+  "seconds": 15.001831832807511,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8849196844767027,
+   "n_classes": 18,
+   "density_per_m2": 106.98094792956209,
+   "surface_variation": 0.05964806899452482,
+   "z_range": 43.16197490692139,
+   "bbox_area_m2": 240099.87289430387,
+   "n_raw": 25686112
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1254654.4517971883,
+   -1246637.2397330077,
+   -1242761.8574886394,
+   -1241088.1371636605,
+   -1240626.2453571847,
+   -1240922.6675793652
+  ],
+  "elbo_full_final": -35511591.80034062
+ },
+ {
+  "tile": "23_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/23_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.4692815629510867,
+   -1.3527770748152297,
+   4.693543188347764
+  ],
+  "khat_count": 20,
+  "khat_entropy": 13.765041937922462,
+  "elbo_tail": [
+   -34532932.594706714
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.569560832809657,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8849196844767027,
+   "n_classes": 18,
+   "density_per_m2": 106.98094792956209,
+   "surface_variation": 0.05964806899452482,
+   "z_range": 43.16197490692139,
+   "bbox_area_m2": 240099.87289430387,
+   "n_raw": 25686112
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1265091.3017343874,
+   -1272898.300524029,
+   -1281792.2695199742,
+   -1291770.6984479015,
+   -1305440.6875479298,
+   -1313985.4086351914
+  ],
+  "elbo_full_final": -34532932.594706714
+ },
+ {
+  "tile": "23_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/23_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.4692815629510867,
+   -1.3527770748152297,
+   4.693543188347764
+  ],
+  "khat_count": 64,
+  "khat_entropy": 46.97608016623711,
+  "elbo_tail": [
+   -33194929.720317967
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.44410916697234,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8849196844767027,
+   "n_classes": 18,
+   "density_per_m2": 106.98094792956209,
+   "surface_variation": 0.05964806899452482,
+   "z_range": 43.16197490692139,
+   "bbox_area_m2": 240099.87289430387,
+   "n_raw": 25686112
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1254228.72587846,
+   -1317396.5966204936,
+   -1386765.1051866373,
+   -1440681.9514122817,
+   -1477354.9861011738,
+   -1490997.3525838673
+  ],
+  "elbo_full_final": -33194929.720317967
+ },
+ {
+  "tile": "23_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/23_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -1.4692815629510867,
+   -1.3527770748152297,
+   4.693543188347764
+  ],
+  "khat_count": 64,
+  "khat_entropy": 39.68335151917224,
+  "elbo_tail": [
+   -33115443.989937946
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.357240916229784,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.8849196844767027,
+   "n_classes": 18,
+   "density_per_m2": 106.98094792956209,
+   "surface_variation": 0.05964806899452482,
+   "z_range": 43.16197490692139,
+   "bbox_area_m2": 240099.87289430387,
+   "n_raw": 25686112
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1242154.5099570025,
+   -1281172.3231142268,
+   -1326113.3204092418,
+   -1363336.589434378,
+   -1393658.83509994,
+   -1407080.587443862
+  ],
+  "elbo_full_final": -33115443.989937946
+ },
+ {
+  "tile": "24_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/24_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   6.970740707181866,
+   -7.273464409817448,
+   5.624157310797606
+  ],
+  "khat_count": 6,
+  "khat_entropy": 3.5811442422615913,
+  "elbo_tail": [
+   -38370676.94340681
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.438738374970853,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.825614433550605,
+   "n_classes": 17,
+   "density_per_m2": 104.0671761883003,
+   "surface_variation": 0.050650073033863444,
+   "z_range": 58.42093467712402,
+   "bbox_area_m2": 240099.9327087449,
+   "n_raw": 24986522
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1333743.2474750278,
+   -1330099.3101742587,
+   -1331631.5150253144,
+   -1332937.7906081337,
+   -1333133.8316374277,
+   -1332032.684766391
+  ],
+  "elbo_full_final": -38370676.94340681
+ },
+ {
+  "tile": "24_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/24_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   6.970740707181866,
+   -7.273464409817448,
+   5.624157310797606
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.660262145648425,
+  "elbo_tail": [
+   -36883921.523536965
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.910131209064275,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.825614433550605,
+   "n_classes": 17,
+   "density_per_m2": 104.0671761883003,
+   "surface_variation": 0.050650073033863444,
+   "z_range": 58.42093467712402,
+   "bbox_area_m2": 240099.9327087449,
+   "n_raw": 24986522
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1289981.8326942883,
+   -1277166.8155815904,
+   -1260261.2494038371,
+   -1252490.0133745277,
+   -1248778.4970582519,
+   -1247884.2397242584
+  ],
+  "elbo_full_final": -36883921.523536965
+ },
+ {
+  "tile": "24_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/24_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   6.970740707181866,
+   -7.273464409817448,
+   5.624157310797606
+  ],
+  "khat_count": 24,
+  "khat_entropy": 13.584515444066785,
+  "elbo_tail": [
+   -34035660.11865728
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.799006375018507,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.825614433550605,
+   "n_classes": 17,
+   "density_per_m2": 104.0671761883003,
+   "surface_variation": 0.050650073033863444,
+   "z_range": 58.42093467712402,
+   "bbox_area_m2": 240099.9327087449,
+   "n_raw": 24986522
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1232506.4501060967,
+   -1217100.7473985553,
+   -1219261.906761123,
+   -1230930.0243193922,
+   -1247647.9944969125,
+   -1257307.9312264714
+  ],
+  "elbo_full_final": -34035660.11865728
+ },
+ {
+  "tile": "24_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/24_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   6.970740707181866,
+   -7.273464409817448,
+   5.624157310797606
+  ],
+  "khat_count": 21,
+  "khat_entropy": 13.50386330695276,
+  "elbo_tail": [
+   -34209256.68374508
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.495145875029266,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.825614433550605,
+   "n_classes": 17,
+   "density_per_m2": 104.0671761883003,
+   "surface_variation": 0.050650073033863444,
+   "z_range": 58.42093467712402,
+   "bbox_area_m2": 240099.9327087449,
+   "n_raw": 24986522
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1243659.6178943184,
+   -1223089.2990896555,
+   -1219697.3063894499,
+   -1225917.0063361716,
+   -1237815.290035389,
+   -1245229.8715078693
+  ],
+  "elbo_full_final": -34209256.68374508
+ },
+ {
+  "tile": "24_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/24_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   6.970740707181866,
+   -7.273464409817448,
+   5.624157310797606
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.220225090270844,
+  "elbo_tail": [
+   -33008514.75563542
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.442356165964156,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.825614433550605,
+   "n_classes": 17,
+   "density_per_m2": 104.0671761883003,
+   "surface_variation": 0.050650073033863444,
+   "z_range": 58.42093467712402,
+   "bbox_area_m2": 240099.9327087449,
+   "n_raw": 24986522
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1238652.57525025,
+   -1272550.2509090756,
+   -1314518.5206603908,
+   -1353612.9205426553,
+   -1386027.0444038482,
+   -1400196.0071369673
+  ],
+  "elbo_full_final": -33008514.75563542
+ },
+ {
+  "tile": "24_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/24_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   6.970740707181866,
+   -7.273464409817448,
+   5.624157310797606
+  ],
+  "khat_count": 64,
+  "khat_entropy": 44.33401542290141,
+  "elbo_tail": [
+   -32988272.602416776
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.56002000020817,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.825614433550605,
+   "n_classes": 17,
+   "density_per_m2": 104.0671761883003,
+   "surface_variation": 0.050650073033863444,
+   "z_range": 58.42093467712402,
+   "bbox_area_m2": 240099.9327087449,
+   "n_raw": 24986522
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1262309.150060414,
+   -1314425.3999878722,
+   -1363159.4841665414,
+   -1401968.1183603911,
+   -1430822.9637607653,
+   -1442024.1964819292
+  ],
+  "elbo_full_final": -32988272.602416776
+ },
+ {
+  "tile": "25_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/25_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.6705665364683524,
+   -5.3810522271109145,
+   3.454220191781265
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.203404138334676,
+  "elbo_tail": [
+   -40917411.72089901
+  ],
+  "elbo_dips": 0,
+  "seconds": 14.183374042157084,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7929851217448363,
+   "n_classes": 18,
+   "density_per_m2": 116.27119313662095,
+   "surface_variation": 0.06755781815315888,
+   "z_range": 93.91748428344727,
+   "bbox_area_m2": 240099.79812624212,
+   "n_raw": 27916690
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1389708.193210956,
+   -1381293.5095112596,
+   -1376632.6436311784,
+   -1373577.2966472616,
+   -1370900.2810636163,
+   -1369561.3482739194
+  ],
+  "elbo_full_final": -40917411.72089901
+ },
+ {
+  "tile": "25_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/25_points_GTv3.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.6705665364683524,
+   -5.3810522271109145,
+   3.454220191781265
+  ],
+  "khat_count": 4,
+  "khat_entropy": 2.791550371903337,
+  "elbo_tail": [
+   -41726446.62948471
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.844948374666274,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7929851217448363,
+   "n_classes": 18,
+   "density_per_m2": 116.27119313662095,
+   "surface_variation": 0.06755781815315888,
+   "z_range": 93.91748428344727,
+   "bbox_area_m2": 240099.79812624212,
+   "n_raw": 27916690
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1413505.366924415,
+   -1409722.8003177566,
+   -1405468.6319759053,
+   -1401137.9923898233,
+   -1397451.1320331066,
+   -1395975.7128010069
+  ],
+  "elbo_full_final": -41726446.62948471
+ },
+ {
+  "tile": "25_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/25_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.6705665364683524,
+   -5.3810522271109145,
+   3.454220191781265
+  ],
+  "khat_count": 22,
+  "khat_entropy": 14.786008153490728,
+  "elbo_tail": [
+   -38228618.911074474
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.535722207743675,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7929851217448363,
+   "n_classes": 18,
+   "density_per_m2": 116.27119313662095,
+   "surface_variation": 0.06755781815315888,
+   "z_range": 93.91748428344727,
+   "bbox_area_m2": 240099.79812624212,
+   "n_raw": 27916690
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1328401.075445273,
+   -1317668.492076076,
+   -1311571.3016569514,
+   -1308807.5134762116,
+   -1307504.5065938157,
+   -1307139.240781841
+  ],
+  "elbo_full_final": -38228618.911074474
+ },
+ {
+  "tile": "25_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/25_points_GTv3.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.6705665364683524,
+   -5.3810522271109145,
+   3.454220191781265
+  ],
+  "khat_count": 20,
+  "khat_entropy": 13.660710317142653,
+  "elbo_tail": [
+   -38847883.782527916
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.39204958314076,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7929851217448363,
+   "n_classes": 18,
+   "density_per_m2": 116.27119313662095,
+   "surface_variation": 0.06755781815315888,
+   "z_range": 93.91748428344727,
+   "bbox_area_m2": 240099.79812624212,
+   "n_raw": 27916690
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1337131.744146938,
+   -1328044.7177150126,
+   -1321095.810072759,
+   -1315837.7824103402,
+   -1311869.9489350698,
+   -1310160.7725125344
+  ],
+  "elbo_full_final": -38847883.782527916
+ },
+ {
+  "tile": "25_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/25_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.6705665364683524,
+   -5.3810522271109145,
+   3.454220191781265
+  ],
+  "khat_count": 64,
+  "khat_entropy": 52.12246516490256,
+  "elbo_tail": [
+   -36635299.43771538
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.447682875208557,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7929851217448363,
+   "n_classes": 18,
+   "density_per_m2": 116.27119313662095,
+   "surface_variation": 0.06755781815315888,
+   "z_range": 93.91748428344727,
+   "bbox_area_m2": 240099.79812624212,
+   "n_raw": 27916690
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1306865.8925440204,
+   -1304971.5614061088,
+   -1308419.8998432548,
+   -1312681.6774341804,
+   -1316752.0409538029,
+   -1318602.4027243361
+  ],
+  "elbo_full_final": -36635299.43771538
+ },
+ {
+  "tile": "25_points_GTv3",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/Synthetic_v3/25_points_GTv3.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   0.6705665364683524,
+   -5.3810522271109145,
+   3.454220191781265
+  ],
+  "khat_count": 64,
+  "khat_entropy": 54.43634159867763,
+  "elbo_tail": [
+   -36689684.57937879
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.370848332997411,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.7929851217448363,
+   "n_classes": 18,
+   "density_per_m2": 116.27119313662095,
+   "surface_variation": 0.06755781815315888,
+   "z_range": 93.91748428344727,
+   "bbox_area_m2": 240099.79812624212,
+   "n_raw": 27916690
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1309219.5871984449,
+   -1310656.5646320402,
+   -1315623.2268113417,
+   -1321577.8110366692,
+   -1326916.1289657126,
+   -1329307.628179435
+  ],
+  "elbo_full_final": -36689684.57937879
+ },
+ {
+  "tile": "OCCC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/OCCC_points.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   29.234452583345732,
+   27.41241464350317,
+   -22.567422615082645
+  ],
+  "khat_count": 5,
+  "khat_entropy": 4.351995289277846,
+  "elbo_tail": [
+   -36087705.00550794
+  ],
+  "elbo_dips": 0,
+  "seconds": 18.54469587514177,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.550312384455263,
+   "n_classes": 9,
+   "density_per_m2": 64.16936112921611,
+   "surface_variation": 0.05944309644514844,
+   "z_range": 50.08806324005127,
+   "bbox_area_m2": 606436.3633235907,
+   "n_raw": 38914634
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1246943.7180716319,
+   -1239555.0685670755,
+   -1235988.7321175337,
+   -1234288.7734453205,
+   -1232776.7836160408,
+   -1232042.0511133561
+  ],
+  "elbo_full_final": -36087705.00550794
+ },
+ {
+  "tile": "OCCC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/OCCC_points.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   29.234452583345732,
+   27.41241464350317,
+   -22.567422615082645
+  ],
+  "khat_count": 5,
+  "khat_entropy": 4.251709882805078,
+  "elbo_tail": [
+   -36177627.62412447
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.687152958009392,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.550312384455263,
+   "n_classes": 9,
+   "density_per_m2": 64.16936112921611,
+   "surface_variation": 0.05944309644514844,
+   "z_range": 50.08806324005127,
+   "bbox_area_m2": 606436.3633235907,
+   "n_raw": 38914634
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1239166.4209423068,
+   -1238503.482947125,
+   -1239236.7038408055,
+   -1240081.4838268182,
+   -1240972.7094060194,
+   -1241491.205537837
+  ],
+  "elbo_full_final": -36177627.62412447
+ },
+ {
+  "tile": "OCCC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/OCCC_points.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   29.234452583345732,
+   27.41241464350317,
+   -22.567422615082645
+  ],
+  "khat_count": 22,
+  "khat_entropy": 18.437972396427547,
+  "elbo_tail": [
+   -32272585.276551954
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.558527959045023,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.550312384455263,
+   "n_classes": 9,
+   "density_per_m2": 64.16936112921611,
+   "surface_variation": 0.05944309644514844,
+   "z_range": 50.08806324005127,
+   "bbox_area_m2": 606436.3633235907,
+   "n_raw": 38914634
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1196780.945010192,
+   -1218294.9727946126,
+   -1240704.5426188358,
+   -1256808.652963947,
+   -1268366.3315571828,
+   -1272981.0221221983
+  ],
+  "elbo_full_final": -32272585.276551954
+ },
+ {
+  "tile": "OCCC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/OCCC_points.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   29.234452583345732,
+   27.41241464350317,
+   -22.567422615082645
+  ],
+  "khat_count": 19,
+  "khat_entropy": 15.46923746562402,
+  "elbo_tail": [
+   -32503657.426429074
+  ],
+  "elbo_dips": 0,
+  "seconds": 13.432848666794598,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.550312384455263,
+   "n_classes": 9,
+   "density_per_m2": 64.16936112921611,
+   "surface_variation": 0.05944309644514844,
+   "z_range": 50.08806324005127,
+   "bbox_area_m2": 606436.3633235907,
+   "n_raw": 38914634
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1167121.9253814993,
+   -1174821.6291916992,
+   -1183161.3241122768,
+   -1193209.1068025427,
+   -1204982.039732994,
+   -1211181.495442542
+  ],
+  "elbo_full_final": -32503657.426429074
+ },
+ {
+  "tile": "OCCC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/OCCC_points.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   29.234452583345732,
+   27.41241464350317,
+   -22.567422615082645
+  ],
+  "khat_count": 64,
+  "khat_entropy": 49.16485416942512,
+  "elbo_tail": [
+   -30269386.150253035
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.322778374888003,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.550312384455263,
+   "n_classes": 9,
+   "density_per_m2": 64.16936112921611,
+   "surface_variation": 0.05944309644514844,
+   "z_range": 50.08806324005127,
+   "bbox_area_m2": 606436.3633235907,
+   "n_raw": 38914634
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1201704.5737827544,
+   -1258237.5485053675,
+   -1306221.7411598556,
+   -1343438.7528487016,
+   -1372016.4750057613,
+   -1384605.2040293429
+  ],
+  "elbo_full_final": -30269386.150253035
+ },
+ {
+  "tile": "OCCC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/OCCC_points.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   29.234452583345732,
+   27.41241464350317,
+   -22.567422615082645
+  ],
+  "khat_count": 64,
+  "khat_entropy": 45.89133475985284,
+  "elbo_tail": [
+   -30535669.434498057
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.29808733286336,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.550312384455263,
+   "n_classes": 9,
+   "density_per_m2": 64.16936112921611,
+   "surface_variation": 0.05944309644514844,
+   "z_range": 50.08806324005127,
+   "bbox_area_m2": 606436.3633235907,
+   "n_raw": 38914634
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1186858.5391035466,
+   -1231391.2159890768,
+   -1266142.700741907,
+   -1293628.66570336,
+   -1317385.5273925837,
+   -1328744.310216629
+  ],
+  "elbo_full_final": -30535669.434498057
+ },
+ {
+  "tile": "RA_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/RA_points.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.20338111994746125,
+   -5.991274667583345,
+   5.839404938093841
+  ],
+  "khat_count": 5,
+  "khat_entropy": 3.7503004978140067,
+  "elbo_tail": [
+   -29693939.810892425
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.45508374972269,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5085286401967155,
+   "n_classes": 9,
+   "density_per_m2": 98.94201378819697,
+   "surface_variation": 0.06513711062786778,
+   "z_range": 17.36172515153885,
+   "bbox_area_m2": 68980.45368886739,
+   "n_raw": 6825065
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1073965.5363603046,
+   -1064186.9343065396,
+   -1045812.4409495592,
+   -1034199.5638044102,
+   -1028977.9588002787,
+   -1027193.8587475531
+  ],
+  "elbo_full_final": -29693939.810892425
+ },
+ {
+  "tile": "RA_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/RA_points.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.20338111994746125,
+   -5.991274667583345,
+   5.839404938093841
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.4610480663246204,
+  "elbo_tail": [
+   -29952546.969320137
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.616336249746382,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5085286401967155,
+   "n_classes": 9,
+   "density_per_m2": 98.94201378819697,
+   "surface_variation": 0.06513711062786778,
+   "z_range": 17.36172515153885,
+   "bbox_area_m2": 68980.45368886739,
+   "n_raw": 6825065
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1048138.7845589167,
+   -1037797.0976045467,
+   -1033725.9939978241,
+   -1035523.5549721789,
+   -1038870.2406151879,
+   -1040459.8786927128
+  ],
+  "elbo_full_final": -29952546.969320137
+ },
+ {
+  "tile": "RA_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/RA_points.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.20338111994746125,
+   -5.991274667583345,
+   5.839404938093841
+  ],
+  "khat_count": 20,
+  "khat_entropy": 13.246875057319258,
+  "elbo_tail": [
+   -28169314.753285307
+  ],
+  "elbo_dips": 0,
+  "seconds": 15.026197541039437,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5085286401967155,
+   "n_classes": 9,
+   "density_per_m2": 98.94201378819697,
+   "surface_variation": 0.06513711062786778,
+   "z_range": 17.36172515153885,
+   "bbox_area_m2": 68980.45368886739,
+   "n_raw": 6825065
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1007071.3710169981,
+   -1007044.4210024656,
+   -1008442.3354669522,
+   -1010193.562781467,
+   -1012709.3327378203,
+   -1014189.8985588432
+  ],
+  "elbo_full_final": -28169314.753285307
+ },
+ {
+  "tile": "RA_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/RA_points.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.20338111994746125,
+   -5.991274667583345,
+   5.839404938093841
+  ],
+  "khat_count": 21,
+  "khat_entropy": 14.708123219964264,
+  "elbo_tail": [
+   -28286706.466461197
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.537444499786943,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5085286401967155,
+   "n_classes": 9,
+   "density_per_m2": 98.94201378819697,
+   "surface_variation": 0.06513711062786778,
+   "z_range": 17.36172515153885,
+   "bbox_area_m2": 68980.45368886739,
+   "n_raw": 6825065
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -999368.2182331786,
+   -996653.328794102,
+   -998001.7575135466,
+   -999204.9550760385,
+   -999840.0554935592,
+   -999978.4317378146
+  ],
+  "elbo_full_final": -28286706.466461197
+ },
+ {
+  "tile": "RA_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/RA_points.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.20338111994746125,
+   -5.991274667583345,
+   5.839404938093841
+  ],
+  "khat_count": 64,
+  "khat_entropy": 46.12886335723479,
+  "elbo_tail": [
+   -26356147.49529776
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.424246957991272,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5085286401967155,
+   "n_classes": 9,
+   "density_per_m2": 98.94201378819697,
+   "surface_variation": 0.06513711062786778,
+   "z_range": 17.36172515153885,
+   "bbox_area_m2": 68980.45368886739,
+   "n_raw": 6825065
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -992299.8505325611,
+   -1013152.9914883986,
+   -1032883.6393281732,
+   -1048719.4647954053,
+   -1062721.7854884388,
+   -1070038.8631374375
+  ],
+  "elbo_full_final": -26356147.49529776
+ },
+ {
+  "tile": "RA_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/RA_points.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -0.20338111994746125,
+   -5.991274667583345,
+   5.839404938093841
+  ],
+  "khat_count": 64,
+  "khat_entropy": 49.097846897033186,
+  "elbo_tail": [
+   -26643933.023061424
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.443295208271593,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.5085286401967155,
+   "n_classes": 9,
+   "density_per_m2": 98.94201378819697,
+   "surface_variation": 0.06513711062786778,
+   "z_range": 17.36172515153885,
+   "bbox_area_m2": 68980.45368886739,
+   "n_raw": 6825065
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -991700.125306864,
+   -1005295.805645483,
+   -1024482.8562082148,
+   -1041647.1439626301,
+   -1055361.940802588,
+   -1061165.0781830822
+  ],
+  "elbo_full_final": -26643933.023061424
+ },
+ {
+  "tile": "USC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/USC_points.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -12.594646854202722,
+   -20.005336404036797,
+   42.102257803418475
+  ],
+  "khat_count": 3,
+  "khat_entropy": 2.4117612114697655,
+  "elbo_tail": [
+   -41964204.63975965
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.480432500131428,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4085167503680216,
+   "n_classes": 9,
+   "density_per_m2": 108.41960647524289,
+   "surface_variation": 0.09278770954797262,
+   "z_range": 62.78413772583008,
+   "bbox_area_m2": 873410.7425636444,
+   "n_raw": 94694849
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1410733.7728122878,
+   -1407136.9815690934,
+   -1404787.9752098208,
+   -1403012.1478499037,
+   -1401560.0894923601,
+   -1400895.146784086
+  ],
+  "elbo_full_final": -41964204.63975965
+ },
+ {
+  "tile": "USC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/USC_points.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -12.594646854202722,
+   -20.005336404036797,
+   42.102257803418475
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.3450046754363534,
+  "elbo_tail": [
+   -42407556.92311742
+  ],
+  "elbo_dips": 0,
+  "seconds": 10.424631834030151,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4085167503680216,
+   "n_classes": 9,
+   "density_per_m2": 108.41960647524289,
+   "surface_variation": 0.09278770954797262,
+   "z_range": 62.78413772583008,
+   "bbox_area_m2": 873410.7425636444,
+   "n_raw": 94694849
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1419879.35337676,
+   -1417642.1522062584,
+   -1416845.660830099,
+   -1416423.083099393,
+   -1416145.9553058944,
+   -1416032.7363068762
+  ],
+  "elbo_full_final": -42407556.92311742
+ },
+ {
+  "tile": "USC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/USC_points.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -12.594646854202722,
+   -20.005336404036797,
+   42.102257803418475
+  ],
+  "khat_count": 22,
+  "khat_entropy": 13.548161073355596,
+  "elbo_tail": [
+   -39905298.13140022
+  ],
+  "elbo_dips": 0,
+  "seconds": 12.22525425022468,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4085167503680216,
+   "n_classes": 9,
+   "density_per_m2": 108.41960647524289,
+   "surface_variation": 0.09278770954797262,
+   "z_range": 62.78413772583008,
+   "bbox_area_m2": 873410.7425636444,
+   "n_raw": 94694849
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1367102.6511763546,
+   -1361998.8131801481,
+   -1358776.4330598777,
+   -1356338.887507229,
+   -1354448.870006048,
+   -1353629.3846767657
+  ],
+  "elbo_full_final": -39905298.13140022
+ },
+ {
+  "tile": "USC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/USC_points.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -12.594646854202722,
+   -20.005336404036797,
+   42.102257803418475
+  ],
+  "khat_count": 22,
+  "khat_entropy": 16.234374258542488,
+  "elbo_tail": [
+   -40102796.92235508
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.500986082945019,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4085167503680216,
+   "n_classes": 9,
+   "density_per_m2": 108.41960647524289,
+   "surface_variation": 0.09278770954797262,
+   "z_range": 62.78413772583008,
+   "bbox_area_m2": 873410.7425636444,
+   "n_raw": 94694849
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1371112.2584625941,
+   -1365110.2344865531,
+   -1361877.9929589233,
+   -1359531.3379094661,
+   -1357662.7761448333,
+   -1356866.3603891535
+  ],
+  "elbo_full_final": -40102796.92235508
+ },
+ {
+  "tile": "USC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/USC_points.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -12.594646854202722,
+   -20.005336404036797,
+   42.102257803418475
+  ],
+  "khat_count": 64,
+  "khat_entropy": 48.99239903154729,
+  "elbo_tail": [
+   -38878672.20931659
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.594153916928917,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4085167503680216,
+   "n_classes": 9,
+   "density_per_m2": 108.41960647524289,
+   "surface_variation": 0.09278770954797262,
+   "z_range": 62.78413772583008,
+   "bbox_area_m2": 873410.7425636444,
+   "n_raw": 94694849
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1361078.0063438292,
+   -1362550.717790429,
+   -1364806.250523061,
+   -1367264.2208763077,
+   -1369646.8704755658,
+   -1370783.0885198286
+  ],
+  "elbo_full_final": -38878672.20931659
+ },
+ {
+  "tile": "USC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/USC_points.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -12.594646854202722,
+   -20.005336404036797,
+   42.102257803418475
+  ],
+  "khat_count": 64,
+  "khat_entropy": 52.99125189377358,
+  "elbo_tail": [
+   -38822823.07017359
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.598019999917597,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4085167503680216,
+   "n_classes": 9,
+   "density_per_m2": 108.41960647524289,
+   "surface_variation": 0.09278770954797262,
+   "z_range": 62.78413772583008,
+   "bbox_area_m2": 873410.7425636444,
+   "n_raw": 94694849
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1360961.3818903249,
+   -1359444.145244306,
+   -1360053.4060100089,
+   -1361466.5241197872,
+   -1363275.893952653,
+   -1364373.5574134632
+  ],
+  "elbo_full_final": -38822823.07017359
+ },
+ {
+  "tile": "WMSC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/WMSC_points.ply",
+  "alpha": 0.1,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -35.037448779807846,
+   -19.734431619818256,
+   -54.55810321140798
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.401672761671415,
+  "elbo_tail": [
+   -33003927.94109219
+  ],
+  "elbo_dips": 0,
+  "seconds": 15.265865583904088,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4835068530846622,
+   "n_classes": 9,
+   "density_per_m2": 69.46558582816104,
+   "surface_variation": 0.03572909624958638,
+   "z_range": 49.891109466552734,
+   "bbox_area_m2": 143636.0736189899,
+   "n_raw": 9977764
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1141144.513190367,
+   -1136581.3506621618,
+   -1129677.5642114822,
+   -1122037.5965045583,
+   -1114600.4591828207,
+   -1110961.7317617997
+  ],
+  "elbo_full_final": -33003927.94109219
+ },
+ {
+  "tile": "WMSC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/WMSC_points.ply",
+  "alpha": 0.1,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -35.037448779807846,
+   -19.734431619818256,
+   -54.55810321140798
+  ],
+  "khat_count": 4,
+  "khat_entropy": 3.587320166981922,
+  "elbo_tail": [
+   -31821071.64842473
+  ],
+  "elbo_dips": 0,
+  "seconds": 13.646850416902453,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4835068530846622,
+   "n_classes": 9,
+   "density_per_m2": 69.46558582816104,
+   "surface_variation": 0.03572909624958638,
+   "z_range": 49.891109466552734,
+   "bbox_area_m2": 143636.0736189899,
+   "n_raw": 9977764
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -1110780.1721714847,
+   -1097381.8170652532,
+   -1086847.6367796059,
+   -1079345.8648152396,
+   -1073245.249532349,
+   -1070313.291128569
+  ],
+  "elbo_full_final": -31821071.64842473
+ },
+ {
+  "tile": "WMSC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/WMSC_points.ply",
+  "alpha": 1.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -35.037448779807846,
+   -19.734431619818256,
+   -54.55810321140798
+  ],
+  "khat_count": 21,
+  "khat_entropy": 15.41350109160822,
+  "elbo_tail": [
+   -27734346.74205462
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.462929375004023,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4835068530846622,
+   "n_classes": 9,
+   "density_per_m2": 69.46558582816104,
+   "surface_variation": 0.03572909624958638,
+   "z_range": 49.891109466552734,
+   "bbox_area_m2": 143636.0736189899,
+   "n_raw": 9977764
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -978916.7033181823,
+   -967995.8414336154,
+   -962637.5939511114,
+   -959498.0688918412,
+   -957596.2488709942,
+   -956907.9297144357
+  ],
+  "elbo_full_final": -27734346.74205462
+ },
+ {
+  "tile": "WMSC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/WMSC_points.ply",
+  "alpha": 1.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -35.037448779807846,
+   -19.734431619818256,
+   -54.55810321140798
+  ],
+  "khat_count": 19,
+  "khat_entropy": 12.773308692270092,
+  "elbo_tail": [
+   -28238871.746961225
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.46110083302483,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4835068530846622,
+   "n_classes": 9,
+   "density_per_m2": 69.46558582816104,
+   "surface_variation": 0.03572909624958638,
+   "z_range": 49.891109466552734,
+   "bbox_area_m2": 143636.0736189899,
+   "n_raw": 9977764
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -988557.3788043037,
+   -978419.3450762788,
+   -972462.0357544611,
+   -968807.2246398235,
+   -966572.4215964673,
+   -965739.3090989098
+  ],
+  "elbo_full_final": -28238871.746961225
+ },
+ {
+  "tile": "WMSC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/WMSC_points.ply",
+  "alpha": 10.0,
+  "seed": 0,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -35.037448779807846,
+   -19.734431619818256,
+   -54.55810321140798
+  ],
+  "khat_count": 64,
+  "khat_entropy": 51.7934305356215,
+  "elbo_tail": [
+   -25774642.343135983
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.474141167011112,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4835068530846622,
+   "n_classes": 9,
+   "density_per_m2": 69.46558582816104,
+   "surface_variation": 0.03572909624958638,
+   "z_range": 49.891109466552734,
+   "bbox_area_m2": 143636.0736189899,
+   "n_raw": 9977764
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -971009.8518765727,
+   -979682.8465474546,
+   -989080.7955429299,
+   -997774.3914325902,
+   -1005505.1903524369,
+   -1009086.143774053
+  ],
+  "elbo_full_final": -25774642.343135983
+ },
+ {
+  "tile": "WMSC_points",
+  "input": "/Users/donga2/dp-splat-data/stpls3d/STPLS3D/RealWorldData/WMSC_points.ply",
+  "alpha": 10.0,
+  "seed": 1,
+  "n_used": 3000000,
+  "subsample": 3000000,
+  "truncation": 64,
+  "n_min": 1.0,
+  "origin": [
+   -35.037448779807846,
+   -19.734431619818256,
+   -54.55810321140798
+  ],
+  "khat_count": 64,
+  "khat_entropy": 50.7993463403193,
+  "elbo_tail": [
+   -25692646.3702292
+  ],
+  "elbo_dips": 0,
+  "seconds": 9.485143375117332,
+  "proxies": {
+   "class_field": "class",
+   "class_entropy": 1.4835068530846622,
+   "n_classes": 9,
+   "density_per_m2": 69.46558582816104,
+   "surface_variation": 0.03572909624958638,
+   "z_range": 49.891109466552734,
+   "bbox_area_m2": 143636.0736189899,
+   "n_raw": 9977764
+  },
+  "versions": {
+   "jax": "0.10.2",
+   "numpy": "2.5.1"
+  },
+  "path": "svi",
+  "steps": 138,
+  "batch": 65536,
+  "elbo_sub_trace": [
+   -969151.6273117086,
+   -974262.2832753127,
+   -980018.5196738245,
+   -985715.678793581,
+   -991143.6409538578,
+   -993943.4955055218
+  ],
+  "elbo_full_final": -25692646.3702292
+ }
+]

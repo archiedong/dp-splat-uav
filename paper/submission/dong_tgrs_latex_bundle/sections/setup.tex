@@ -1,0 +1,317 @@
+% Section IV: Experimental Setup
+% All numbers sourced from PHASE_B_FINDINGS.md and experiments/out/*.json
+% (record/eval files named in comments where non-obvious).
+
+\section{Experimental Setup}
+\label{sec:setup}
+
+\subsection{Datasets}
+\label{sec:setup:datasets}
+
+We evaluate on four public aerial datasets spanning native UAV LiDAR,
+UAV photogrammetry, and controlled synthetic photogrammetry. Figures
+show pipeline products, not dataset ground truth; we release code,
+configuration, and evaluation scripts that reproduce every number from
+the original data, but no derived products of the non-commercially
+licensed sources.
+
+\subsubsection{Hessigheim 3D (H3D)}
+\looseness=-1 The primary dataset~\cite{koelle2021h3d}: UAV laser scanning (Riegl
+VUX-1LR, octocopter) over Hessigheim, Germany, at roughly
+$800$~points/m$^2$, with per-point RGB from oblique imagery
+and eleven manual semantic classes (CC~BY-NC-SA~4.0;
+registration-gated). We use the three UAV epochs: March~2018
+($59.4\times10^{6}$ training points plus a spatially disjoint
+$14.5\times10^{6}$-point validation area), November~2018
+($128.9\times10^{6}$), and March~2019 ($119.0\times10^{6}$). These
+support cross-epoch replication and multi-epoch change detection
+(Secs.~\ref{sec:results:seams}--\ref{sec:results:change}). H3D also
+ships a March~2018 reference mesh; its 43 labeled training-split tiles
+($9.0\times10^{6}$ faces after exact de-duplication of slab-boundary
+faces; $132{,}622$~m$^2$) serve as the absolute geometric reference
+(Sec.~\ref{sec:results:geoacc}). The mesh is the dataset authors'
+reconstruction from the same campaign's imagery and LiDAR: an
+independent processing chain over the same acquisition, not an
+independent survey.
+
+\subsubsection{Mill 19 Rubble}
+\looseness=-1 An ungated UAV image collection over a construction/debris site near
+Pittsburgh~\cite{turki2022meganerf}: 1{,}678 4K images with shipped
+PixSfM-refined poses (publicly released; no formal license file, noted
+for completeness). No point cloud ships with it, so we build a sparse
+metric anchor ourselves, CPU-only (SIFT at $4\times$ downscale,
+sequential-plus-spatial matching, COLMAP
+\texttt{point\_triangulator}~\cite{schonberger2016colmap} with poses
+held fixed, no bundle adjustment), yielding
+$1{,}750{,}606$ colored points over a metrically coherent
+$275\times318$~m site; this image-side scene carries the re-flight
+planning experiment (Sec.~\ref{sec:results:reflight}).
+
+\subsubsection{STPLS3D (synthetic subset)}
+Synthetic aerial photogrammetry~\cite{chen2022stpls3d} (CC~BY-NC-SA~3.0,
+form-delivered download): colored point clouds at ${\sim}0.1$~m spacing with 18
+semantic classes, from simulated UAV flights over scenes ranging from
+empty terrain to dense urban. Content varies while acquisition is held
+constant, making it the natural controlled testbed for the capacity
+study: 29
+scenes at matched $N=3\times10^{6}$ points across a concentration and
+prior-scale grid (261 controlled fits; Sec.~\ref{sec:disc-khat}).
+
+\subsubsection{GauU-Scene V2 (SMBU)}
+One scene from a DJI Matrice~300 / Zenmuse~L1 RGB-LiDAR
+campaign~\cite{xiong2024gauuscene} (access by e-mailed license request): the
+merged SMBU campus cloud of $169.1\times10^{6}$ colored points, our
+largest single input, stressing the scaling claim and providing the
+second-site held-out check
+(Secs.~\ref{sec:results:seams}--\ref{sec:results:calibration}).
+
+\subsection{Model Configuration}
+\label{sec:setup:config}
+
+\looseness=-1 All experiments run the tiled DP-Splat pipeline of
+Sec.~\ref{sec:method} on an Apple-silicon laptop (36~GB RAM, CPU
+only). Scenes are partitioned into a ground-plane grid
+targeting ${\sim}10^{7}$ points per tile (H3D: $2\times3$ to $2\times7$
+tiles; SMBU: 20 tiles; Mill~19: $10^{5}$-scale tiles matched to its
+smaller anchor cloud), each tile dilated by a 5~m halo with ownership
+down-weighting and concentration allocation as in
+Sec.~\ref{sec:tiled-fit}. Tiles above $2\times10^{6}$ points are fitted
+by the stochastic variational schedule (batch size $65{,}536$, three
+data epochs, step size $\rho_t=(t+64)^{-0.7}$ as
+in~\cite{dong2026dpsplat}); smaller tiles run full CAVI to a relative ELBO tolerance
+of $10^{-6}$. (The SMBU production fit records SVI threshold
+$5\times10^{5}$ and tile target $8\times10^{6}$. Its realized tiles
+are highly uneven, from near-empty to $41.2\times10^{6}$ points: 15
+ran the SVI schedule, the three smallest, each under $4\times10^{5}$
+points, ran full CAVI, and two near-empty tiles were skipped. The
+threshold difference matters only for the two tiles of $1.2$ and
+$1.6\times10^{6}$ points, which ran SVI where the H3D threshold would
+assign full CAVI.)
+
+\looseness=-1 The \emph{production configuration} for all headline experiments is
+$\alpha_{\mathrm{global}}=100$, truncation $T=256$ per tile, justified
+by the capacity study of Sec.~\ref{sec:results:calibration}:
+relative to the low-capacity reference arm ($\alpha_{\mathrm{global}}=1$,
+$T=64$), production improves held-out predictive quality, resolves
+the one calibration defect we observed, and activates the cross-tile
+matcher, while error ranking is insensitive to the choice. Both arms
+are reported wherever they differ materially; runtimes in
+Sec.~\ref{sec:results:seams}.
+
+\subsection{Evaluation Protocols}
+\label{sec:setup:protocols}
+
+\subsubsection{Held-out complement protocol}
+\looseness=-1 In-sample density scores flatter any generative fit, so all headline
+predictive numbers use a hold-out: each H3D epoch (and, for the
+second-site check, SMBU) is refit on a
+recorded 90\% subsample (fixed seed), and $200{,}000$ evaluation points
+are drawn from the \emph{exact complement} of the recorded fit indices
+under an independent seed: points the model has never seen, from the
+same flight. All methods are scored on the identical point set.
+The hold-out is sample-wise, not spatial: at ${\sim}800$
+points/m$^2$ a complement point lies centimeters from training points,
+so absolute scores and coverage describe quasi-interpolative
+generalization within a flight; method \emph{comparisons} are
+unaffected, and a spatially
+blocked protocol is an open item (Sec.~\ref{sec:disc-open}). Each arm
+is likewise a single fixed-seed refit scored once, so
+Tables~\ref{tab:seam} and~\ref{tab:coverage} carry no paired
+standard errors.
+Every metric is reported on all points and on the \emph{seam subset}:
+points lying inside two or more halo-dilated tiles, i.e., within one
+halo width of a tile boundary (8.5\% of the March~2018 hold-out;
+$n=16{,}941$).
+
+\subsubsection{Seam baselines}
+The stitched predictive is compared against the two hard-selection rules
+of current practice (Sec.~\ref{sec:related-tiled}): \emph{crop}, which
+truncates each tile's mixture to its owned box, and \emph{Voronoi},
+which assigns each component to its nearest tile center and deletes it
+elsewhere. Both are evaluated as normalized densities on the same
+per-tile posteriors, isolating the seam-handling rule itself: a
+controlled ablation on shared halo-down-weighted fits, not an
+end-to-end reproduction of any native pipeline, which would train each
+expanded cell at full weight before cropping; on the
+equal-area grids used here the two rules coincide exactly (verified;
+they differ on irregular partitions).
+
+\subsubsection{Change-detection protocol}
+\looseness=-1 The November~2018 and March~2019 production fits are compared on a
+shared 1~m ground grid (0.5~m and 2~m in ablation), retaining cells with
+at least 20 points in both epochs, under two complementary tests.
+(i)~\emph{Null calibration}: cells whose dominant class is impervious in
+both epochs, with dominant-class purity above $0.9$ in each
+($n=17{,}592$), are physically stable ground; their
+exceedance of the nominal-5\% threshold measures calibration
+directly. (ii)~\emph{Detection}: among cells with per-epoch purity
+above $0.6$, cells whose dominant class changes
+between epochs (vegetation-excluded headline) serve as a labeled-change
+proxy, scored by ROC AUC and precision/recall at the threshold; the
+proxy undercounts true vertical change (same-class construction) and
+includes vertical-less transitions (vehicles), so precision at the
+threshold is not a false-alarm rate; the null test carries that role.
+Independently labeled epochs mean dominant-label flips can
+also arise from labeling inconsistency, boundary rasterization, or
+leaf-off/leaf-on appearance without physical change; the proxy is
+unvalidated and used only for ranking, never calibration.
+Of $113{,}020$ valid cells, the $0.6$ purity filter leaves $93{,}144$
+eligible; excluding cells whose dominant class in either epoch is Low
+Vegetation, Shrub, or Tree leaves $43{,}221$ scored ($734$ positives).
+A registration term $\sigma_{\mathrm{reg}}$ enters the level-of-detection
+variance once (Sec.~\ref{sec:setup:metrics}); results are reported at
+$\sigma_{\mathrm{reg}}=0$ and, as a sensitivity, at 2~cm.
+
+\subsubsection{Re-flight protocol (leakage-proofed)}
+\looseness=-1 On Mill~19 Rubble the 1{,}678-image flight is split by acquisition
+order: the first 80\% forms the survey, the trailing 20\% block (336
+images) the held-back re-flight pool, emulating an unfinished mission
+over contiguous new ground. Triangulated points are assigned to survey
+or pool by which image set observes them in at least two views
+($1{,}480{,}265$ survey; $266{,}168$ pool; ambiguous points discarded);
+an interleaved every-fifth-image split is the null control. After a
+robust bounding-box crop of the anchor (the per-axis $0.5$--$99.5$
+percentile box of the survey cloud, applied to both sets; it drops
+$42{,}785$ survey and
+$14{,}148$ pool outliers), a fixed 25\% of the cropped pool
+($63{,}005$ points) is reserved as the evaluation set \emph{before}
+any granting, identically across arms, so no evaluation point enters
+any refit. Tiles are a ground-plane partition of the full cropped
+site's bounding box: $2\times3$ in the 6-tile scenario, $3\times4$ in
+the 12-tile scenario. Planner arms
+select the top quarter of tiles by acquisition score
+(nearest-integer rounding: 2 of 6 tiles, 3 of 12) and
+receive the remaining pool points there; controls are random
+tile subsets of the same size (5--8 seeded replicates) and a per-tile
+\emph{oracle} ranked by the pool points' true held-out error
+contribution under the initial model; improvement is the change in mean
+held-out NLPD, baseline minus arm, on the fixed evaluation set.
+
+\subsection{Metrics}
+\label{sec:setup:metrics}
+
+\subsubsection{Held-out log-predictive}
+% Mass numbers (0.980, SE 0.002; per-tile-renormalized 5.62):
+% experiments/out/mass_oracle_mar18.json.
+Mean log-density per point (nats, i.e., natural-log units) of the
+six-dimensional
+(spatial~$\times$~color) stitched predictive on held-out points; higher
+is better; reported for all methods on both splits. Density comparisons
+require normalized densities, so the stitched mass is oracle-enforced:
+tile sub-mixtures carry their components' \emph{global} weights,
+un-renormalized within tiles (a straddling component contributes
+$\pi_k \sum_t g_t = \pi_k$), and importance-sampling integration of the
+production March~2018 model measures total mass $0.980$ (SE $0.002$;
+the deficit is Student-$t$ tail mass outside the dilated footprint).
+Renormalizing per tile instead inflates the mass to
+${\approx}$\,\#tiles ($5.62$ measured), a regression-guarded failure
+mode. The crop/Voronoi baselines renormalize to exactly unit mass, so
+the stitched rule carries a $0.020$-nat ($-\log 0.980$) tail-mass
+handicap into every overall comparison of Table~\ref{tab:seam}. Set
+against the production deficits there, the handicap roughly cancels
+the March~2018 gap ($-0.017$) but not the other two
+($-0.031$/$-0.033$), which would shrink to roughly
+$-0.011$/$-0.013$ if their unmeasured tail mass matches
+March~2018's; the reference-arm seam-band gaps are more than an order
+of magnitude larger and are not explained by it.
+
+\subsubsection{Calibration coverage}
+For each held-out point, responsibilities over all (tile, component)
+pairs are formed under the stitched predictive (conditioning on the
+full point, position and color), and the point is tested against each
+claiming component's central equal-tailed Student-$t$ interval at
+nominal 68/90/95\% along each spatial axis; reported coverage is the
+responsibility-weighted mean of these indicators, averaged over axes,
+on both splits. This is a component-conditional calibration check,
+asking whether a point falls in the central interval of the components
+that claim it, not the mixture-marginal CDF; we make no theoretical
+seam-coverage claim.
+
+\subsubsection{Sparsification: AUSE and AURG}
+\looseness=-1 Following the sparsification-curve
+methodology~\cite{ilg2018uncertainty,poggi2020uncertainty}, $200{,}000$
+points are sampled \emph{exactly} from the stitched spatial predictive
+(rejection sampling with the gates as acceptance probability), and each sample is
+scored by the reference-based error convention of Huang and
+Qin~\cite{huang2025uncertainty}: $e$ is the orthogonal distance to the
+least-squares plane through the sample's six nearest neighbors in the
+full epoch cloud. Samples are removed by decreasing uncertainty $u$ in
+2\% steps up to 98\%, recording the mean $|e|$ of the retained set,
+normalized by the full-set mean. AUSE (lower is better) is the area
+between the uncertainty-ordered and error-oracle curves; AURG (higher
+is better) that between the random-removal and uncertainty-ordered
+curves. Three $u$ variants are reported: per-point NLPD under the
+stitched mixture (the headline ranker); the generating component's
+marginal predictive variances pooled by root mean square, written
+$\sqrt{\overline{\mathrm{Var}}}$ (the location-queryable
+alternative); and, as a model-free control, the negative of the local
+point density $6/(\tfrac{4}{3}\pi r_6^{3})$, with $r_6$ the distance to the
+sample's sixth reference neighbor: the same neighborhood the error
+plane is fitted to. Density-stratified AUSE is reported alongside as
+the honest confound decomposition, and the AUSE machinery
+itself is verified in Sec.~\ref{sec:results:sparsification}. Unlike
+the predict-then-observe setting
+of~\cite{ilg2018uncertainty,poggi2020uncertainty}, the scored points
+are the model's own samples ($u$ and $e$ are functionals of the
+same point and model), so the ranking is model criticism, a
+quality-assurance ordering of reconstructed mass against the reference
+geometry, not a before-measurement error map
+(Sec.~\ref{sec:results:sparsification}).
+
+\subsubsection{Geometric accuracy and completeness}
+\looseness=-1 Against the March~2018 reference mesh
+(Sec.~\ref{sec:setup:datasets}), both directions of the standard
+accuracy/completeness pair are scored in meters.
+\emph{Accuracy} (model${\to}$mesh): $200{,}000$ samples drawn from
+each seam rule's spatial predictive (stitched by the gate-rejection
+sampler above; crop/Voronoi ancestrally from their normalized
+mixtures), each scored by exact unsigned point-to-mesh distance (a
+certified nearest-triangle search, oracle-tested against brute force);
+the 1.2--1.5\% of samples falling outside the mesh tiles' footprint
+are excluded. \emph{Completeness} (mesh${\to}$model): $200{,}000$
+area-weighted mesh-surface samples, restricted to 1~m ground cells
+holding at least five points of the fit's own input cloud (70.3\%
+kept; the mesh extends beyond the surveyed area), each scored by
+distance to the nearest of $5\times10^{5}$ dense model samples, a
+discretization that overestimates distance to the model by about the
+dense-bank spacing (median $0.326$~m), the resolution floor of the
+completeness fractions. Both directions are additionally stratified
+into terciles of the stitched model's own per-sample spatial
+predictive NLPD.
+
+\subsubsection{Level of detection (LoD95)}
+For change detection we adopt the significance-testing convention of the
+M3C2 lineage~\cite{lague2013m3c2,winiwarter2021m3c2ep}: a per-cell threshold
+\begin{equation}
+\mathrm{LoD}_{95}
+ = 1.96\sqrt{\operatorname{var}^{A}_{z} + \operatorname{var}^{B}_{z}
+   + \sigma_{\mathrm{reg}}^{2}},
+\label{eq:lod95}
+\end{equation}
+where $\operatorname{var}^{E}_{z}$ is the vertical variance of the
+responsibility-weighted \emph{posterior mean location} in epoch $E$, derived
+in closed form from component $k$'s spatial NIW posterior as
+$\Sigma_{\mu,k}=\Psi_{k,s}/\bigl(\kappa_{k,s}(\nu_{k,s}-D_s-1)\bigr)$. Using the
+mean-location covariance rather than the full predictive covariance
+avoids double-counting surface roughness in the threshold (the
+pitfall M3C2-EP was designed to fix~\cite{winiwarter2021m3c2ep}), and
+we verify the two covariances are distinct by Monte Carlo. Concretely,
+each cell is scored per epoch at its mean observed ground point
+$q = (c_x, c_y, \bar z_E)$: responsibilities
+$w_{tk} \propto g_t(q)\, \mathbb{E}_q[\pi_k]\,
+\operatorname{St}_3(q)$ over (tile, component) pairs (global
+post-merge weights, as in \eqref{eq:stitch}) give
+$\mu^E_z = \sum_{tk} w_{tk}\, m_{k,z}$, with
+$\operatorname{var}^E_z$ by the law of total variance (weighted
+$[\Sigma_{\mu,k}]_{zz}$ within components plus the spread of $m_{k,z}$
+between them); $d = \mu^A_z - \mu^B_z$ is a vertical difference on a
+fixed grid (DoD-style, conflating horizontal displacement on slopes
+and facades with elevation change, unlike M3C2's normal-direction
+projection), and change is flagged where $|d| > \mathrm{LoD}_{95}$.
+The \emph{classical} baseline of Sec.~\ref{sec:results:change} is the
+propagated-error DoD convention on identical cells, masks, and proxy
+sets: $d = \bar z_A - \bar z_B$ from the raw per-cell points, and
+\eqref{eq:lod95} with the empirical standard errors $s^2_E/n_E$ of
+those means (within-cell sample variance over the $n_E$ points) in
+place of the posterior mean-location variances; the arms differ
+only in the variance source.

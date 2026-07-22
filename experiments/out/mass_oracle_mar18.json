@@ -1,0 +1,15 @@
+{
+ "name": "mass_oracle_mar18",
+ "description": "Importance-sampling total-mass oracle for the stitched mar18_rich production predictive (tests/test_eval_mass_oracle.py run at its own seed/settings): 'fixed' = global weights un-renormalized within tiles (the paper's construction); 'old' = per-tile-renormalized weights (regression-guarded failure mode).",
+ "source_test": "tests/test_eval_mass_oracle.py::test_stitched_mass_fixed_is_one_and_old_is_tiles",
+ "model": "experiments/out/mar18_rich_model.npz",
+ "record": "experiments/out/mar18_rich_record.json",
+ "n_draws": 200000,
+ "seed": 7,
+ "inflate": 2.25,
+ "mass_fixed": 0.980014252958656,
+ "se_fixed": 0.0015606463892703002,
+ "mass_old": 5.618482306744759,
+ "se_old": 0.010614976906780075,
+ "generated": "2026-07-21"
+}

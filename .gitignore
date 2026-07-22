@@ -1,0 +1,23 @@
+# Large binary artifacts never ship (NC-license hygiene + size); the aggregate
+# result JSONs in experiments/out/ ARE tracked — they ground every paper number.
+experiments/out/*.npz
+experiments/out/*.npy
+*.laz
+*.las
+*.ply
+*.pkl
+figures/*
+!figures/README.md
+paper/figs/*.png
+__pycache__/
+*.egg-info/
+.DS_Store
+# LaTeX build byproducts (main.pdf stays tracked)
+paper/main.log
+paper/main.blg
+paper/main.out
+paper/main.aux
+paper/main.bbl
+paper/main.fls
+paper/main.fdb_latexmk
+paper/missfont.log

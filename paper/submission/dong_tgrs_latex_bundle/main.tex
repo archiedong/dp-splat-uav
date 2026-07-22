@@ -1,0 +1,147 @@
+% Paper 2: Tiled DP-Splat for UAV Mapping (IEEE TGRS submission draft)
+% Compile: cd paper && tectonic main.tex
+\documentclass[journal]{IEEEtran}
+
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usetikzlibrary{calc,arrows.meta}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+
+\interdisplaylinepenalty=2500
+
+% Reporting thresholds only (no layout effect): underfull-box reports are
+% cosmetic in two-column IEEEtran with \looseness=-1 paragraphs; suppress
+% them while leaving overfull detection (\hfuzz, \vfuzz) untouched.
+\hbadness=10000
+\vbadness=10000
+
+% Vertical-space discipline (page-budget pass): modestly tighter float and
+% display spacing; no content or font-size changes.
+\setlength{\textfloatsep}{0.8\baselineskip plus 0.2\baselineskip minus 0.3\baselineskip}
+\setlength{\dbltextfloatsep}{0.8\baselineskip plus 0.2\baselineskip minus 0.3\baselineskip}
+\setlength{\floatsep}{0.65\baselineskip plus 0.2\baselineskip minus 0.2\baselineskip}
+\makeatletter
+% IEEEtran's \normalsize re-sets display skips at every size switch, so the
+% override must ride along with it.
+\g@addto@macro\normalsize{%
+  \abovedisplayskip 4pt plus 2pt minus 2pt%
+  \belowdisplayskip 4pt plus 2pt minus 2pt%
+  \abovedisplayshortskip 2pt plus 1pt%
+  \belowdisplayshortskip 2pt plus 1pt minus 1pt%
+}
+\makeatother
+
+\begin{document}
+\bstctlcite{BSTcontrol}
+
+\title{Tiled Dirichlet-Process Gaussian Splatting for UAV Mapping with
+Calibrated Uncertainty}
+
+\author{Aqi~Dong%
+\thanks{Manuscript received July~2026.}%
+\thanks{A.~Dong is with the Department of Management, Marketing and
+Operations, David B. O'Maley College of Business, Embry-Riddle Aeronautical
+University, Daytona Beach, FL 32114 USA (e-mail: donga2@erau.edu;
+ORCID: 0009-0004-1676-3528).}}
+
+\markboth{IEEE Transactions on Geoscience and Remote Sensing}%
+{Dong: Tiled Dirichlet-Process Gaussian Splatting for UAV Mapping with Calibrated Uncertainty}
+
+\maketitle
+
+\begin{abstract}
+\looseness=-1 Operational aerial-mapping decisions need trustworthy,
+spatially resolved uncertainty at survey scale. We present a fully Bayesian treatment of tiled
+large-scene splatting: independent Dirichlet-process Gaussian-mixture fits
+per tile are matched and merged exactly in closed form, then
+stitched by a partition-of-unity
+gate into one \emph{normalized}, provenance-preserving scene-level
+predictive density, evaluated as a density, never as a
+renderer. On three Hessigheim 3D (H3D)
+LiDAR epochs (59--129 million points), that density matches the hard
+seam-deletion rules of current practice to within
+$0.02$--$0.03$~nats per held-out point
+while deleting nothing. The normalized posterior is then spent:
+coverage at 68/90/95\% is near-nominal on
+H3D (68\% seam-band coverage $0.64$--$0.67$); at a second site,
+all-points coverage replicates
+but seam coverage falls to $0.57$. Predictive
+log-density ranks held-out error better than random
+(area under the sparsification error curve, AUSE, 0.16--0.20) but a model-free local-density ranker does better
+still, so we claim the uncertainty as a
+compact, calibrated, density-faithful surrogate, not as ranking
+power beyond sampling density; predictive confidence nonetheless
+stratifies mesh-referenced error monotonically. A
+null-calibrated model-derived level of detection holds its
+nominal level on stable ground (4.2\% vs.\ nominal 5\%;
+AUC 0.72) where a same-grid classical DEM-of-difference
+baseline flags 17--90\% of the same cells, though the
+classical test remains the sharper pure ranker (AUC 0.82--0.97); the
+${\approx}1$~m detection floor is a stated representation limit. In
+re-flight planning, posterior uncertainty matches a per-tile error
+oracle and beats a mass-only planner on comparable-mass tiles
+($+1.10$ vs.\ $+0.86$~nats); where mass separates tiles, mass alone
+plans as well. The pipeline is CPU-only: a laptop fits
+152 million points in 2{,}346~s.
+\end{abstract}
+
+\begin{IEEEkeywords}
+Change detection, Dirichlet process, Gaussian splatting, LiDAR, UAV
+mapping, uncertainty quantification, variational inference.
+\end{IEEEkeywords}
+
+\IEEEpeerreviewmaketitle
+
+\input{sections/intro}
+\input{sections/related}
+\input{sections/method}
+\input{sections/setup}
+\input{sections/results}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+\section*{Data and Code Availability}
+\looseness=-1 All four datasets are publicly accessible from their
+originators~\cite{koelle2021h3d,turki2022meganerf,chen2022stpls3d,xiong2024gauuscene}
+under the access and license terms noted per dataset in
+Sec.~\ref{sec:setup:datasets}. In keeping with
+the non-commercial license terms, no derived point clouds or
+fitted models are redistributed; the complete pipeline, configuration,
+evaluation scripts, and aggregate result records reproducing every
+number and figure from the original data are available at
+\url{https://github.com/archiedong/dp-splat-uav}.
+
+\bibliographystyle{IEEEtran}
+% Final-page balance: at the current reflow the reference list exactly
+% fills page 13 and the page is full, so no \IEEEtriggeratref is
+% needed. Re-add one (standard IEEEtran device) if the reference list
+% or preceding text changes.
+% Page-count ruling (round 1): body plus references occupy pages 1-13;
+% the IEEEbiographynophoto block alone overflows to page 14, accepted
+% for the submission draft (bio pages are commonly set aside from the
+% technical-page budget).
+% Page-count ruling (round 5): re-examined. All 26 columns of pp. 1-13
+% are flush-full; every paragraph on pp. 12-13 with a recoverable short
+% last line already carries \looseness=-1; IEEEtran's bibliography
+% itemsep is already zero. Lines saved upstream (verified with
+% \looseness=-1 probes in Secs. III/IV, since reverted) are absorbed by
+% float-separation stretch at the p11/p12 boundary and never reach
+% p13, so the ~5-line deficit for the bio cannot be recovered without
+% cutting content or violating class defaults. Left at 14 pages.
+\bibliography{references}
+
+\begin{IEEEbiographynophoto}{Aqi Dong}
+is with the Department of Management, Marketing and Operations, David B.
+O'Maley College of Business, Embry-Riddle Aeronautical University, Daytona
+Beach, FL, USA. His research interests include Bayesian nonparametric
+methods, variational inference, and uncertainty quantification for
+three-dimensional scene representations and geospatial analytics.
+% PI-OPTIONAL: a degrees line ("He received the ... degree from ... in ...")
+% can be added here if desired.
+\end{IEEEbiographynophoto}
+
+\end{document}

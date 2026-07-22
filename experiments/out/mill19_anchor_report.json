@@ -1,0 +1,14 @@
+{
+ "source": "Mill 19 Rubble (Mega-NeRF), 1678 images at 4x downscale, shipped PixSfM poses fixed",
+ "pipeline": "SIFT (CPU) -> sequential+spatial matching -> colmap point_triangulator (OPENCV model, no pose BA)",
+ "points": 1750606,
+ "points_within_robust_bbox": 1700748,
+ "robust_extent_m": [274.7, 18.3, 317.9],
+ "cameras": 1678,
+ "camera_grid_footprint_m": [206.5, 248.3],
+ "camera_altitude_spread_m": 5.1,
+ "axis_convention": "Mega-NeRF down/right/backward derived; axis 1 is vertical",
+ "model": "~/dp-splat-data/mill19/colmap_work/sparse_opencv (bin+txt)",
+ "ply": "~/dp-splat-data/mill19/colmap_work/mill19_rubble_anchor.ply",
+ "note": "pinhole comparison arm removed: DB cameras are OPENCV; kPinhole-vs-kOpenCV CHECK crash"
+}

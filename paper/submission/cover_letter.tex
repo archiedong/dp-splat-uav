@@ -1,0 +1,82 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.1in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{parskip}
+\pagestyle{empty}
+\setlength{\parskip}{0.65\baselineskip}
+
+\begin{document}
+
+% ---- Letterhead: the only identity block in the letter ----
+{\bfseries Aqi Dong}\\
+Department of Management, Marketing and Operations\\
+David B.\ O'Maley College of Business\\
+Embry-Riddle Aeronautical University\\
+Daytona Beach, FL 32114, USA\\
+\texttt{donga2@erau.edu}
+
+\vspace{1.2\baselineskip}
+July 21, 2026
+
+\vspace{1.2\baselineskip}
+Editor-in-Chief\\
+IEEE Transactions on Geoscience and Remote Sensing
+
+\vspace{1.2\baselineskip}
+Dear Editor-in-Chief,
+
+I am pleased to submit my manuscript, \emph{``Tiled Dirichlet-Process Gaussian
+Splatting for UAV Mapping with Calibrated Uncertainty,''} for consideration in
+IEEE Transactions on Geoscience and Remote Sensing. The paper extends the
+Dirichlet-process Gaussian-splatting model of my earlier methods paper
+(arXiv:2607.10912) to survey-scale UAV mapping: independent per-tile
+variational fits are fused by Hungarian matching under an exact conjugate
+normal--inverse--Wishart marginal-likelihood score, merged in closed form, and
+stitched by a partition-of-unity gate into a single \emph{normalized},
+provenance-preserving scene-level predictive density. On three Hessigheim 3D
+LiDAR epochs (59--129 million points) and a second 152-million-point
+photogrammetric site, the stitched density matches the hard seam-deletion
+rules of current tiled practice on held-out log-density while deleting
+nothing, and the resulting calibrated uncertainty is then spent on four
+mapping tasks: error sparsification, mesh-referenced accuracy stratification,
+change detection with a model-derived level of detection, and re-flight
+planning, all on CPU-only laptop hardware.
+
+I believe TGRS is the right home for this work because its contribution is
+operational rather than a methodological display: tiled processing of large UAV
+surveys is standard practice in this community, the seam problem it addresses
+is a practice problem, and every evaluation is a mapping-product evaluation
+(held-out predictive density, empirical interval coverage, geometric
+accuracy against the benchmark's reference mesh, null-calibrated change
+detection on repeat LiDAR epochs, and acquisition planning) rather than a
+rendering benchmark. The datasets (Hessigheim 3D, GauU-Scene, Mill 19,
+STPLS3D) and the tasks are those of the remote-sensing literature the paper
+engages.
+
+I have tried to make the paper's claims exactly as strong as its evidence and
+no stronger, and its controls and ablations are reported at parity: seam
+deletion is empirically near-costless on these scenes and the paper says so;
+seam-band parity and seam calibration hold at production capacity on the H3D
+epochs but do not replicate at the second site, and the abstract carries that
+caveat; the sparsification signal's point-density confound is decomposed
+rather than hidden; the change-detection level of detection has a stated
+${\approx}1$~m representation-limit floor; and the re-flight result is
+dissected against oracle, random, and mass-only controls, including the
+regime where the mass-only control matches the planner. A merge ablation and
+a no-merge refit isolate what the exact conjugate merge contributes. Complete
+code, fixed-seed reproduction commands, and machine-readable experiment
+records accompany the submission.
+
+This manuscript is not under consideration elsewhere; the methods paper it
+builds on is cited and none of its figures or results are reused. I have no
+conflicts of interest to declare.
+
+Thank you for your consideration. I look forward to the reviewers' comments.
+
+\vspace{1.2\baselineskip}
+Sincerely,
+
+\vspace{1.6\baselineskip}
+Aqi Dong
+
+\end{document}

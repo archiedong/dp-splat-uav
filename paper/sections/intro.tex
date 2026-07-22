@@ -1,0 +1,88 @@
+\section{Introduction}
+\label{sec:intro}
+
+\looseness=-1 Aerial mapping products increasingly feed operational
+decisions (infrastructure inspection, multi-epoch change monitoring,
+follow-up flight planning) that consume a reconstruction and then act
+on it. What they need is not photorealism but \emph{trustworthy, spatially
+resolved uncertainty} at survey scale ($10^{8}$ points per campaign)
+on hardware a field team actually has. \looseness=-1 Current practice supplies neither.
+Survey-scale scenes force partitioned processing, and the dominant large-scale
+splatting and neural-field pipelines resolve the resulting tile seams by
+geometric heuristics: hard cropping of out-of-tile primitives~\cite{lin2024vastgaussian,liu2024citygaussian,kerbl2024hierarchical},
+unweighted consensus averaging~\cite{chen2024dogs}, or hand-tuned
+image-space distance blending~\cite{tancik2022blocknerf}. As a result, no
+normalized global
+predictive density is defined, no contribution is weighted by posterior
+uncertainty, and duplicated boundary structure is deleted, never fused
+(Sec.~\ref{sec:related}). Uncertainty, where it appears at all, is a post hoc
+overlay on a photometric optimizer~\cite{jia2026bayesian}, not a
+property of a generative model that can be calibrated and then spent.
+
+\looseness=-1 This paper closes that gap for point-cloud splatting. Building on the
+DP-Splat model~\cite{dong2026dpsplat}, a conjugate Dirichlet-process
+(DP) mixture over colored points fitted by closed-form coordinate
+ascent, we
+develop a fully Bayesian treatment of \emph{tiled} large-scene fitting.
+In one sentence: partition-of-unity stitching with exact conjugate
+merging turns independent tile posteriors into one coherent,
+\emph{normalized}, calibrated predictive density (at parity with hard
+crop/Voronoi deletion on predictive quality, but, unlike them, a
+well-defined probability model of the whole scene), and that density is
+what tells the operator where the reconstruction cannot be trusted, and
+where to fly next. Our contributions:
+\begin{enumerate}
+\item \textbf{Tiled conjugate inference with exact merging.} A partitioned
+  DP-Splat pipeline: halo down-weighting, per-tile concentration bookkeeping
+  ($\sum_t \alpha_t = \alpha$), Hungarian matching of straddling
+  components under a normal--inverse--Wishart (NIW)
+  marginal-likelihood score with exact prior-subtracted merging,
+  and partition-of-unity stitching
+  (Sec.~\ref{sec:method}). The matcher fires at production capacity,
+  fusing, with exact provenance, the straddling structure that hard
+  seam rules simply delete (Sec.~\ref{sec:results}).
+\item \textbf{A held-out, seam-aware evaluation, reported at parity.}
+  To our knowledge, the first exact-conjugate-generative treatment of
+  tiled large-scene splatting evaluated as a scene-level predictive
+  density. On three Hessigheim 3D (H3D) epochs the stitched predictive
+  matches the crop and Voronoi baselines to within $0.02$--$0.03$~nats
+  per held-out point (hard deletion is empirically near-costless
+  here) while uniquely yielding a global density normalized up to a
+  measured $0.020$ tail deficit (mass $0.980$ by numerical
+  integration, Sec.~\ref{sec:setup:metrics}). Credible intervals are calibrated at
+  production capacity including within the seam bands on the H3D
+  epochs; at the second site, all-points calibration replicates but
+  seam-band calibration does not. The merge contributes exact
+  model-order de-duplication and, by ablation, $+0.14$--$0.35$~nats of
+  seam log-predictive across the three epochs (Sec.~\ref{sec:results}).
+\item \textbf{Uncertainty that is calibrated and then spent}, on three
+  remote-sensing tasks, each with its controls measured
+  (Sec.~\ref{sec:results}). In error sparsification, the predictive
+  negative log-density (NLPD) ranks held-out error better than random
+  on real LiDAR but is outranked by a model-free local-density
+  control, so we read the signal as a compact, calibrated,
+  density-faithful surrogate, not as ranking power beyond sampling
+  density. Null-calibrated per-cell change detection, with a capacity
+  dose--response, holds the null that a same-grid classical
+  DEM-of-difference (DoD) baseline badly violates. In re-flight
+  planning, posterior uncertainty matches a per-tile error oracle and
+  out-plans a mass-only control where per-tile recoverable mass is
+  comparable; where it is not, mass dominates and the attribution is
+  stated.
+\item \textbf{Laptop-scale practicality with automatic capacity adaptation.}
+  The pipeline runs on a laptop CPU at $10^{8}$-point scale (SMBU, 20
+  tiles: 152M points in 2{,}346~s at the production configuration;
+  169M in 863~s, 37.6~GB peak, at the lighter reference arm, whose
+  smaller per-tile budget explains the shorter time on more points),
+  and the inferred per-tile
+  component count $\hat{K}$ adapts capacity to data
+  volume, deconfounded explicitly: $\hat{K}$ tracks point count, not
+  scene content (Secs.~\ref{sec:results}
+  and~\ref{sec:discussion}).
+\end{enumerate}
+
+\looseness=-1 Throughout, claims are scaled to the evidence: the model is evaluated
+as a predictive density over colored points, never as a renderer, and
+where a signal carries a confound or a task hits an intrinsic floor,
+the paper quantifies the limitation rather than eliding it
+(Sec.~\ref{sec:discussion}).

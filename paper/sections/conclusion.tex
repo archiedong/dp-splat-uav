@@ -1,0 +1,33 @@
+% Section VII: Conclusion
+% Numbers trace to PHASE_B_FINDINGS.md / experiments/out/*.json (see OUTLINE.md §VII).
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+\looseness=-1 Partition-of-unity stitching with exact conjugate merging turns
+independent per-tile posteriors into a single normalized,
+provenance-preserving predictive density that matches crop/Voronoi
+seam deletion on held-out quality (within $0.02$--$0.03$~nats/point on
+three H3D epochs) while deleting nothing, with near-nominal coverage
+including at seams; at the second site, overall parity and all-points
+calibration replicate while the seam bands fall short, and we say so.
+That normalized density, not a nat advantage, is
+the contribution: it makes the calibrated intervals, NLPD error
+ranking, model-derived level of detection, and acquisition score
+well-defined, and it pays where spent: predictive confidence
+stratifies mesh-referenced accuracy monotonically, isolating a
+self-identified decimeter-grade core ($0.14$~m mean vs.\ $0.52$~m
+overall); the model-derived LoD holds its null where a same-grid
+classical DoD flags 17--90\% of stable ground (though the DoD remains
+the sharper pure ranker); posterior-guided
+re-flight
+matches a per-tile error oracle and beats a mass-only control on
+comparable-mass grants ($+1.10$ vs.\ $+0.86$~nats), with the
+mass-dominated regime attributed, and the exact merge is what holds
+the stitched density at seam parity ($+0.14$--$0.35$~nats at seams in
+ablation). All of this runs on a laptop at $10^{8}$-point
+scale. Future work: halo-width and merge-threshold
+ablations, a full M3C2-EP error budget for the change test, HDP
+cross-tile sharing, and a GPU dense phase extending to
+photogrammetric sources with LiDAR-referenced validation on
+GauU-Scene.

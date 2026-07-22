@@ -1,0 +1,31 @@
+[project]
+name = "dp-splat-uav"
+version = "0.0.1"
+description = "Tiled DP Gaussian splatting for UAV mapping with calibrated uncertainty"
+license = { file = "LICENSE" }
+authors = [{ name = "Aqi Dong" }]
+requires-python = ">=3.12"
+# Versions are pinned exactly to the environment behind every number in the paper
+# (Python 3.14.6; full dependency closure in requirements-lock.txt).
+#
+# dp-splat (the Paper 1 method package, arXiv:2607.10912) is a required sibling
+# dependency, installed from a source checkout pinned at its arXiv-v1 revision
+# until its public release lands on an index:
+#   git clone <dp-splat repo> ../dp-splat   # pin to the arXiv-v1 tag/commit
+# The root conftest.py adds ../dp-splat/src to sys.path; see README "Installation".
+dependencies = [
+    "jax==0.10.2",
+    "jaxlib==0.10.2",
+    "numpy==2.5.1",
+    "scipy==1.18.0",
+    "laspy==2.7.0",
+    "lazrs==0.8.1",
+    "plyfile==1.1.4",
+    "matplotlib==3.11.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

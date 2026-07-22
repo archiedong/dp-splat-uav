@@ -1,0 +1,146 @@
+% =========================================================================
+% Section II: Related Work
+% Governing docs: paper2-uav/LIT_REVIEW.md (verified references only),
+% paper/OUTLINE.md §II. Reviewer-proof prior-art sentences used verbatim
+% where provided. No claims outside the claims-evidence table.
+% =========================================================================
+
+\section{Related Work}
+\label{sec:related}
+
+\subsection{Tiled Large-Scale Splatting and NeRF}
+\label{sec:related-tiled}
+
+\looseness=-1 Spatial partitioning is the accepted route to city-scale
+radiance-field reconstruction, and existing pipelines resolve the
+resulting seams geometrically: by hard spatial cropping of
+out-of-tile primitives (VastGaussian~\cite{lin2024vastgaussian},
+Sec.~4.3; CityGaussian~\cite{liu2024citygaussian}, Sec.~3.2 and its
+released merge script; Kerbl \emph{et~al.}'s
+hierarchy~\cite{kerbl2024hierarchical}, whose Sec.~6.3 deletes a
+primitive trained by one chunk when it lies nearer another, a Voronoi
+cull), by ADMM consensus whose parameter average
+(Eq.~8b of DOGS~\cite{chen2024dogs}) weights position, quaternion, scale,
+and opacity with uniform $1/K$ over a preassigned shared set, or by
+hand-tuned inverse-distance image blending
+(Block-NeRF~\cite{tancik2022blocknerf}, Sec.~4.3);
+Mega-NeRF~\cite{turki2022meganerf}, drawn on here for its partitioning
+scheme (and, in Sec.~\ref{sec:setup}, as the source of the Mill~19
+collection), answers each query by a single nearest-centroid submodule.
+In every case the merge rule is geometric and heuristic: none defines a
+normalized global predictive density, none weights contributions by
+posterior uncertainty, and duplicated boundary primitives are deleted,
+never fused. That is workable for rasterization, which carries no
+normalization constraint, but untenable for a generative model whose
+output must integrate to one. Two designs are direct foils
+for Sec.~\ref{sec:method}: Block-NeRF's separate appearance-matching
+pass shows that models fit in isolation disagree at boundaries and
+must be reconciled, and DOGS's uniform $1/K$ average ignores how much
+evidence each replica holds; our merge answers both at once, exactly,
+by adding prior-subtracted natural parameters on the pooled evidence.
+
+\subsection{Bayesian Splatting}
+\label{sec:related-bayes}
+
+\looseness=-1 Jia \emph{et~al.}~\cite{jia2026bayesian} attach NIW
+summaries to the standard photometric 3D Gaussian splatting (3DGS)
+optimizer~\cite{kerbl2023gaussian}: pseudo-counts from an opacity--volume heuristic, the
+optimizer's running center as ``observation,'' the NIW scatter
+statistic held at zero;
+no assignments, no E-step, no joint evidence lower bound (ELBO), and
+the stick-breaking weights (Sec.~\ref{sec:model-recap}) acting purely
+as a pruning schedule: summaries the authors themselves call
+``optimization-driven approximations'' (their Sec.~4). That concession
+motivates the opposite design, an exact conjugate generative
+treatment in which responsibilities, sufficient statistics, and a
+monotone ELBO are the inference itself, with Jia \emph{et~al.}\ as
+precedent for image-space calibration; ours is in point/density
+space. VBGS~\cite{vandemaele2024vbgs} is the closest inferential
+relative: a conjugate mixture on colored points fitted by
+coordinate-ascent variational inference (CAVI), but with a fixed finite
+component budget and no predictive use of its posterior (rendered,
+not queried as a density); its additive updates stream frames into one
+fixed-capacity global model, whereas we decompose space, so capacity
+adapts per tile and fits parallelize.
+VBGS-SLAM~\cite{zhu2026vbgsslam} propagates camera-pose uncertainty for
+indoor tracking, a different quantity from the map posterior used
+here. None of these systems addresses tiling, overlap mass, or
+model-order semantics. The DP-Splat
+model, its stick-breaking prior, and its CAVI and stochastic
+variational inference (SVI) are from
+our prior work~\cite{dong2026dpsplat}; this paper contributes the tiled
+inference, the exact merge, the stitched predictive, and the aerial
+evaluation.
+
+\subsection{3D Gaussian Splatting for Aerial Mapping}
+\label{sec:related-aerial}
+
+\looseness=-1 Partitioned aerial 3DGS pipelines (Yan
+\emph{et~al.}~\cite{yan2025aerial}; Ortho-3DGS~\cite{ortho3dgs2025};
+ULSR-GS~\cite{ulsrgs2024};
+ARSGaussian~\cite{arsgaussian2026};
+Horizon-GS~\cite{horizongs2025}) establish tiling as the accepted route
+to large scenes but handle boundaries with engineering heuristics
+(auxiliary supervision, view assignment) and leave component counts
+uninterpreted; benchmark studies (Atik~\cite{atik2025benchmark};
+Fadilah \emph{et~al.}~\cite{fadilah2026benchmark}, who find geometric
+accuracy uncorrelated with rendering quality, and whose ``3DGS-MCMC''
+baseline is a densification sampler, not posterior inference) quantify
+error only post hoc against a reference cloud. None performs Bayesian
+inference, produces a predictive density, or attaches calibrated
+uncertainty to the map itself. TreeDGS~\cite{treedgs2026} reweights
+primitives by an opacity-derived reliability score, a concrete
+downstream consumer of the per-component uncertainty our posterior
+provides in closed form; GU-GS~\cite{ding2026gugs} realizes
+``uncertainty'' as a learned mask on the training loss, with no
+probabilistic semantics; and PRIMU~\cite{gottwald2025primu} predicts
+per-Gaussian uncertainty with post hoc features and a per-scene
+learned regressor, setting the evaluation vocabulary (area under the
+sparsification error curve, AUSE; error--uncertainty
+correlation) we adopt. Neither of the latter two
+reports calibration, the property we evaluate directly via interval
+coverage.
+
+\subsection{Uncertainty Evaluation, Distributed Nonparametric
+Inference, and Active View Selection}
+\label{sec:related-eval}
+
+\looseness=-1 Our evaluation protocol assembles established instruments:
+sparsification analysis and AUSE from Ilg
+\emph{et~al.}~\cite{ilg2018uncertainty}, the area-under-random-gain
+metric (AURG)
+of Poggi \emph{et~al.}~\cite{poggi2020uncertainty}, and, for change
+detection, the M3C2 distance measure~\cite{lague2013m3c2} with the
+error-propagated level of detection of
+M3C2-EP~\cite{winiwarter2021m3c2ep}, which targets the pitfall
+(conflating surface roughness with positional uncertainty) that our
+posterior-mean covariance construction likewise avoids by design
+(Sec.~\ref{sec:setup:metrics}); Huang and Qin~\cite{huang2025uncertainty}
+provide the plane-fit reference-based error convention our
+sparsification analysis adopts on H3D
+(Sec.~\ref{sec:setup:metrics}). The
+merge machinery of Sec.~\ref{sec:method} is likewise adapted, not
+invented: the closed-form merge-ratio score appears in memoized
+variational inference~\cite{hughes2013memoized},
+partition-probability-thresholded component matching in streaming
+distributed Bayesian-nonparametric
+inference~\cite{campbell2015streaming}, Hungarian parameter matching in
+model aggregation~\cite{yurochkin2019spahm}, precision-weighted
+combination in consensus Monte Carlo~\cite{scott2016consensus}, and the
+concentration bookkeeping $\sum_t \alpha_t = \alpha$ that motivates
+interpreting the merged union against a single global DP in Williamson
+\emph{et al.}~\cite{williamson2013parallel} (Thm.~1); kernel
+stick-breaking~\cite{dunson2008kernel} anchors the tiling: in the
+compact-kernel limit, spatially localized mixtures reduce to
+independent per-region DPs, the regime our tiles approximate.
+Finally, uncertainty-driven view selection for splatting
+(GAVIS~\cite{xue2026gavis}, FisherRF~\cite{jiang2024fisherrf},
+ActiveSplat~\cite{li2025activesplat}, GauSS-MI~\cite{xie2025gaussmi}) is
+sequential, GPU-rasterized, photometric, and room-scale; our re-flight
+problem is batch, tile-level acquisition
+ranking from rasterization-free closed-form posterior scores, evaluated
+by held-out predictive density on a held-back image block's
+triangulated points. GAVIS argues that parameter-space
+uncertainty underestimates unseen regions; a nonparametric predictive,
+whose prior reverts to a fat-tailed, low-capacity regime where data are
+absent, is a natural response, and we test it directly.

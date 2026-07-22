@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "dp-splat-uav: Tiled Dirichlet-Process Gaussian Splatting for UAV Mapping"
+authors:
+  - family-names: Dong
+    given-names: Aqi
+    affiliation: "Embry-Riddle Aeronautical University"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Tiled Dirichlet-Process Gaussian Splatting for UAV Mapping with Calibrated Uncertainty"
+  authors:
+    - family-names: Dong
+      given-names: Aqi
+  year: 2026
+  notes: "Submitted to IEEE Transactions on Geoscience and Remote Sensing."
+references:
+  - type: article
+    title: "DP-Splat: Bayesian Nonparametric Complexity Control for Gaussian Splatting"
+    authors:
+      - family-names: Dong
+        given-names: Aqi
+    year: 2026
+    identifiers:
+      - type: other
+        value: "arXiv:2607.10912"
+    notes: "The underlying method package (sibling dependency dp-splat)."
